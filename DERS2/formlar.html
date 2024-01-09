@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- kullanıcıdan bilgi almak için kullanılır formlar -->
+
     <h1>Formlar</h1>
-    <form action="" method="get">
+    <form action="result.html" method="get">
+      <div>
         <label for="name">isim</label>
-        <input type="text" id="name">
+        <input type="text" id="name" name="Kullanıcı Adı" />
+        <!-- burdaki name attirbute backend tarafınfan bilgilerin tutulması için -->
 
+        <label for="lastname">soyisim</label>
+        <input type="text" id="lastname" name="Kullanıcı SOyAdı" />
+      </div>
 
-        <br><br><br><br>
-        <input type="submit" value="gönder">
-
-
-
+      <input type="submit" value="gönder" />
     </form>
-</body>
+  </body>
 </html>
