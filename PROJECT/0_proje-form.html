@@ -3,131 +3,129 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="0_profe-form.css" />
     <title>Document</title>
   </head>
   <body>
     <!-- BİRİNCİ KISIM -->
 
-    <fieldset>
-      <h1>ABC Tasarım programı Kurulum ve Satış sözleşmesi</h1>
-      <form action="../İTOP/result.html" method="get">
-        <div>
-          <fieldset>
-            <legend>Sözleşme Onay</legend>
-            <label for="Sözleşme">
-              <input type="checkbox" id="Sözleşme" />Aşağıdaki bilgilerin
-              doğruluğunu kabul ediyorum ve sözleşmemi onaylıyorum
-              <br />
-              <input type="submit" value="Formu Kaydet" />
-              <input type="reset" value="Formu Temizle" />
-            </label>
-          </fieldset>
-        </div>
-        <br /><br />
-
-        <!-- İKİNCİ KISIM -->
-
-        <div>
-          <fieldset>
-            <legend>Kişisel Bilgiler</legend>
-            <label for="Kişisel">Form Güvenlik ID </label>
-            <input
-              type="text"
-              name="Database"
-              id="Kişisel"
-              placeholder="ID numarası"
-            />
+    <h1 id="hd">ABC Tasarım programı Kurulum ve Satış sözleşmesi</h1>
+    <form action="../İTOP/result.html" method="get">
+      <div>
+        <fieldset>
+          <legend>Sözleşme Onay</legend>
+          <label for="Sözleşme">
+            <input type="checkbox" id="Sözleşme" />Aşağıdaki bilgilerin
+            doğruluğunu kabul ediyorum ve sözleşmemi onaylıyorum
             <br />
+            <input type="submit" value="Formu Kaydet" />
+            <input type="reset" value="Formu Temizle" />
+          </label>
+        </fieldset>
+      </div>
+      <br /><br />
 
-            <label for="isim">Ad </label>
-            <input type="text" name="Database" id="isim" placeholder="Adınız" />
-            <br />
+      <!-- İKİNCİ KISIM -->
 
-            <label for="soyisim">Soyad </label>
-            <input
-              type="text"
-              name="Database"
-              id="soyisim"
-              placeholder="Soyadınız"
-            />
-            <br />
+      <div>
+        <fieldset>
+          <legend>Kişisel Bilgiler</legend>
+          <label for="Kişisel">Form Güvenlik ID </label>
+          <input
+            type="text"
+            name="Database"
+            id="Kişisel"
+            placeholder="ID numarası"
+          />
+          <br />
 
-            <label for="Yaş">Yaş </label>
-            <input type="text" name="Database" id="Yaş" placeholder="yaşınız" />
-            <br />
-            <label for="email">Email:</label>
-            <input
-              type="email"
-              name="Database"
-              id="email"
-              placeholder="email girin"
-            />
-            <br />
+          <label for="isim">Ad </label>
+          <input type="text" name="Database" id="isim" placeholder="Adınız" />
+          <br />
 
-            <label for="indir">Fotograf Ekle</label>
-            <input type="file" id="indir" name="Database" />
-          </fieldset>
-        </div>
+          <label for="soyisim">Soyad </label>
+          <input
+            type="text"
+            name="Database"
+            id="soyisim"
+            placeholder="Soyadınız"
+          />
+          <br />
 
-        <!-- ÜÇÜNCÜ KISIM -->
+          <label for="Yaş">Yaş </label>
+          <input type="text" name="Database" id="Yaş" placeholder="yaşınız" />
+          <br />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="Database"
+            id="email"
+            placeholder="email girin"
+          />
+          <br />
 
-        <div>
-          <fieldset>
-            <legend>Diğer Bilgiler</legend>
-            <h4>Buradaki Alanlar Meslei Deneyimi Kapsar</h4>
+          <label for="indir">Fotograf Ekle</label>
+          <input type="file" id="indir" name="Database" />
+        </fieldset>
+      </div>
 
-            <h4>Buradaki alanlar Mesleki Deneyimi Kapsar</h4>
-            <label for="Giriş">Sektöre Giriş Tarihi</label>
-            <input type="date" name="Giriş" id="Giriş" /> <br /><br />
+      <!-- ÜÇÜNCÜ KISIM -->
 
-            <span>Sektör Deneyimi</span>
-            <input type="radio" name="Deneyim" id="Deneyim" value="1-5 yıl" />
+      <div>
+        <fieldset>
+          <legend>Diğer Bilgiler</legend>
+          <h4>Buradaki Alanlar Meslei Deneyimi Kapsar</h4>
 
-            <label for="Deneyim">1-5 yıl</label> <br />
-            <input type="radio" name="Deneyim" id="Deneyim" value="6-10yıl" />
+          <h4>Buradaki alanlar Mesleki Deneyimi Kapsar</h4>
+          <label for="Giriş">Sektöre Giriş Tarihi</label>
+          <input type="date" name="Giriş" id="Giriş" /> <br /><br />
 
-            <label for="">6-10yıl</label> <br />
-            <input type="radio" name="Deneyim" id="Deneyim" value="11-15 yıl" />
+          <span>Sektör Deneyimi</span>
+          <input type="radio" name="Deneyim" id="Deneyim" value="1-5 yıl" />
 
-            <label for="Deneyim">11-15 yıl</label> <br />
-            <input type="radio" name="Deneyim" id="" value="" />
+          <label for="Deneyim">1-5 yıl</label> <br />
+          <input type="radio" name="Deneyim" id="Deneyim" value="6-10yıl" />
 
-            <label for="">15-üzeri</label> <br /><br /><br />
+          <label for="">6-10yıl</label> <br />
+          <input type="radio" name="Deneyim" id="Deneyim" value="11-15 yıl" />
 
-            <label for="diller">Programlama Dilleri</label>
-            <select name="Database" id="diller">
-              <option value="">C#</option>
-              <option value="">PHP</option>
-              <option value="">Java</option>
-              <option value="">Javascript</option>
-            </select>
-          </fieldset>
-        </div>
+          <label for="Deneyim">11-15 yıl</label> <br />
+          <input type="radio" name="Deneyim" id="" value="" />
 
-        <!-- DÖRDÜNCÜ KISIM -->
+          <label for="">15-üzeri</label> <br /><br /><br />
 
-        <div>
-          <fieldset>
-            <legend>Sözleşme Kopyası</legend>
-            <label for="yorum"></label>
-            <textarea name="Database" id="yorum" cols="50" rows="5"></textarea>
-          </fieldset>
-        </div>
+          <label for="diller">Programlama Dilleri</label>
+          <select name="Database" id="diller">
+            <option value="">C#</option>
+            <option value="">PHP</option>
+            <option value="">Java</option>
+            <option value="">Javascript</option>
+          </select>
+        </fieldset>
+      </div>
 
-        <!-- BEŞİNCİ KISIM -->
-        <div>
-            <fieldset>
-                <legend>Mail Listesi</legend>
-                <label for="mail">Mail listesine katılmak istiyorum</label>
-                <input type="radio" id="mail" name="mail" value="istiyor"> <br>
-                <label for="mail2">Mail listesine katılmak <b> <u>istemiyorum</u></b> </label>
-                <input type="radio" id="mail2" name="mail" value="istemiyorum">
-            </fieldset>
-        </div>
+      <!-- DÖRDÜNCÜ KISIM -->
 
+      <div>
+        <fieldset>
+          <legend>Sözleşme Kopyası</legend>
+          <label for="yorum"></label>
+          <textarea name="Database" id="yorum" cols="50" rows="5"></textarea>
+        </fieldset>
+      </div>
 
-
-      </form>
-    </fieldset>
+      <!-- BEŞİNCİ KISIM -->
+      <div>
+        <fieldset>
+          <legend>Mail Listesi</legend>
+          <label for="mail">Mail listesine katılmak istiyorum</label>
+          <input type="radio" id="mail" name="mail" value="istiyor" /> <br />
+          <label for="mail2"
+            >Mail listesine katılmak <b> <u>istemiyorum</u></b>
+          </label>
+          <input type="radio" id="mail2" name="mail" value="istemiyorum" />
+        </fieldset>
+      </div>
+    </form>
   </body>
 </html>
