@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Odev-1</title>
+  </head>
+  <body>
+    <h1 id="main-header">
+      ABC Tasarım Programı Kurulum ve Satış Sözleşmesi :)
+    </h1>
+    <form action="" method="POST">
+      <fieldset class="first-fieldset">
+        <legend>Sözleşme Onay</legend>
+        <label for="confirm"
+          ><input type="checkbox" id="confirm" />Aşağıdaki bilgilerin
+          doğruluğunu kabul ediyorum ve onaylıyorum</label
+        ><br />
+        <input type="submit" value="Formu Kaydet" id="submit-button" /><input
+          type="reset"
+          value="Formu Temizle"
+          id="reset-button"
+        />
+      </fieldset>
+
+      <fieldset class="personel-info">
+        <legend>Kişisel Bilgiler</legend>
+        <label for="form_security_id"
+          >Form Güvenlik ID:<input type="text" id="form_security_id" /></label
+        ><br />
+        <label for="name">Ad <input type="text" id="name" /></label><br />
+        <label for="surname">Soyad <input type="text" id="surname" /></label
+        ><br />
+        <label for="age">Yaş <input type="number" id="age" /></label><br />
+        <label for="e_mail"
+          >Mail Adresi <input type="email" id="e_mail" /></label
+        ><br />
+        <label for="your_images"
+          >Fotoğraf Ekle <input type="file" id="your_images"
+        /></label>
+      </fieldset>
+
+      <fieldset class="other-info">
+        <legend>Diğer Bilgiler</legend>
+        <h4 id="other-info-header">Buradaki alanlar Mesleki Deneyimi Kapsar</h4>
+
+        <label for="date"
+          >Sektöre giriş tarihi:<input type="date" id="date" /></label
+        ><br />
+
+        <div class="container">
+          <label id="job-exp" for="years">Sektör Denemeyimi:</label>
+
+          <div class="job-exp-years">
+            <input type="radio" name="" id="" /><label for="">1-5</label><br />
+            <input type="radio" name="" id="" /><label for="">1-5</label><br />
+            <input type="radio" name="" id="" /><label for="">1-5</label><br />
+            <input type="radio" name="" id="" /><label for="">1-5</label><br />
+          </div>
+        </div>
+
+        <div class="container2">
+          <label id="container2-label" for="select-list"
+            >Programlama Dilleri:</label
+          >
+          <div class="select-languages">
+            <select name="selected-language" id="select-list" size="5">
+              <option value="">C#</option>
+              <option value="">PHP</option>
+              <option value="">Java</option>
+              <option value="">Javascript</option>
+              <option value="">C++</option>
+              <option value="">Ptyhon</option>
+              <option value="">Kotlin</option>
+              <option value="">Swift</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="contract">
+        <legend>Sözleşme Kopyası</legend>
+        <textarea name="contract-copy" id="text-area">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi accusamus rem temporibus, enim labore eveniet, voluptate id vel animi officiis beatae doloremque doloribus dolor rerum minus atque distinctio, numquam aperiam? Consequuntur earum, atque sapiente consequatur natus commodi reiciendis quae praesentium laboriosam cum recusandae vero perspiciatis molestiae alias eius cupiditate illum quos, voluptatum blanditiis, totam quod! Porro officiis dicta incidunt culpa magnam esse dolor hic, impedit quisquam quidem numquam amet totam repellendus perspiciatis nihil doloribus veniam iste! Explicabo dolorum ducimus error at maiores possimus ex tempore quibusdam. Voluptas atque, iste distinctio nobis a, ad sit suscipit, ipsa possimus architecto sunt!</textarea
+        >
+      </fieldset>
+
+      <fieldset class="confirmation">
+        <legend>Mail Listesi</legend>
+        <label for="true-confirm"
+          >Mail Listesine Katlmak <strong>İstiyorum</strong
+          ><input type="radio" name="confirm1" id="true-confirm" /></label
+        ><br />
+        <label for="false-confirm"
+          >Mail Listesine Katlmak <strong>İstemiyorum</strong
+          ><input type="radio" name="confirm1" id="false-confirm"
+        /></label>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#main-header{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.first-fieldset{
+    margin:20px 30px 10px 30px;
+    padding: 10px;
+}
+
+#confirm{
+    margin-right: 5px;
+}
+
+.personel-info{
+    margin:20px 30px 10px 30px;
+    padding: 10px;
+}
+
+#name{
+    margin-left: 100px;
+    margin-top: 5px;
+}
+
+#surname{
+    margin-left: 80px;
+    margin-top: 5px;
+}
+
+#age{
+    margin-left: 97px;
+    margin-top: 5px;
+}
+
+#e_mail{
+    margin-left: 44px;
+    margin-top: 5px;
+}
+
+#your_images{
+    margin-left: 32px;
+    margin-top: 5px;
+}
+
+.other-info{
+    margin:20px 30px 10px 30px;
+    padding: 10px;
+}
+
+#other-info-header{
+    margin-left:55px;
+    margin-bottom: 10px;
+}
+
+#date{
+    margin-left: 150px;
+}
+
+.container{
+    display: flex;
+}
+
+div.job-exp-years{
+    margin-left: 140px;
+}
+
+#job-exp{
+    margin-top: 15px;
+}
+
+.container2{
+    display: flex;
+}
+
+.select-languages{
+    margin-left: 135px;
+}
+
+#container2-label{
+    margin-top: 30px;
+}
+
+.contract{
+    margin:20px 30px 10px 30px;
+    padding: 10px;
+}
+
+textarea#text-area{
+    width: 350px;
+    height: 60px;
+}
+
+.confirmation{
+    margin:20px 30px 10px 30px;
+    padding: 10px;
+}
