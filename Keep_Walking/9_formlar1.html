@@ -13,7 +13,7 @@
 
     <!--  "get"  metodu açıktan gönderir  "post"  metodu daha güvenli gönderir backend'e -->
 
-    <form action="../DERS2/result.html" method="get">
+    <form action="../İTOP/result.html" method="get">
       <!-- label ve tex input kullanımı -->
       <!-- label:
              input yada out alanın başlığı,label'deki for input alanındaki id içindir-onunla iliştirilmelidir
@@ -162,7 +162,7 @@
       </div>
       <hr />
 
-      <!-- texerea -->
+      <!-- texerea ,geniş kutucuk oluşturma yorum ,resize: none boyutlandırmaya kapatır-->
       <div>
         <label for="yorum_kutucugu">Yorum</label> <br />
         <textarea
@@ -170,14 +170,61 @@
           id="yorum_kutucugu"
           cols="30"
           rows="10"
+          style="height: auto; width: auto; resize: none;"
+          
         ></textarea>
       </div>
 
-      <!-- datalist -->
+      <!-- datalist daha sonra seçenek oluşturmak amacıyla datalist acıyorum , option diyerej seçenekleri oluşturuyorum -->
+
+      <div>
+
+        <label for="browser_alanı">Browser:</label>
+        <input type="text" name="Database" id="browser_alanı" list="internet_seceneği">
+
+<!-- üstteki labelle bağlamam için (input alanıyla) datalist id vereceğim ÖNEMLİ list seceneği ile bağlayacağım  -->
+
+        <datalist id="internet_seceneği">
+          <option value="choreme"></option>
+          <option value="safari"></option>
+          <option value="opera"></option>
+          <option value="firefox"></option>
+          <option value="microsoft"></option>
+          <!-- name ile value farkı mesela siz ahmet diye bir name gönderdiniz bu ahmet değeri neyin karşığı value -->
+        </datalist>   
+      </div>
+
+  <!-- fieldset -->
+  <!-- bir veriyi gruplandırır ,placeholder silik yönlendiren yazı yazar gölge şeklinde , -->
+  <div>
+    <fieldset>
+      <legend>Kişisel bilgi</legend>
+<!-- 
+      legendeetiketi çizgi üstüne formun yazı yazmanızı sağlar o kutucugun yada verinin ne içerdiği ile ilgili küçük bilgi -->
+
+      <label for="fieldset">Ad: </label>
+      <input type="text" id="fieldset" name="Ad_Data" placeholder="Adınızı giriniz">
+
+      <label for="fieldset">Soyad: </label>
+      <input type="text" name="Soyad_Data" id="fieldset" placeholder="Soyadınızı giriniz">
+
+
+    </fieldset>
+
+
+
+  </div>
+
+
 
       <br /><br /><br /><br /><br /><br />
 
+      <!-- Gönder ve sıfırla butonu -->
       <input type="submit" value="Gönder" />
+
+      <input type="reset" value="Sıfırla">
+
+
     </form>
   </body>
 </html>
