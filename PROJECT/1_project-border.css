@@ -1,0 +1,20 @@
+#container {
+  border: solid 2px red;
+  background-color: aqua;
+  /* display: inline-block; */
+  /* display: flex; */
+}
+.diva {
+  border: solid 2px rgb(191, 255, 0);
+}
+.diva1{
+    border: solid 2px rgb(;
+}
+
+.divb {
+  border: solid 2px rgb(43, 0, 255);
+}
+
+.divc {
+  border: solid 2px rgb(0, 255, 64);
+}
