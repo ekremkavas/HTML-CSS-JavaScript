@@ -57,3 +57,16 @@ body{
  /* margin: 50px; */
  padding: 10px;
 }
+
+#eko1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    margin: auto ;
+    width: 250px;
+    height: 150px;
+    border: 10px solid blue;
+    padding: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: justify;
+    font-size: x-small;
+}
