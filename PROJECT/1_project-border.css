@@ -2,12 +2,15 @@
   border: solid 2px red;
   background-color: aqua;
   /* display: inline-block; */
-  /* display: flex; */
+  display: flex;
 }
-.diva {
+
+/* .diva {
   border: solid 2px rgb(191, 255, 0);
   text-align: center;
-}
+  display: flex;
+} */
+
 .diva1 {
   border: solid 2px red;
 }
@@ -18,10 +21,10 @@
 .diva3 {
   border: solid 2px red;
 }
-.divb {
+/* .divb {
   border: solid 2px rgb(43, 0, 255);
   text-align: center;
-}
+} */
 .divb1 {
   border: solid 2px red;
 }
@@ -33,10 +36,10 @@
   border: solid 2px red;
 }
 
-.divc {
+/* .divc {
   border: solid 2px rgb(0, 255, 64);
   text-align: center;
-}
+} */
 .divc1 {
   border: solid 2px black;
 }
