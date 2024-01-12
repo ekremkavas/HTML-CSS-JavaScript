@@ -1,4 +1,7 @@
-.stil{
-    font-size:large;
-    
+h1{
+   
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 50px solid red !important;
+    text-align: center;
+
 }
