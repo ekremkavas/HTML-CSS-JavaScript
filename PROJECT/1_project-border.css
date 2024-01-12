@@ -7,14 +7,40 @@
 .diva {
   border: solid 2px rgb(191, 255, 0);
 }
-.diva1{
-    border: solid 2px rgb(;
+.diva1 {
+  border: solid 2px red;
 }
 
+.diva2 {
+  border: solid 2px rgba(255, 0, 0, 0.84);
+}
+.diva3 {
+  border: solid 2px red;
+}
 .divb {
   border: solid 2px rgb(43, 0, 255);
+}
+.divb1 {
+  border: solid 2px red;
+}
+
+.divb2 {
+  border: solid 2px red;
+}
+.divb3 {
+  border: solid 2px red;
 }
 
 .divc {
   border: solid 2px rgb(0, 255, 64);
+}
+.divc1 {
+  border: solid 2px black;
+}
+
+.divc2 {
+  border: solid 2px black;
+}
+.divc3 {
+  border: solid 2px black;
 }
