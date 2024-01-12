@@ -1,0 +1,26 @@
+
+
+.part1{
+    border: 2px solid greenyellow ;
+    text-align: center;
+}
+.part2{
+    border: 2px solid greenyellow;
+    width: 300px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.part3{
+    border: 2px solid greenyellow ;
+}
+.part4{
+    border: 2px solid greenyellow ;
+}
+.part5{
+    border: 2px solid greenyellow ;
+}
+
+#div1{
+    border:  2px solid rebeccapurple;width: fit-content;
+    margin: auto;
+}
