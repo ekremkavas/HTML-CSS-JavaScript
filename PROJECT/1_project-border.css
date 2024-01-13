@@ -19,10 +19,11 @@ background-color: cadetblue;
 
 #z{display: inline-block;
 margin: auto  ;
+
 }
 
 .a1 {
-  border: solid 2px red;
+  border: nane;
   width: 200px;
   height: 200px;
   margin-right: 100px;
