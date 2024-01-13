@@ -31,12 +31,12 @@
       <br /><br />
 
       <!-- İKİNCİ KISIM -->
-
+118px;
       <div>
         <fieldset>
           <legend>Kişisel Bilgiler</legend>
           <label for="Kişisel">Form Güvenlik ID </label>
-          <input
+          <input class="boxid"
             type="text"
             name="Database"
             id="Kişisel"
@@ -45,11 +45,11 @@
           <br />
 
           <label for="isim">Ad </label>
-          <input type="text" name="Database" id="isim" placeholder="Adınız" />
+          <input class="name1" type="text" name="Database" id="isim" placeholder="Adınız" />
           <br />
 
           <label for="soyisim">Soyad </label>
-          <input
+          <input class="surname1"
             type="text"
             name="Database"
             id="soyisim"
@@ -58,10 +58,10 @@
           <br />
 
           <label for="Yaş">Yaş </label>
-          <input type="text" name="Database" id="Yaş" placeholder="yaşınız" />
+          <input class="age1" type="text" name="Database" id="Yaş" placeholder="yaşınız" />
           <br />
           <label for="email">Email:</label>
-          <input
+          <input class="mail1"
             type="email"
             name="Database"
             id="email"
@@ -88,15 +88,20 @@
           <input type="radio" name="Deneyim" id="Deneyim" value="1-5 yıl" />
 
           <label for="Deneyim">1-5 yıl</label> <br />
-          <input type="radio" name="Deneyim" id="Deneyim" value="6-10yıl" />
+          <input class="year6" type="radio" name="Deneyim" id="Deneyim" value="6-10yıl" />
 
           <label for="">6-10yıl</label> <br />
-          <input type="radio" name="Deneyim" id="Deneyim" value="11-15 yıl" />
+          <input class="year10" type="radio" name="Deneyim" id="Deneyim" value="11-15 yıl" />
 
           <label for="Deneyim">11-15 yıl</label> <br />
-          <input type="radio" name="Deneyim" id="" value="" />
+          <!-- <input class="year15" type="radio" name="Deneyim" id="15-üzeri" value="" /> -->
 
-          <label for="">15-üzeri</label> <br /><br /><br />
+          <input class="year10" type="radio" name="Deneyim" id="Deneyim" value="15 yıl üzeri" />
+        
+
+          <label for="Deneyim">15 yıl üzeri</label> <br><br><br>
+
+    
 
           <label for="diller">Programlama Dilleri</label>
           <select name="Database" id="diller">
