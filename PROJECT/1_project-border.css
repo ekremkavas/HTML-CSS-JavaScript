@@ -2,51 +2,77 @@
   border: solid 2px red;
   background-color: aqua;
   /* display: inline-block; */
-  display: flex;
+  /* display: flex; */
+  /* width: fit-content;
+  height: fit-content; */
 }
 
-/* .diva {
-  border: solid 2px rgb(191, 255, 0);
-  text-align: center;
-  display: flex;
-} */
+#x{margin: auto;
+  display: inline-flex block;
 
-.diva1 {
+}
+
+.a1 {
   border: solid 2px red;
+  width: 200px;
+  height: 200px;
+  margin-right: 100px;
+  margin-bottom: 100px;
 }
 
-.diva2 {
+.a2 {
   border: solid 2px rgba(255, 0, 0, 0.84);
+  width: 200px;
+  height: 200px;
+  margin-right: 100px;
+  margin-bottom: 100px;
 }
-.diva3 {
+.a3 {
   border: solid 2px red;
-}
-/* .divb {
-  border: solid 2px rgb(43, 0, 255);
-  text-align: center;
-} */
-.divb1 {
-  border: solid 2px red;
+  width: 200px;
+  height: 200px;
+  margin-right: 100px;
+
 }
 
-.divb2 {
+.b1 {
   border: solid 2px red;
-}
-.divb3 {
-  border: solid 2px red;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+ 
 }
 
-/* .divc {
-  border: solid 2px rgb(0, 255, 64);
-  text-align: center;
-} */
-.divc1 {
-  border: solid 2px black;
+.b2 {
+  border: solid 2px red;
+  width: 200px;
+  height: 200px;
+ 
+}
+.b3 {
+  border: solid 2px red;
+  width: 200px;
+  height: 200px;
 }
 
-.divc2 {
+
+.c1 {
   border: solid 2px black;
+  border: solid 2px red;
+  width: 200px;
+  height: 200px;
+ 
 }
-.divc3 {
+
+.c2 {
   border: solid 2px black;
+  border: solid 2px red;
+  width: 200px;
+  height: 200px;
+}
+.c3 {
+  border: solid 2px black;
+  border: solid 2px red;
+  width: 200px;
+  height: 200px;
 }
