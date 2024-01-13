@@ -1,0 +1,24 @@
+/* *{
+    margin: 0;
+} */
+
+/* .languages{
+    border: 2px solid red;
+    padding: 0;
+} */
+ul.languages{
+    border: 2px solid red;
+    /* padding: 0; */
+    /* madde imi şaretleri */
+list-style-type: none;
+list-style-type: square;
+list-style-type: circle;
+list-style-type: lower-alpha;
+list-style-type: disc;
+
+/* 
+list-style-position: inside;
+yazarsan noktaları içeri alır */
+}
+
+/* ul yazıp bosluk bırakırsan .languages dersen bu ul classındakı .languages ara demek */
