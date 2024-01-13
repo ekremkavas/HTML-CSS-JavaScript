@@ -1,15 +1,24 @@
 #container {
   border: solid 2px red;
-  background-color: aqua;
+background-color: cadetblue;
   /* display: inline-block; */
   /* display: flex; */
-  /* width: fit-content;
-  height: fit-content; */
+  width: fit-content;
+  height: fit-content;
 }
 
-#x{margin: auto;
-  display: inline-flex block;
+#x{display: inline-block;
 
+}
+
+
+#y{display: inline-block;
+  margin: auto ;
+
+}
+
+#z{display: inline-block;
+margin: auto  ;
 }
 
 .a1 {
@@ -21,14 +30,14 @@
 }
 
 .a2 {
-  border: solid 2px rgba(255, 0, 0, 0.84);
+  border: dotted 2px rgba(255, 0, 0, 0.84);
   width: 200px;
   height: 200px;
   margin-right: 100px;
   margin-bottom: 100px;
 }
 .a3 {
-  border: solid 2px red;
+  border: dashed 2px red;
   width: 200px;
   height: 200px;
   margin-right: 100px;
@@ -39,40 +48,44 @@
   border: solid 2px red;
   width: 200px;
   height: 200px;
-  margin: 100px auto;
+  margin-bottom: 100px;
+  margin-right: 100px;
+ 
  
 }
 
 .b2 {
-  border: solid 2px red;
+  border: double 2px red;
   width: 200px;
   height: 200px;
+  margin-bottom: 100px;
+  margin-right: 100px;
  
 }
 .b3 {
-  border: solid 2px red;
+  border: groove 2px red;
   width: 200px;
   height: 200px;
+  margin-right: 100px;
 }
 
 
 .c1 {
-  border: solid 2px black;
-  border: solid 2px red;
+  border: ridge 2px black;
   width: 200px;
   height: 200px;
+margin-bottom: 100px;
  
 }
 
 .c2 {
-  border: solid 2px black;
-  border: solid 2px red;
+  border: inset 2px black;
   width: 200px;
   height: 200px;
+  margin-bottom: 100px;
 }
 .c3 {
-  border: solid 2px black;
-  border: solid 2px red;
+  border: outset 2px black;
   width: 200px;
   height: 200px;
 }
