@@ -19,6 +19,8 @@ list-style-type: disc;
 /* 
 list-style-position: inside;
 yazarsan noktaları içeri alır */
+
+list-style-image: url(./house-solid.svg);
 }
 
 /* ul yazıp bosluk bırakırsan .languages dersen bu ul classındakı .languages ara demek */
