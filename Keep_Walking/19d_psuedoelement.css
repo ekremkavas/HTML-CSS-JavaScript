@@ -1,0 +1,38 @@
+.p-elements::first-line {
+  color: rgb(153, 78, 51);
+}
+
+.p-elements::first-letter {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: "Times New Roman", Times, serif;
+}
+
+ul.before-after {
+  list-style-type: none;
+}
+
+ul.before-after li {
+  background-color: lightcoral;
+  border-radius: 20px;
+  margin: 0.5rem;
+  width: 40%;
+  /* text-align: center; */
+}
+
+ul.before-after li::before {
+  content: "😎";
+  /* windows tuşu ve noktaya aynı anda bas imoji içiin */
+  margin: 10px;
+}
+
+ul.before-after li:nth-child(4)::after {
+  content: "🚚";
+  margin: 10px;
+}
+
+ul.before-after li:nth-child(5)::after {
+  content: "\1F689";
+  /* burdakı content ıcındekı ımojının unicode numarasıdır */
+  margin: 10px;
+}
