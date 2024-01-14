@@ -6,21 +6,25 @@
     border: 2px solid red;
     padding: 0;
 } */
-ul.languages{
-    border: 2px solid red;
-    /* padding: 0; */
-    /* madde imi şaretleri */
-list-style-type: none;
-list-style-type: square;
-list-style-type: circle;
-list-style-type: lower-alpha;
-list-style-type: disc;
+ul.languages {
+  border: 2px solid red;
+  /* padding: 0; */
+  /* madde imi şaretleri */
+  list-style-type: none;
+  list-style-type: square;
+  list-style-type: circle;
+  list-style-type: lower-alpha;
+  list-style-type: disc;
 
-/* 
+  /* 
 list-style-position: inside;
 yazarsan noktaları içeri alır */
 
-list-style-image: url(./house-solid.svg);
+  list-style-image: url(./marketarbası.svg);
+  color: brown;
 }
 
 /* ul yazıp bosluk bırakırsan .languages dersen bu ul classındakı .languages ara demek */
+h2 {
+  color: rgb(6, 12, 131);
+}
