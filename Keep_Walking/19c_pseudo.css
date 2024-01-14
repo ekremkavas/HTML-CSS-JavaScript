@@ -1,0 +1,70 @@
+/* google_font tan bitter yazısını style ıcındekı ımport yazan kısımdan ıtıbaren copyaladık css kısmına yapıstırdık daha sonra degıstırmek  ıstedıgımız stıllın altına  google fonttakı css lınkını yapıstırdık */
+* {
+  margin: 10px;
+  font-weight: bold;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital@1&display=swap");
+
+ul.pseudo li:first-child {
+  color: red;
+}
+
+ul.pseudo li:last-child {
+  color: blue;
+  font-family: "Bitter", serif;
+  /* bu yazıyı google font bitter css rules kısmından kopyaladık font-family: 'Bitter', serif; */
+}
+
+ul.pseudo li:nth-child(3) {
+  color: magenta;
+  font-family: cursive;
+
+  /* nth kaçıncı elemanına demek 3 de 3.eleamn oluyor */
+}
+ul.pseudo li:nth-child(5) {
+  color: olive;
+  font-size: 2rem;
+  list-style-type: upper-alpha;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* tekler odd çiftler even */
+ul.pseudo li:nth-child(odd) {
+  background-color: bisque;
+}
+ul.pseudo li:nth-child(even) {
+  background-color: rgb(218, 255, 196);
+}
+
+ul.pseudo li:hover {
+  background-color: blueviolet;
+  cursor: grabbing;
+}
+/* mouse tıkladığım zaman kırmızıya dönsün */
+ul.pseudo li:active {
+  background-color: brown;
+}
+/* 
+input alanını yakalıyorum labeldekı */
+
+input:focus {
+  background-color: aqua;
+  border: 10px solid gray;
+}
+
+/* LİNK PSUEDO CLASSES */
+
+nav.link a:link {
+  color: aqua;
+}
+
+/* ziyaret edilmiş hali linkin */
+nav.link a:visited {
+  color: rgb(132, 203, 16);
+}
+
+/* üzerine basılı tuttuğum hali */
+nav.link a:active {
+  color: rgb(220, 13, 235);
+}

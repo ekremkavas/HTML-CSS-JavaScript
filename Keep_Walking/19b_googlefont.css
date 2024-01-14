@@ -19,6 +19,7 @@ ul.languages {
   /* 
 list-style-position: inside;
 yazarsan noktaları içeri alır */
+  list-style-position: inside;
 
   list-style-image: url(./marketarbası.svg);
   color: brown;
@@ -26,5 +27,33 @@ yazarsan noktaları içeri alır */
 
 /* ul yazıp bosluk bırakırsan .languages dersen bu ul classındakı .languages ara demek */
 h2 {
-  color: rgb(6, 12, 131);
+  color: rgb(227, 48, 122);
+}
+
+h2 i {
+  color: magenta;
+}
+
+ul.languages li {
+  background-color: lightgreen;
+  margin: 5px;
+  padding-left: 20px;
+  border: 2px solid orange;
+  border-left: 5px solid gray;
+}
+
+/* li lere hower vermek için */
+
+ul.languages li:hover {
+  /* background-color: brown; */
+  opacity: 0.8;
+  cursor: pointer;
+}
+/* bu siteden background resimleri var hazır ordan aldık https://cssgradient.io/gradient-backgrounds/ */
+body {
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+
+  /* body yukseklık vermezsek sureklı tekrar eder */
+  height: 100vh;
 }
