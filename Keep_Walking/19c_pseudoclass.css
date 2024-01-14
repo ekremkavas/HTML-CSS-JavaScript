@@ -68,3 +68,22 @@ nav.link a:visited {
 nav.link a:active {
   color: rgb(220, 13, 235);
 }
+
+nav.cw a {
+  text-decoration: none;
+  border: 4px red solid;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+nav.cw a:hover {
+  background-color: rgb(209, 234, 20);
+}
+
+nav.cw a:hover i {
+  color: purple;
+}
+
+nav a i {
+  font-size: 1.7rem;
+}
