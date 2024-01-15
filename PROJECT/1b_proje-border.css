@@ -1,0 +1,51 @@
+* {
+  /* box-sizing: border-box; */
+}
+/* box-sizing: border-box özelliği kullanıldığında, belirtilen genişlik ve yükseklik değeri, iç içe geçmiş padding ve border'ları içerecek şekilde hesaplanır. Yani, padding ve border değerleri, toplam genişlik ve yükseklik içinde dahil edilir. */
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  border: 8px solid red;
+  background-image: url(./deniz.jpg);
+  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* epeat tekararlamaması ıcın no-repaır kullandık
+
+Cover, görüntünün yüksekliğini ekran yüksekliğine sığdırmaya ve genişliğini orantılı olarak uzatmaya çalışacaktır. 
+
+Contain, görüntünün genişliğini ekran genişliğine sığdırmaya ve yüksekliği orantılı olarak uzatmaya çalışacaktır.
+
+görüş alanına ortalamak istediğimi varsayalım. Bunu yapmak için tek yapmam gereken, .container içindeki background-position özelliğine değer olarak center center eklemek*/
+.div1 {
+  border: 5px solid black;
+  width: 200px;
+  height: 700px;
+  margin-top: 50px;
+  margin-left: 250px;
+  text-align: center;
+  color: blue;
+  font-size: larger;
+  padding-top: 65px;
+}
+
+div.div1 div {
+  border: 3px solid red;
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  padding: 45px;
+}
+
+.div2 {
+}
+.div3 {
+}
