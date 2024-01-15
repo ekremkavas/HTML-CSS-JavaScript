@@ -51,3 +51,17 @@ console.log(değişkentanımla);
 /*
 --->Block scope
 JavaScript'te, block scope veya blok kapsamı, değişkenlerin tanımlandığı ve sadece belirli bir kod bloğu içinde erişilebildiği bir kapsam türüdür. JavaScript'te var, let, ve const anahtar kelimeleri kullanılarak değişkenler tanımlanabilir, ancak bunlar farklı kapsama sahiptir.*/
+
+
+//  DATA TYPES
+
+// Output:
+
+// 1. undefined
+// 2. object
+// 3. number
+// 4. string
+// 5. boolean
+// 6. bigint
+// 7. symbol
+// 8. object
