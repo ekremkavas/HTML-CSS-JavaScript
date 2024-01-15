@@ -37,7 +37,8 @@ console.log("Hello Word");
  --->Block scope
 
  */
-//  --->Global scope
+//  --->Global scope 
+// Hiçbir sınırı olmayan her yerden erişilebilen skope dur
 
 //  sen bu değişkene her yerden erişebilirşin demek
 // tanımladığınız değer süslü parantezin dışında olmalı
