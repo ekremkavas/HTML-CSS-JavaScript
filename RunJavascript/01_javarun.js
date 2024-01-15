@@ -37,6 +37,17 @@ console.log("Hello Word");
  --->Block scope
 
  */
+//  --->Global scope
 
+//  sen bu değişkene her yerden erişebilirşin demek
+// tanımladığınız değer süslü parantezin dışında olmalı
 var değişkentanımla = 10;
 console.log(değişkentanımla);
+
+// --->function scope
+
+// Function scope" veya "fonksiyon kapsamı", bir değişkenin sadece tanımlandığı fonksiyon içinde erişilebilir olduğu kapsam türünü ifade eder. Yani, bir değişkenin kapsamı, tanımlandığı fonksiyonun içindedir ve bu değişken dışındaki diğer yerlerden erişilemez.
+
+/*
+--->Block scope
+JavaScript'te, block scope veya blok kapsamı, değişkenlerin tanımlandığı ve sadece belirli bir kod bloğu içinde erişilebildiği bir kapsam türüdür. JavaScript'te var, let, ve const anahtar kelimeleri kullanılarak değişkenler tanımlanabilir, ancak bunlar farklı kapsama sahiptir.*/
