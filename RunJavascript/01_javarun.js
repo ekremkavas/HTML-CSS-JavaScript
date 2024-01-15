@@ -22,3 +22,21 @@ console.log("ikii sayının toplamı :", a + b);
 alert("F5 e basmayınız");
 
 console.log(window);
+
+console.log("Hello Word");
+debugger;
+// hata ayıklamada kullanılır
+console.looog("Hello Word");
+console.log("Hello Word");
+console.log("Hello Word");
+
+/* SCOPE KAVRAMI
+
+ --->Global scope
+ --->Function scope
+ --->Block scope
+
+ */
+
+var değişkentanımla = 10;
+console.log(değişkentanımla);
