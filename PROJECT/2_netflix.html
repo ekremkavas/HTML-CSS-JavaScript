@@ -9,6 +9,27 @@
       #spanflix {
         color: red;
       }
+      #name1{
+        margin-right: 260px;
+      }
+      #age1{
+        margin-right: 260px;
+      }
+      #email1{
+        margin-right: 260px;
+      }
+      #type1{
+        margin-right: 220px;
+      }
+      #back1{
+        margin-right: 220px;
+      }
+
+
+    
+
+
+     
     </style>
   </head>
 
@@ -18,48 +39,50 @@
     <form action="./result.html" method="get">
       <div class="bigbox">
         <div class="box1">
-          <label for="firstname">Name</label> <br />
-          <input
+           
+          <label for="firstname"> <span id="name1">Name</span> </label><br /><br>
+          <input class="nameinput"
             type="text"
             name="Dataname"
             id="firstname"
             placeholder="Enter your name"
-          />
-        </div>
+          /> <br>
+        </div> <br>
+
 
         <div class="box2">
-          <label for="agebox">Age</label> <br />
-          <input type="text" name="Dataage" id="agebox" placeholder="Age" />
-        </div>
+          <l50px;for="agebox"> <span id="age1">Age</span> </l50px;for=> <br /> <br>
+          <input class="ageinput" type="text" name="Dataage" id="agebox" placeholder="Age" />
+        </div> <br>
 
         <div class="box3">
-          <label for="mailbox">E-mail</label>
-          <br />
-          <input
+          <label for="mailbox"> <span id="email1">E-mail</span> </label>
+          <br /> <br>
+          <input class="mailinput"
             type="text"
             name=""
             id="mailbox"
             placeholder="Enter your e-mail"
           />
-        </div>
+        </div> <br>
 
         <div class="box4">
-          <label for="diller">Content Type</label> <br />
-          <select name="Database" id="diller">
+          <label for="diller"> <span id="type1">Content Type</span>  </label> <br /> <br>
+          <select class="inputselect" name="Database" id="diller">
             <option value="">Series</option>
             <option value="">x</option>
             <option value="">y</option>
             <option value="">z</option>
           </select>
-        </div>
+        </div> <br>
 
-        <div>
+        <div class="box5">
           <span>Move Type</span> <br />
           <label>
             <input type="checkbox" name="hobby" value="comedy" />
             Comedy
           </label>
-          <br />
+          <br /> 
 
           <label>
             <input type="checkbox" name="hobby" value="Action" />
@@ -71,9 +94,9 @@
             <input type="checkbox" name="hobby" value="romantic" />
             Romantic
           </label>
-        </div>
+        </div> <br>
 
-        <div>
+        <div class="box6">
           <span>Gender</span> <br />
 
           <label>
@@ -92,14 +115,15 @@
             <input type="radio" name="gender" value="other" />
             Other
           </label>
-        </div>
+        </div> <br>
 
-        <div>
-            <span>Feed Back</span>
-          <label for="message"></label> <br>
-          <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        <div class="boxfeed">
+          <span id="back1">Feed Back</span> <br>
+          <label for="message"></label> <br />
+          <textarea class="text1" id="message" name="message" rows="4" cols="50" placeholder="Feed Back plase" ></textarea>
         </div>
-        <input type="submit" value="Submit">
+        <br>
+        <input class="subclass" type="submit" value="Submit" />
       </div>
     </form>
   </body>

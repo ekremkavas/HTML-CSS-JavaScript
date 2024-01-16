@@ -5,7 +5,7 @@
     background-size: contain;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: center; */
+
 }
 body{
     background-image: url(./background_image.jpg);
@@ -13,14 +13,16 @@ body{
 }
 h1 {
     font-size: 2rem; color: blue;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     text-align: center;
+    color: whitesmoke;
    
 }
 
 h5{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    color: white;
 }
 
 .bigbox{
@@ -33,7 +35,60 @@ h5{
     width: fit-content;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 40px;
     padding-top: 30px;
+
+}
+.box1{
+    /* border: 2px solid red; */
+    height: 60px;
+}
+.box4{
+    height: 80px;
+}
+.box5{
+    /* border: solid 2px red; */
+    text-align: left;
+    padding-left: 70px;
+}
+.box6{
+     /* border: solid 2px red; */
+     text-align: left;
+     padding-left: 70px;
+}
+.boxfeed{
+    height: 180px;
+    /* border: 2px solid red; */
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
+.nameinput{
+    width: 300px;
+    height: 30px;
+}
+.ageinput{
+    width: 300px;
+    height: 30px;
+
+}
+
+.mailinput{
+    width: 300px;
+    height: 30px;
+}
+.inputselect{
+    width: 300px;
+    height: 30px;
+}
+.subclass{
+   color: rgb(14, 13, 13);
+   background-color: red;
+   border-radius: 20px;
+   width: 30%;
+   height: 50px;
+   
+}
+.text1{
+    height: 100px;
+}
