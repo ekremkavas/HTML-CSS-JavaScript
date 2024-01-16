@@ -27,3 +27,8 @@ Hem değerlere hem tiplere baksın diyorsanız === kullanmanız gerek console.lo
 
 sayi = sayi + 2;  yada sayi +=2 ; sayima 2 ekle demek
 
+sayi *=3 ; demek sayıyı 3 ile çarp demek
+
+sayi %=5 ; sayının 5 e göre modunu al sonucu ver demek
+
+sayi **=4 ; sayıın 4 uncu kuvvetını al demek
