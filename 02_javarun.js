@@ -51,3 +51,23 @@ console.log(typeof sayi1);
 //?Boolean
 // True ve False çin kullanılır
 console.log(5 < 2);
+
+//? Null
+
+// içerisine herhangi bir değer ataması yapmayıp belki sonra yapmaya karar verdiğimiz yer
+let a = null;
+console.log(a);
+
+//? Undefined
+// tanımlanamayan , değer ataması yapılmayan demektir
+
+let d;
+console.log(d);
+
+console.log(typeof d);
+
+//? OBJECT veri tipleri
+
+let rakamlar = [1, 2, 3, 4, 5, 6];
+console.log(rakamlar);
+console.log(typeof rakamlar);
