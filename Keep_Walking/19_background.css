@@ -15,12 +15,17 @@
 
 
     /* background-image: url(./img/resim-2.jpg); */
-    background-repeat: no-repeat;
-    background-position: center;
+    background-repeat: no-repeat; 
+    /* TEKRARLAMAYI KALDIRIR */ 
+     /* cover tum kutuyu kapsıyacak sekılde fotograf buyur */
     background-size: cover;
+    /* center fotoyu tam merkeze getırır */
+    background-position: center;
+  
+    /* background-size: contain; dersem fotograf cerceve sıgdıgı anda bırakır*/
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),url(./img/resim-2.jpg);
 
-
+/* ARKA PLAN FOTOGRAFI background-image:url(); ile eklenir */
 
 }
 

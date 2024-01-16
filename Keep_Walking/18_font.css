@@ -35,7 +35,13 @@
     font-weight: 100;
 }
 
-@font-face {
+/* @font-face {
     font-family: "Bungee" ;
-    src: url(./fonts/BungeeSpice-Regular.ttf);
+    src: url(./fonts/BungeeSpice-Regular.ttf); 
+} */
+
+@font-face{
+    font-family: ;
+    src: url();
+
 }
