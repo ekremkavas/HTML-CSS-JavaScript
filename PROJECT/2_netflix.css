@@ -12,10 +12,12 @@ body{
 
 }
 h1 {
-    font-size: 2rem; color: blue;
+    font-size: 3rem; color: blue;
     /* border: 2px solid red; */
     text-align: center;
     color: whitesmoke;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
    
 }
 
