@@ -1,0 +1,39 @@
+*{
+    /* margin: 0px ; */
+    /* background-image: url(./background_image.jpg); */
+    /* box-sizing: border-box; */
+    background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+}
+body{
+    background-image: url(./background_image.jpg);
+
+}
+h1 {
+    font-size: 2rem; color: blue;
+    border: 2px solid red;
+    text-align: center;
+   
+}
+
+h5{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.bigbox{
+    color:  white;
+    background-color: rgba(8, 8, 8, 0.5);
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    height: fit-content;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-top: 30px;
+}
+

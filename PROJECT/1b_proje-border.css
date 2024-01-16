@@ -3,6 +3,7 @@
   margin: 40px;
   /* padding: 0; */
   box-sizing: border-box;
+  
   /* text-align: center; */
 }
 /* box-sizing: border-box özelliği kullanıldığında, belirtilen genişlik ve yükseklik değeri, iç içe geçmiş padding ve border'ları içerecek şekilde hesaplanır. Yani, padding ve border değerleri, toplam genişlik ve yükseklik içinde dahil edilir. */

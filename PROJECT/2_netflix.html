@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./2_netflix.css" />
+    <title>Netflix</title>
+    <style>
+      #spanflix {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>NET<span id="spanflix">FLİX</span></h1>
+    <h5>Thank you for signing up at Netflix.Tell us more about your self</h5>
+    <form action="./result.html" method="get">
+      <div class="bigbox">
+        <div class="box1">
+          <label for="firstname">Name</label> <br />
+          <input
+            type="text"
+            name="Dataname"
+            id="firstname"
+            placeholder="Enter your name"
+          />
+        </div>
+
+        <div class="box2">
+          <label for="agebox">Age</label> <br />
+          <input type="text" name="Dataage" id="agebox" placeholder="Age" />
+        </div>
+
+        <div class="box3">
+          <label for="mailbox">E-mail</label>
+          <br />
+          <input
+            type="text"
+            name=""
+            id="mailbox"
+            placeholder="Enter your e-mail"
+          />
+        </div>
+
+        <div class="box4">
+          <label for="diller">Content Type</label> <br />
+          <select name="Database" id="diller">
+            <option value="">Series</option>
+            <option value="">x</option>
+            <option value="">y</option>
+            <option value="">z</option>
+          </select>
+        </div>
+
+        <div>
+          <span>Move Type</span> <br />
+          <label>
+            <input type="checkbox" name="hobby" value="comedy" />
+            Comedy
+          </label>
+          <br />
+
+          <label>
+            <input type="checkbox" name="hobby" value="Action" />
+            Action
+          </label>
+          <br />
+
+          <label>
+            <input type="checkbox" name="hobby" value="romantic" />
+            Romantic
+          </label>
+        </div>
+
+        <div>
+          <span>Gender</span> <br />
+
+          <label>
+            <input type="radio" name="gender" value="male" />
+            Male
+          </label>
+          <br />
+
+          <label>
+            <input type="radio" name="gender" value="female" />
+            Female
+          </label>
+          <br />
+
+          <label>
+            <input type="radio" name="gender" value="other" />
+            Other
+          </label>
+        </div>
+
+        <div>
+            <span>Feed Back</span>
+          <label for="message"></label> <br>
+          <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        </div>
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </body>
+</html>
