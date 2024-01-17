@@ -13,6 +13,10 @@ function exampleFunction() {
   let result = exampleFunction();
   console.log(result);  // undefined
 
+//   2.Null (değeri belirtilmemiş)
+    let emptyValue = null;
+    console.log(emptyValue); // null
+
     
 // 2. object
 // 3. number
