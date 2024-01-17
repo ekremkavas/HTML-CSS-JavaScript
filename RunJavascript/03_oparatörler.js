@@ -12,9 +12,7 @@ console.log(sonuc);
 //% modülüs kalan verir 7 bölü 3 mesela kalan 1 sonuc
 
 let artiarti = 10; // a++ ay'ı 1 artır demek
-a++;
-a++;
-a--;
+
 console.log(artiarti);
 
 // 2**7    2 üzeri 7 demek
@@ -31,4 +29,4 @@ sayi *=3 ; demek sayıyı 3 ile çarp demek
 
 sayi %=5 ; sayının 5 e göre modunu al sonucu ver demek
 
-sayi **=4 ; sayıın 4 uncu kuvvetını al demek
+sayi **=4 ; sayıın 4 uncu kuvvetını al demek */
