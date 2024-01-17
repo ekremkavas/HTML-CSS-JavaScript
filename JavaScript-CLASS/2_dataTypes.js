@@ -7,6 +7,10 @@ tırnak işareti içerisindeki değerler string ifadelerdir '' ""  ``
 string içerisinde yazılan sayılar string kabul edili
 
 */
+// yüksek seviyeli dil olması
+// nesne yönelimli
+// ve dinamik
+// çok fazla yerde kullanılır
 
 //! DATA TYPES
 //? typeof veri türünü gösterir
@@ -50,3 +54,31 @@ console.log(fixedSonuc);
 //rastegele sayı üretmek için kullanılır 0-1 arasında bir sayı üretir
 
 console.log(Math.random() * 10);
+
+//! STRİNG DATA TYPE
+ad = "george";
+let str1 = "merhaba dünya";
+let str2 = "hello world1";
+let str3 = `hello world1`;
+let str4 = `hello world1 ${ad}`;
+console.log(str4);
+console.log(typeof str4);
+console.log(str3);
+
+let kimlik = 12312323332;
+let adSoyad = "Cenkeri Esat";
+console.log(`Bizim evin tatlısı ${adSoyad}`);
+
+//! BOOLEAN
+
+let deger = undefined;
+console.log(Boolean(deger));
+
+//!NULL
+let personel = null;
+console.log(personel);
+
+//! NaN - Not a number
+
+//NON PRiMİTİVE
+//Array, object ,function
