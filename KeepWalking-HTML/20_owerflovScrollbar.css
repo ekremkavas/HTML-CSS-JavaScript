@@ -1,0 +1,23 @@
+.box1{
+    /* border: 3px solid blue; */
+    background-color: gray;
+    overflow: scroll;
+    width: 600px; height:400px
+    /* overflow : hidden;  */
+    /* x eksenınde hizaladı */
+
+}
+   
+
+.box2{
+    border: 3px solid red;
+    background-color: red;
+    overflow: auto;
+    width: 300px; height: 400px
+    
+    
+}
+p{
+    color yellow;
+    
+}
