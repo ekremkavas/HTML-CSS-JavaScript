@@ -98,18 +98,33 @@ console.log(Boolean(null))
 console.log(Boolean(undefined))
 console.log(Boolean([]))
 
-console.log([] && 0 && 2)
-console.log([] && "M" && 5)
-
 console.clear()
+//VE , AND ; &&
+console.log([] && 0 && 2) // arada false varsa ilk gördüğü false alır
+console.log([] && "M" && 5) // true true gittiğinde sonuncu true yazar
+
+console.log(true && "ekrem");
+console.log(false && "ekrem");
+console.log(Boolean(false && "ekrem"));
+console.log(true && "ekrem" && 17);
+console.log(true && 82 && "ahmet" && "ekrem" && 17);
+console.log(Boolean(false && 82 && "ahmet" && "ekrem" && 17));
+// console.clear()
 //! OR - ||
 // Herşey false olsa bile bir tane true, true döndermeye yeter
 // Hepsi false ise en son false değerini verir
 
 console.log(0 || null || 2 ||  undefined )
 
-
+console.log(null);
 console.log(!null)
+
+console.log(true || "ekrem");
+console.log(false || "ekrem");
+console.log(Boolean(false || "ekrem"));
+console.log(false || "ekrem" || 17);
+console.log(false || 82 || "ahmet" || "ekrem" || 17);
+console.log(Boolean(false || 82 || "ahmet" || "ekrem" || 17));
 
 
 
