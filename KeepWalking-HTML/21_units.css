@@ -34,10 +34,25 @@ body {
   /* dikey 100 vh yatay 100 vw */
 }
 .div5 {
+  font-size: 25px;
 }
 
 .div6 {
+  font-size: 2rem;
 }
 
 .div7 {
+  font-size: 2rem;
+}
+
+.div8 {
+  font-size: 25px;
+}
+
+.div9 {
+  font-size: 5rem;
+}
+
+.div10 {
+  font-size: 5rem;
 }

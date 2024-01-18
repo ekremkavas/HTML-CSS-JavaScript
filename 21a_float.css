@@ -1,0 +1,31 @@
+.bigboss {
+  border: 3px black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.bigboss * {
+  border: 2px black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+header {
+  background-color: lightblue;
+}
+
+main {
+  background-color: blue;
+}
+
+aside {
+  background-color: darkmagenta;
+}
+
+article {
+  background-color: greenyellow;
+}
+
+footer {
+  background-color: aquamarine;
+}
