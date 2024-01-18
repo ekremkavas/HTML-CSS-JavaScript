@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: blue;
+}
+
+body {
+  border: 2px solid red;
+}
+
+.abs {
+  background-color: chocolate;
+  /* sabittir */
+  width: 350px;
+  width: 10cm;
+  width: 5in;
+}
+
+.div2 {
+  background-color: aqua;
+  width: 50%;
+}
+
+.div3 {
+  background-color: bisque;
+  width: 50%;
+}
+
+.div4 {
+  background-color: rebeccapurple;
+  width: 50vw;
+  /* 50vw gorünen alan yarısını tamamen yarısı alır sayfa dışındakı, sayfayı kucult mesela gorunen alana göre oranlar */
+
+  /* dikey 100 vh yatay 100 vw */
+}
+.div5 {
+}
+
+.div6 {
+}
+
+.div7 {
+}
