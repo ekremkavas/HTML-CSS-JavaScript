@@ -1,0 +1,26 @@
+.box {
+  border: 3px solid olive yellow;
+  margin-bottom: 4 rem;
+  width: 20rem;
+  height: 4rem;
+  background-color: bisque;
+}
+
+.box1 {
+  /* defult degerı overflow: visibeldır; */
+  overflow: visible;
+}
+
+.box2 {
+  overflow: hidden;
+}
+
+.box3 {
+  overflow: scroll;
+}
+
+.box4 {
+}
+
+.box5 {
+}
