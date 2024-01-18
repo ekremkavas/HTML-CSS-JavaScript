@@ -82,3 +82,49 @@ console.log(personel);
 
 //NON PRiMİTİVE
 //Array, object ,function
+
+//?INCREMENT ve DECREMENT
+
+let a = 5;
+let b = a++;
+let c = b++;
+console.log(c);
+console.log(b);
+console.log(a);
+
+//?ASSIGMENT OPERATÖRS
+
+//!MANTIKSAL OPARATÖRLER
+
+//? && : ve
+//? || : veya
+//? ! : değil
+
+// ve de  && hepsi true olmak zorunda tek false false verdirir
+
+// veya || da ikisinde olmasının zorunluluğu yok, içinden birinin ture olması sonucu true verdirir
+
+// başındaki ünlem zıttını almak için kullanılır
+
+console.log(true || "ekrem");
+console.log(false || "ekrem");
+console.log("5" + 3);
+console.log(typeof "5" + 3);
+console.log(true || false); // veya
+console.log(15 % 6);
+console.log(4 < 5 && false); // ve
+console.log(Math.round(15.67)); // (En yakın ondalık sayıya yuvarlar)
+console.log("55" < 56);
+console.log(true && false);
+console.log(!false);
+console.log("55" < 56 && 67 === "67");
+console.log(253 % 11 && !false);
+console.log(("55" < 56 && 67 === "67") || (253 % 11 && !false));
+console.log(false || 0);
+
+let para = 3500;
+console.log(para > 3000 && false);
+console.log((para > 3000 && false) || "ekrem");
+
+let yas = 23;
+console.log(yas != 18);
