@@ -1,3 +1,7 @@
+/* -------------------------------------------------------------------------- */
+/*                                  OPERATORS                                 */
+/* -------------------------------------------------------------------------- */
+
 //! ARİTMATİK OPERATÖRLER
 
 /* -------------------->  = atama operatörüdür */
@@ -30,4 +34,87 @@ sayi *=3 ; demek sayıyı 3 ile çarp demek
 sayi %=5 ; sayının 5 e göre modunu al sonucu ver demek
 
 sayi **=4 ; sayıın 4 uncu kuvvetını al demek */
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                            ASSIGNMENT OPERATORS                            */
+/* -------------------------------------------------------------------------- */
+
+let t=10
+let y=5
+
+console.log(t)
+console.log(y)
+
+console.log(t=t+y)
+console.log(t+=y)
+console.log(t-=y)
+console.log(t*=y)
+console.log(t/=y)
+console.log(t**=y)
+console.log(t%=y)
+
+let k=18
+let h=3
+console.log(h +=k)
+
+let sayi=45.986
+console.log(Math.trunc(sayi))
+console.log(sayi)
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                            COMPARISON OPERATORS                            */
+/* -------------------------------------------------------------------------- */
+
+// Karşılaştırma operatörleri bize Boolean sonuç döndürür.
+
+let c=2
+let d="2"
+
+console.log(typeof c)
+console.log(typeof d)
+console.log(c==d) //içindeki değer eşit mi türü önemli değil
+
+console.log(c===d) //hem ifade hemde ifade türü eşit olacak
+
+console.log(c!=d) // eşit değil mi - false 2  2 ye eşit
+console.log(c!==d) // eşit değil mi - true biri string biri number olduğu için eşit değil
+console.log(3>=2)
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                              LOGICAL OPERATORS                             */
+/* -------------------------------------------------------------------------- */
+
+//! AND  - && ( ve anlamındadır)
+// ANd mükemmeliyetçidir
+// Herşey true olmalı  yoksa true değer dönmez
+
+console.log(Boolean("Merhaba") )
+console.log(Boolean(0))
+console.log(Boolean(2))
+console.log(Boolean(null))
+console.log(Boolean(undefined))
+console.log(Boolean([]))
+
+console.log([] && 0 && 2)
+console.log([] && "M" && 5)
+
+console.clear()
+//! OR - ||
+// Herşey false olsa bile bir tane true, true döndermeye yeter
+// Hepsi false ise en son false değerini verir
+
+console.log(0 || null || 2 ||  undefined )
+
+
+console.log(!null)
+
+
+
+
+
+
+
 
