@@ -1,0 +1,33 @@
+/* em taşıyıcı konterner ile alakalı
+rem de root ile alakalı */
+
+.div5{
+    font-size: 25px;
+}
+
+/* burda div5 div6 nın taşıyıcı konterynartı o yuzden 1 em 25px ı baz alacak */
+.div6{font-size: 2em;  /*50px */
+}
+
+
+.div7{
+    font-size: 3em; /*75px */
+}
+
+
+/* Rem kavramı da root tanımlı ne varsa ona göre alır  */
+
+.div8{
+font-size: 30px;
+}
+
+
+.div9{
+font-size: 4rem; /*64px*/
+}
+/* rootta 1Rem 16px   */
+
+
+.div10{
+ font-size: 10rem; /*160x*/
+}
