@@ -1,11 +1,14 @@
 body{
     border: 2px solid rgb(244, 8, 8);
+    width: fit-content;
+    height: fit-content;
 }
 
 div{
     background-color: rgba(165, 213, 197, 0.7);
     width: 100vw;
     height: 200px;
+    text-align: justify;
 }
 
 .imaj{
@@ -14,7 +17,7 @@ div{
     margin-left: 10px;
     margin-right: 20px;
     width: 30%;
-    height: 30vh;
+    height: 22vh;
     
     background-size: cover;
 } 
