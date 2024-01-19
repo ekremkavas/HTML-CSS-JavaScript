@@ -1,0 +1,11 @@
+div{
+    background-color: rgb(97, 158, 138, 0.7);
+}
+
+.imaj{
+    width: 30%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+} 
