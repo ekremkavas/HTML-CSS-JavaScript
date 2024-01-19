@@ -1,3 +1,5 @@
+/*
+
 let sayi1 = Number(prompt("ders notunuzu giriniz :"));
 console.log(sayi1);
 
@@ -13,4 +15,20 @@ if (sayi1 >= 90 && sayi1 <= 100) {
   console.log(" dersten kaldınız");
 } else {
   console.log("yalnış sayı girdiniz 0-100 arası not girin");
+}
+
+*/
+
+let secilenYol = prompt("gitmek istediğiniz yolu seçiniz");
+if (secilenYol == 1){ 
+  alert("seçtiğiniz yol " + secilenYol + ".yoldur...");
+  console.log("seçtiğiniz yol " + secilenYol + ".yoldur...");
+}else if (secilenYol == 2){ 
+  alert("seçtiğiniz yol " + secilenYol + ".yoldur...");
+  console.log("seçtiğiniz yol " + secilenYol + ".yoldur...");
+}else if (secilenYol == 3){ 
+  alert("seçtiğiniz yol " + secilenYol + ".yoldur...");
+  console.log("seçtiğiniz yol " + secilenYol + ".yoldur...");
+}else{
+  alert("yalnış yol seçtiniz!!!!")
 }
