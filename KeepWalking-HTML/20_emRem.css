@@ -1,5 +1,9 @@
 /* em taşıyıcı konterner ile alakalı
 rem de root ile alakalı */
+html{
+    /* font-size: 10px; */
+    /* 1 rem 10 px olur burdan root(HTML) değerini belirleyebilirsin */
+}
 
 .div5{
     font-size: 25px;
@@ -13,6 +17,7 @@ rem de root ile alakalı */
 .div7{
     font-size: 3em; /*75px */
 }
+
 
 
 /* Rem kavramı da root tanımlı ne varsa ona göre alır  */
