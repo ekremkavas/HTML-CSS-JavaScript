@@ -9,8 +9,10 @@ let ortalama = vize1 * 0.3 + vize2 * 0.3 + final * 0.3;
 
 if (ortalama >= 60) {
   alert("dersten geçtiniz :)");
-  console.log("DERSTEN GECTINIZZ TEBRIKLER");
-} else {
+  console.log("DERSTEN GECTINIZZ TEBRIKLER" + ortalama + );
+
+}else{
   alert("dersten kaldınız: ");
-  console.log("DESTEN KALDINIZ GECMIS OLSUN");
+  console.log("DESTEN KALDINIZ GECMIS OLSUN" + ortalama);
+
 }
