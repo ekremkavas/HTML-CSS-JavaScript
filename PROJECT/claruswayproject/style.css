@@ -3,17 +3,16 @@ body{
     margin: 80px 60px;
 }
 
-.boss{border-radius: 3px solid red;
-
-}
-main{
-    text-align: justify;
+.boss{
+    background-color: rgb(219, 106, 13);
+    border-radius: 3px solid red;
+ text-align: justify;
     height: 200px;
-    background-color: rgb(34, 121, 148);
-    
 }
+
 h1 {
-    text-align: center;
+    text-align: center; font-family: 'Rubik Doodle Shadow', system-ui;
+    font-size: 3.5rem; 
 }
 .imaj{
  
@@ -22,15 +21,17 @@ h1 {
     margin: 10px;
 }
 
-.my-button{
+button{
     height: 5vh;
     background-color: red ;
     
       float: right;
-    padding-right: 60px ;
+    margin-right: 60px ;
 }
 
 p{
     font-size: 1rem;
+    margin-right: 10px;
+   
    
 }
