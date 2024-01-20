@@ -1,32 +1,36 @@
+body{
+    background-color: rgb(39, 161, 161);
+    margin: 80px 60px;
+}
+
+.boss{border-radius: 3px solid red;
+
+}
 main{
     text-align: justify;
     height: 200px;
     background-color: rgb(34, 121, 148);
+    
 }
 h1 {
     text-align: center;
 }
 .imaj{
-    border-radius: 5px solid red ; 
+ 
     float: left;
     height: 15vh;
     margin: 10px;
-}
-article{
-
-    float: right;
-    padding-right: 60px ;
 }
 
 .my-button{
     height: 5vh;
     background-color: red ;
     
-     
+      float: right;
+    padding-right: 60px ;
 }
 
 p{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
-    font-size: 1.2rem;
+    font-size: 1rem;
+   
 }
