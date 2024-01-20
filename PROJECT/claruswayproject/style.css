@@ -11,6 +11,7 @@ body {
   border: 5px solid red;
   border-radius: 18px;
   
+  
 }
 span{
   font-family: 'Climate Crisis', sans-serif;
@@ -27,16 +28,25 @@ h1 {
   height: 20vh;
   margin: 10px;
   border-radius: 15px;
+
+}
+
+.imaj:hover{
+  opacity: 0.8;
 }
 
 button {
+  color: antiquewhite;
   height: 3.5em;
   background-color: red;
   float: right;
   margin-right: 60px;
   border-radius: 12px;
 }
-
+.button:hover{
+  opacity: 0.8;
+  cursor:  pointer;
+}
 p {
   font-size: 1rem;
   margin-right: 10px;
