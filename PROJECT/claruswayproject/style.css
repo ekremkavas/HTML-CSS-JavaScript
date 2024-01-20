@@ -1,13 +1,16 @@
 body {
   background-color: rgb(39, 161, 161);
   margin: 80px 60px;
+  overflow: scroll;
 }
 
 .boss {
   background-color: rgb(219, 106, 13);
-  border-radius: 3px solid red;
   text-align: justify;
-  height: 200px;
+  height: 240px;
+  border: 5px solid red;
+  border-radius: 18px;
+  
 }
 
 h1 {
@@ -17,8 +20,9 @@ h1 {
 }
 .imaj {
   float: left;
-  height: 15vh;
+  height: 20vh;
   margin: 10px;
+  border-radius: 15px;
 }
 
 button {
@@ -26,6 +30,7 @@ button {
   background-color: red;
   float: right;
   margin-right: 60px;
+  border-radius: 12px;
 }
 
 p {

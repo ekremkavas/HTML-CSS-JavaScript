@@ -1,11 +1,11 @@
-body{
+/* body{
     border: 2px solid rgb(244, 8, 8);
     background-repeat: no-repeat; 
-    /* background-image: url(); */
+    background-image: url();
 
-}
+} */
 
-div{
+.boss{
     background-color: rgba(165, 213, 197, 0.7);
     width: 100vw;
     height: 220px;
@@ -25,7 +25,12 @@ div{
     background-size: cover;
 } 
 
-.my-button{
+.click{
+    width: 3em;
+    height: 5em;
+    
+}
+/* .my-button{
   width: 10vw; 
   height: 8vh;
   float :right;
@@ -33,4 +38,4 @@ div{
   border-radius: 10px;
 
   
-}
+} */
