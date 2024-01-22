@@ -10,6 +10,7 @@ console.log("*** CONDITIONS ***")
 const num1 = 5
 // console.log(num1, typeof num1)
 // console.log("Toplam:", num1 + num2) //? String birleştirme (concatination)
+//prompt her zaman string çıktı verir
 
 if (num1 < 0) {
   console.log("Girilen sayi negatiftir")
