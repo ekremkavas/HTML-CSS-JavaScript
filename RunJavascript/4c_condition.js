@@ -5,7 +5,7 @@
 console.log("*** CONDITIONS ***")
 
 //! Ornek1
-// const num1 = +prompt("Bir sayi giriniz:")
+// const num1 = prompt("Bir sayi giriniz:")
 // const num1 = Number(prompt("Bir sayi giriniz:"))
 const num1 = 5
 // console.log(num1, typeof num1)

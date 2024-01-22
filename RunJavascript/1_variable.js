@@ -23,6 +23,7 @@ y = 70;
 toplam = x + y;
 console.log(toplam);
 
+ //+ nın concatinate ve toplama görevi vardır. diğer matematik ifadelerinin tek görevi vardır
 //? GLOBAL ALAN
 
 // Program içinde her ortamdan ulaşılabilen bir alandır
