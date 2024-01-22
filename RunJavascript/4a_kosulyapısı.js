@@ -37,4 +37,30 @@
 // console.log(num3);
 // console.log("ifade tipi :" , typeof num3);
 
-YAZILA
+const sayi1 = 5
+const sayi2 = 6
+const sayi3 = 7
+
+let enBuyuk = sayi1
+
+if (sayi2 > enBuyuk){
+    enBuyuk = sayi2
+}
+if (sayi3 > enBuyuk) {
+    enBuyuk = sayi3
+}
+
+console.log("en büyük :", enBuyuk);
+
+//! Ornek: Condition birleştirme
+
+const yaş = 20;
+const cinsiyet = "erkek";
+const sağlıklı = true;
+
+const koşul = yaş >= 18 && cinsiyet == "erkek" && sağlıklı;
+
+if (koşul) {
+	console.log("Askerlik Yapmalı");
+} else {
+	console.log("Askerlik Yapması gerekmez");}
