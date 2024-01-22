@@ -1,0 +1,17 @@
+Position absolute
+
+bir elementi başka bir elementin içine hapsetmek için kullanılıyor
+
+bir kutuyu başka bir kutunun içinde hapsetmek için
+içindeki kutunun içindeki hapsetmek için apsolute verıyorsunuz
+hapsetmek ıstedıgınız kutuya relatıve verıyorsunuz
+
+Relative-parent
+absolute-child
+
+Position-fixed tamamen dokumantasyona göre sabit kullanılıyor
+https://codepen.io/suryawiguna/pen/wvGeqxy
+
+position sticy
+üstekı sticek gibi bir hane yana scroll cubugu verıdgınde ekranı kaydırman gerekse bıle ustte kalır
+

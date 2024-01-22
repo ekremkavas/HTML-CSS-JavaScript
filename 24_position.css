@@ -1,0 +1,59 @@
+.main{
+    background-color: rgb(96, 132, 23, 0.9);
+    width: 90%;
+    margin: 50px auto;
+    /* position: relative; burdakı relatıve box 4 ıle parent chıld ılıskısı ıcınde */
+    position: relative;
+}
+
+.box1{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    /* position: static; default özelliği */
+}
+
+.box2{
+    background-color: rgba(187, 255, 0, 0.805);
+    width: 100px;
+    height: 100px;
+    position: relative; /*görecelidir ilk durma göre konum alır */
+    top: 20px;
+    left: 50px;
+    /*marginden farkı margin diğer kutuları da etkiler */
+    /* eger bır yerde postıon kullandıysam z-ındeks kullanabılıyrum */
+    z-index: 2;
+}
+
+.box3{
+    background-color: rgba(255, 0, 21, 0.827);
+    width: 100px;
+    height: 100px;
+    /* box 3 e postıon absolute dersem normal akıs sıralmasından cıkar box 4 onun sırasına gecer */
+    /* position: fixed; akıştan cıkar ıstedıgın yere sabıtleyebılırsın */
+    position: fixed;
+    bottom: 120px;
+    right: 100px;
+}
+
+.box4{
+    background-color: rgba(228, 120, 19, 0.72);
+    width: 100px;
+    height: 100px;
+    /* position: absolute; verdiğinde relatıve değerını arar parantenda ust kutuda ona göre konum almak ıcın */
+    position: absolute;
+    /* box 3 e ralatıve versende ona göre konumlanmaz cunku aynı hıyerarsıde ust kutu perant arar */
+    top: 0 ;
+    right: 0;
+
+}
+
+.par2{
+    background-color: brown;
+    position: sticky; /*üstte kalsın istediğim yaz top değeride ne kadar üstte kalsın onu belirler */
+    border-radius: 20px;
+    padding: 10px;
+    top: 0;
+    /* left: 0; */
+    /* left o vermek de sola scroll yaptıgında solda sabıt kalır */
+}

@@ -1,0 +1,16 @@
+*{
+    border: solid 3px red;
+}
+
+a{
+    background-color: aqua;
+}
+
+button{
+    background-color: blueviolet;
+}
+span{
+    background-color: yellow;
+}
+/* 
+visibilitiy hidden (görünürlüğü kaybol istersiniz) */

@@ -1,0 +1,19 @@
+div p {
+    background-color: aquamarine;
+}
+p + div{
+    background-color: fuchsia;
+    
+}
+/* p de n hemen sonra gelen div demek */
+
+div + p {
+    background-color: green;
+}
+
+/* div de n hemen sonra gelen p demek burda div bittikten sonra gelen p yi secıyor o yuzden p1 secmedı
+*/
+ div ~ p {
+    background-color: blue;
+ }
+/* divden sonra gelen butun p ler */
