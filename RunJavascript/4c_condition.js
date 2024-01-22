@@ -162,7 +162,7 @@ year >= 10 && (salary = salary * 1.5)
 
 console.log("SALARY:", salary)
 
-//! || operatorü (false ise yanındaki ifadeyi calistir.))
+//! || operatorü (false ise yanındaki ifadeyi calistir.))|| ifadesi true aradığı için ilk bulduğu true ifadeyi çalıştırır. Herşey false olduğunda en sonuncu ifadeyi yazdıracaktır (edited) 
 const sene = 14
 let result = "ahmet"
 
