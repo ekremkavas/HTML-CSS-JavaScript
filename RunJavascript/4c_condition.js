@@ -154,7 +154,7 @@ let year = 5
 let marriage = true
 
 //! && operatorü (true ise yanındaki ifadeyi calistir.)
-//? Tek condition ve tek durum
+//? Tek condition ve tek durum and operatörü true bakıyor ve iki durumda true olduğu için ikinci operandın değerini döndürüyor.(yani salary = salary * 1.5) (edited) 
 year >= 10 && (salary = salary * 1.5)
 
 //? 2 condition var ve tek durum
