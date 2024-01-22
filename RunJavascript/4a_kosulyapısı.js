@@ -36,3 +36,5 @@
 // const num3 = Number(prompt("Bir sayı giriniz"))
 // console.log(num3);
 // console.log("ifade tipi :" , typeof num3);
+
+YAZILA
