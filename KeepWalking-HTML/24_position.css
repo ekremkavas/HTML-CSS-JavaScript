@@ -45,6 +45,8 @@
     /* box 3 e ralatıve versende ona göre konumlanmaz cunku aynı hıyerarsıde ust kutu perant arar */
     top: 0 ;
     right: 0;
+    z-index: -1;
+    /* böyle dersek kutuların altına alırım z-index: -1; */
 
 }
 
