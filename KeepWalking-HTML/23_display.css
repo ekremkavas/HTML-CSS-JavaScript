@@ -1,16 +1,38 @@
-*{
+/* *{
     border: solid 3px red;
-}
+} */
 
 a{
     background-color: aqua;
+    margin: 40px;
+    /* yukarıdan aşagıdan almadı inline lement çünkü */
+    display: inline-block;
+    /* bu yazdıgımda yukarıdan asagıdan aldı margın */
+    padding: 50px;
+    /* inline elementler genilik ve yukseklik değeri veremezsınız widh ve height uygulmadı diplay blok dersen alır*/
+    width: 300px;
+    height: 300px;
 }
 
 button{
     background-color: blueviolet;
+    /* margin: 40px; */
 }
 span{
     background-color: yellow;
+    padding: 30px;   
+     display: block;
+    /* display: block; mesela span ınlıne element ben buna ınlıen blok dersem tum blogu kaplar */
+
 }
 /* 
 visibilitiy hidden (görünürlüğü kaybol istersiniz) */
+.box{
+    background-color: blue;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    /* bunu dersen bu blok elementler satırı kaplamaz artık yanlarında element alır
+    display: inline-block; */
+}
