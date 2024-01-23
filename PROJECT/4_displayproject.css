@@ -6,13 +6,13 @@
 
 /* HEADER */
 
-body{
-    /* font-family: 'DynaPuff', system-ui; */
-    font-family: 'Open Sans', sans-serif;
+body {
+
+  font-family: "Open Sans", sans-serif;
 }
 
-header{
-      background-color: #fa8bff;
+header {
+  background-color: #fa8bff;
   background-image: linear-gradient(
     45deg,
     #fa8bff 0%,
@@ -24,13 +24,106 @@ header{
 
 header a img {
   width: 60px;
-
 }
 /* header background css greiden sıtesınden aldık yazılımklasorunde var senın */
 
-header .sign-in{
-    float: right;
-    padding-top: 2rem;
-    padding-right: 2rem;
-    color: #920101;
+header .sign-in {
+  float: right;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  color: #920101;
+}
+
+header .sign-in a {
+  color: #920101;
+  font-weight: 700;
+  text-decoration: none;
+}
+/* burda color zilla eklentosoyel ggole dakı ıstedıgımız sayfa hangısı ıse font un özellıklerıne baktık */
+header .sign-in a:hover {
+  /* text-decoration: underline; */
+  /* bu altını çizer ama tam istenılen gıbı olmadıgı ıcın
+    border bottom: ıle yapmak lazım; */
+  border-bottom: #920101 2px solid;
+}
+
+/* NAW STİCK */
+
+nav.sticky {
+  background-color: #fad961;
+  background-image: linear-gradient(90deg, #fad961 0%, #f76b1c 100%);
+  padding: 2rem;
+  /* iç hacim vermek için pading verdik */
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+nav.sticky a {
+      font-family: 'DynaPuff', system-ui;
+      color: black;
+      text-decoration: none;
+      /* alt tarafındakı cızgılerı kaldırır */
+      margin-right: 0.8rem;
+}
+
+
+nav.sticky a:hover{
+    color: white;
+}
+
+/* NAW BANNER */
+
+
+nav.banner img{
+    width: 100%;
+    max-height: calc(100vh - 202px);
+    /* bu bir css fonksiyonu fotografın ustundekı turuncu ve mavı alanı hesapladık google corome eklentılerıyle 202 px bulduk 100 vh bunu cıkardık */   
+}
+
+nav.banner .hero{
+    border: 2px solid red;
+    position: absolute;
+    /* position: absolute; dersem akıstan çıkar,  absolute kendını ayarlamak ıcın her zaman relatıve arardı tasıyıcısına posıtıon relatıve verecegım */
+    top: 42%;
+    left: 11%;
+
+
+    /* top 50% left 50% transform:translate: (-50%), -50%; bir kalıp tam merkeze ortalamak için  */
+}
+
+nav.banner{
+    position: relative;
+
+}
+nav.banner .hero h2{
+
+    color: white;
+    font-size: 3rem;
+    text-shadow: 0 3px 4 px black;
+}
+
+nav.banner .hero h3{
+    color:red;
+    font-size: 1rem;
+    text-shadow: 0 3px 4 px black
+    /* gölge için
+    text-shadow: 0 3px 4 px black; */
+    
+
+}
+
+nav.banner .hero button{
+    padding: 0.7rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: #bc08c5;
+
+}
+
+nav.banner .hero button:hover{
+    opacity: 0.5;
+    cursor: pointer;
 }
