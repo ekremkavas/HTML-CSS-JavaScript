@@ -17,6 +17,7 @@ a{
 button{
     background-color: blueviolet;
     /* margin: 40px; */
+    padding: 35px;
 }
 span{
     background-color: yellow;
@@ -35,4 +36,25 @@ visibilitiy hidden (görünürlüğü kaybol istersiniz) */
     display: inline-block;
     /* bunu dersen bu blok elementler satırı kaplamaz artık yanlarında element alır
     display: inline-block; */
+}
+
+.boxnone{
+    background-color: orangered;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    /* display: none; */
+    visibility: hidden; 
+    kaybolur ama yerıne baska element almaz akıstan cıkmaz
+
+
+}
+.boxnone2{
+    background-color: rgb(9, 185, 68);
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    /* display: none; */
+    /* display: none; yazınca kayboldu akıştan cıktı bır oncekının yerıne kayar */
+
 }
