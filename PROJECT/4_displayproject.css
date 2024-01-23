@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+body{
+    /* font-family: 'DynaPuff', system-ui; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+      background-color: #fa8bff;
+  background-image: linear-gradient(
+    45deg,
+    #fa8bff 0%,
+    #2bd2ff 52%,
+    #2bff88 90%
+  );
+  padding: 1rem;
+}
+
+header a img {
+  width: 60px;
+
+}
+/* header background css greiden sıtesınden aldık yazılımklasorunde var senın */
+
+header .sign-in{
+    float: right;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    color: #920101;
+}
