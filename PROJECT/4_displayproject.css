@@ -82,7 +82,7 @@ nav.banner img{
 }
 
 nav.banner .hero{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     position: absolute;
     /* position: absolute; dersem akıstan çıkar,  absolute kendını ayarlamak ıcın her zaman relatıve arardı tasıyıcısına posıtıon relatıve verecegım */
     top: 42%;
