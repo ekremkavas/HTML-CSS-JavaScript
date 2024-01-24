@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box1{
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: contain; */
+    height: 100vh;
+    position: relative;
+}
+
+div span{
+    /* border: 4px solid rgb(238, 8, 161); */
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50% , -50%);
+ background-color: rgba(10, 10, 10, 0.64);
+ width: 20vw;
+ height: 10vh;
+ text-align: center;
+ padding-top: 2rem;
+ border-bottom-right-radius: 20px;
+ border-top-left-radius: 20px;
+ outline: 5px solid red;
+ outline-offset: 0.7rem;
+    
+}
+/* outline: 5px solid red;
+outline-offset: 0.7rem;
+bu özellikler kutu dışına border vermemizi ve araya boşluk eklememizi sağladı */
+#logo{
+    display: inline-block;
+    /* img inline elemet olduğu için genişlik v yükseklik almaz o yüzden disp-blok dedik genişliği ve yükseliği yesin diye */
+    width: 5rem;
+    height: 5rem;
+    opacity: 0.6;
+    position: fixed;
+    bottom: 12%;
+    left: 90%;
+   
+}
