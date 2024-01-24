@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+yazı-kutu-ortalama{
+    display: flex;
+    /* display: flex; CSS özelliği, bir container (kap) elementinin içindeki öğeleri düzenlemek ve hizalamak için esnek bir model sağlar. Bu özellik, öğeleri yatay veya dikey düzende hizalayabilmenizi, boşlukları ayarlayabilmenizi ve ekstra özelliklerle bir dizi düzenleme seçeneği sunar. */
+    justify-content: center;
+    align-items: center;
+}
+
 .box1 {
   background-image: url(./bg.jpg);
   background-repeat: no-repeat;
@@ -12,6 +19,7 @@
   height: 100vh;
   position: relative;
   opacity: 0.8;
+  background-attachment: fixed;
 }
 
 .box1 span {
@@ -27,8 +35,13 @@
   padding-top: 2rem;
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
-  outline: 4px solid red;
+  outline: 4px inset rgb(253, 5, 241);
   outline-offset: 0.7rem;
+  letter-spacing:  0.5rem;
+  color: aqua;
+  font-size: 1.5rem;
+  /* bu özellik yazı aralarını açar
+  letter-spacing:  0.3rem; */
 }
 
 /* outline: 5px solid red;
@@ -63,6 +76,7 @@ bu özellikler kutu dışına border vermemizi ve araya boşluk eklememizi sağl
   /* background-size: contain; */
   height: 100vh;
   opacity: 0.8;
+  background-attachment: fixed;
 }
 
 .box2 header {
@@ -71,8 +85,8 @@ bu özellikler kutu dışına border vermemizi ve araya boşluk eklememizi sağl
   text-align: justify;
   /* border: 3px solid red; */
   padding: 2%;
-  position: sticky;
-  top: 0;
+  /* position: sticky;
+  top: 0; */
  
 }
 
@@ -90,7 +104,9 @@ bu özellikler kutu dışına border vermemizi ve araya boşluk eklememizi sağl
   /* background-size: contain; */
   height: 100vh;
   opacity: 0.8;
+  background-attachment: fixed;
 }
+
 #yourself3 {
   display: inline-block;
   width: 22rem;
@@ -133,6 +149,7 @@ bu özellikler kutu dışına border vermemizi ve araya boşluk eklememizi sağl
   /* background-size: contain; */
   height: 100vh;
   opacity: 0.8;
+  background-attachment: fixed;
 }
 
 #yourself4 {
@@ -178,6 +195,7 @@ bu özellikler kutu dışına border vermemizi ve araya boşluk eklememizi sağl
     /* background-size: contain; */
     height: 100vh;
     opacity: 0.8;
+    background-attachment: fixed;
   }
 
 
