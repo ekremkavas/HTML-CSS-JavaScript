@@ -13,23 +13,24 @@
     position: relative;
 }
 
-div span{
-    /* border: 4px solid rgb(238, 8, 161); */
+.box1 span{    /* border: 4px solid rgb(238, 8, 161); */
  position: absolute;
  top: 50%;
  left: 50%;
  transform: translate(-50% , -50%);
- background-color: rgba(10, 10, 10, 0.64);
+ background-color: rgba(10, 10, 10, 0.44);
  width: 20vw;
  height: 10vh;
  text-align: center;
  padding-top: 2rem;
  border-bottom-right-radius: 20px;
  border-top-left-radius: 20px;
- outline: 5px solid red;
+ outline: 4px solid red;
  outline-offset: 0.7rem;
-    
+
 }
+
+
 /* outline: 5px solid red;
 outline-offset: 0.7rem;
 bu özellikler kutu dışına border vermemizi ve araya boşluk eklememizi sağladı */
@@ -44,3 +45,32 @@ bu özellikler kutu dışına border vermemizi ve araya boşluk eklememizi sağl
     left: 90%;
    
 }
+
+#yourself{
+    display: inline-block;
+    width: 22rem;
+    height: 5rem;
+    position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50% , -50%);
+}
+
+.box2{
+    position: relative;
+    background-image: url(./bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: contain; */
+    height: 100vh;
+}
+
+header{
+    background-color: white;
+    color: black;
+    text-align: justify;
+}
+
+/* .box2 header span{
+    text-align: center;
+} */
