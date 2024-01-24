@@ -1,6 +1,23 @@
-span{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url(../00-İmage/bilgmasa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+div span{
+    background-color: chartreuse;
     display: flex;
     /* display: flex; CSS özelliği, bir container (kap) elementinin içindeki öğeleri düzenlemek ve hizalamak için esnek bir model sağlar. Bu özellik, öğeleri yatay veya dikey düzende hizalayabilmenizi, boşlukları ayarlayabilmenizi ve ekstra özelliklerle bir dizi düzenleme seçeneği sunar. */
-    justify-content: center;
-    align-items: center;
+    height: 10vh;
+    width: 15vw;
+    justify-content: center; */
+    align-items: center; 
+    border-radius: 3px solid red;
 }
