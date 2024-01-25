@@ -2,22 +2,24 @@
 // *               KARAR YAPILARI
 // * ============================================
 
-console.log("*** CONDITIONS ***")
+console.log("*** CONDITIONS ***");
 
 //! Ornek1
-// const num1 = prompt("Bir sayi giriniz:")
+// const num1 = +prompt("Bir sayi giriniz:")
 // const num1 = Number(prompt("Bir sayi giriniz:"))
-const num1 = 5
+
+// promt un önune artı koymak onu numberlaştırır
+const num1 = 5;
 // console.log(num1, typeof num1)
 // console.log("Toplam:", num1 + num2) //? String birleştirme (concatination)
 //prompt her zaman string çıktı verir
 
 if (num1 < 0) {
-  console.log("Girilen sayi negatiftir")
+  console.log("Girilen sayi negatiftir");
 } else if (num1 > 0) {
-  console.log("Girilen sayi pozitiftir")
+  console.log("Girilen sayi pozitiftir");
 } else {
-  console.log("Girilen sayi 0'a eşittir")
+  console.log("Girilen sayi 0'a eşittir");
 }
 //! Ornek2: 3 sayinin en buyugu
 
@@ -61,120 +63,157 @@ if (num1 < 0) {
 // console.log(true == "true")
 
 //? 4.yontem (Logic operatorler ile)
-const sayi1 = 5
-const sayi2 = 6
-const sayi3 = 7
+const sayi1 = 5;
+const sayi2 = 6;
+const sayi3 = 7;
 
-let enBuyuk = sayi1
+let enBuyuk = sayi1;
 
 if (sayi2 > enBuyuk) {
-  enBuyuk = sayi2
+  enBuyuk = sayi2;
 }
 if (sayi3 > enBuyuk) {
-  enBuyuk = sayi3
+  enBuyuk = sayi3;
 }
 
-console.log("EnBuyuk:", enBuyuk)
+console.log("EnBuyuk:", enBuyuk);
 
 //! Ornek: Condition birleştirme
 
-const yaş = 20
-const cinsiyet = "erkek"
-const sağlıklı = true
+const yaş = 20;
+const cinsiyet = "erkek";
+const sağlıklı = true;
 
 //? string.toLowerCase()  --> built-in fonksiyon (JS nin içerisinde tanımlı olan fonksiyonlar)
 
 const koşul =
-  yaş >= 18 && cinsiyet.toLowerCase() === "erkek" && sağlıklı === true
+  yaş >= 18 && cinsiyet.toLowerCase() === "erkek" && sağlıklı === true;
 
 if (koşul) {
-  console.log("Askerlik Yapmalı")
+  console.log("Askerlik Yapmalı");
 } else {
-  console.log("Askerlik Yapması gerekmez")
+  console.log("Askerlik Yapması gerekmez");
 }
 
 //? if(koşul === true)  ==> if(koşul)
 //* if(koşul === false)  ==> if(!koşul)
 
-const cumle = "Bugün günlerden Cumartesi"
-const kucukHarfler = cumle.toLowerCase()
-const buyukHarfler = cumle.toUpperCase()
-console.log(kucukHarfler)
-console.log(buyukHarfler)
+const cumle = "Bugün günlerden Cumartesi";
+const kucukHarfler = cumle.toLowerCase();
+const buyukHarfler = cumle.toUpperCase();
+console.log(kucukHarfler);
+console.log(buyukHarfler);
 
 //*********************************************
 //* TERNARY
 //*********************************************
 
-const yas = 14
+const yas = 14;
 //? Ternary
-yas >= 18 ? console.log("Askerlik yapmalı") : console.log("Askerlik yapmaz")
+yas >= 18 ? console.log("Askerlik yapmalı") : console.log("Askerlik yapmaz");
 
 //? if-else
 if (yas > 18) {
-  console.log("Askerlik yapmalı")
+  console.log("Askerlik yapmalı");
 } else {
-  console.log("Askerlik yapmaz")
+  console.log("Askerlik yapmaz");
 }
 
 //? nested ternary
-const age = 19
-const sonuc = age <= 14 ? "cocuk " : age <= 18 ? "ergen" : "yetiskin"
-console.log(sonuc)
+const age = 19;
+const sonuc = age <= 14 ? "cocuk " : age <= 18 ? "ergen" : "yetiskin";
+console.log(sonuc);
 
 //? if-else hali
-let durum = ""
+let durum = "";
 if (age <= 14) {
-  durum = "cocuk"
+  durum = "cocuk";
 } else if (age <= 18) {
-  durum = "ergen"
+  durum = "ergen";
 } else {
-  durum = "yetiskin"
+  durum = "yetiskin";
 }
 
-console.log(durum)
+console.log(durum);
 
 //! Ornek
-const calismaSuresi = 9
-let maas = 30000
+const calismaSuresi = 9;
+let maas = 30000;
 
 //? tek durumlu senaryoda ternary icinde işlem yapma
 // calismaSuresi >= 10 ? (maas = maas * 1.5) : ""
 
 //? tek durumlu senaryoda ternary'nin bir degiskene deger aktarması işlemi
-maas = calismaSuresi >= 10 ? maas * 1.5 : maas
-console.log("MAAS:", maas)
+maas = calismaSuresi >= 10 ? maas * 1.5 : maas;
+console.log("MAAS:", maas);
 
 //*********************************************
 //* SHORT - CIRCUIT
 //*********************************************
 
-let salary = 40000
-let year = 5
-let marriage = true
+let salary = 40000;
+let year = 5;
+let marriage = true;
 
 //! && operatorü (true ise yanındaki ifadeyi calistir.)
-//? Tek condition ve tek durum and operatörü true bakıyor ve iki durumda true olduğu için ikinci operandın değerini döndürüyor.(yani salary = salary * 1.5) (edited) 
-year >= 10 && (salary = salary * 1.5)
+//? Tek condition ve tek durum and operatörü true bakıyor ve iki durumda true olduğu için ikinci operandın değerini döndürüyor.(yani salary = salary * 1.5) (edited)
+year >= 10 && (salary = salary * 1.5);
 
 //? 2 condition var ve tek durum
 // year >= 10 && marriage === true && (salary = salary * 1.5)
 
-console.log("SALARY:", salary)
+console.log("SALARY:", salary);
 
-//! || operatorü (false ise yanındaki ifadeyi calistir.))|| ifadesi true aradığı için ilk bulduğu true ifadeyi çalıştırır. Herşey false olduğunda en sonuncu ifadeyi yazdıracaktır (edited) 
-const sene = 14
-let result = "ahmet"
+//! || operatorü (false ise yanındaki ifadeyi calistir.))|| ifadesi true aradığı için ilk bulduğu true ifadeyi çalıştırır. Herşey false olduğunda en sonuncu ifadeyi yazdıracaktır (edited)
+const sene = 14;
+let result = "ahmet";
 
-sene >= 18 || (result = "cocuk")
-console.log(result)
+sene >= 18 || (result = "cocuk");
+console.log(result);
 
 //? falsy bir degerin tespit edilip buna göre bir degiskene baslangic degeri vermek için kullanıma çok uygundur.
-result = ""
-let myVar = result || "noname"
-console.log(myVar)
+result = "";
+let myVar = result || "noname";
+console.log(myVar);
 
 //? tek durum var ise short-circuit
 //? 2 durum var ise ternary
 //? 3-6 arasi durum var ise if-else
 //? 6 dan fazla ise switch-case
+
+//*********************************************
+//* SWİTCH CASE
+//*********************************************
+
+const s1 = +prompt("1.sayı giriniz");
+const s2 = +prompt("2.sayı giriniz");
+const islem = prompt("işlemi giriniz +,-,/,*");
+
+if(isNaN(s1) || isNaN(s2)){
+  alert("lütfen geçerli bir sayı giriniz")
+}
+
+let yekun = 0;
+
+switch (islem) {
+  case "+":
+    yekun = s1 + s2;
+    break;
+  case "-":
+    yekun = s1 - s2;
+    break;
+  case "/":
+    yekun = s1 / s2;
+    break;
+  case "*":
+    yekun = s1 * s2;
+    break;
+  default:
+    alert("yanlış işlem seçtiniz");
+    break;
+}
+
+// f string gibi pythodaki
+console.log(´${s1} ${islem} ${s2} = ${yekun}´);
+
+//NULL , UNDEFİNED , "", FALSE , BOOLEN(0) ,NAN ===> falsy ' li
