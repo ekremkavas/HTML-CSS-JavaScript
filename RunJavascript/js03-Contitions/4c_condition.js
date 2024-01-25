@@ -192,6 +192,9 @@ const islem = prompt("işlemi giriniz +,-,/,*");
 if(isNaN(s1) || isNaN(s2)){
   alert("lütfen geçerli bir sayı giriniz")
 }
+if(islem === "/" && s2 === 0){
+  alert("Sıfıra bölme hatası")
+}
 
 let yekun = 0;
 
