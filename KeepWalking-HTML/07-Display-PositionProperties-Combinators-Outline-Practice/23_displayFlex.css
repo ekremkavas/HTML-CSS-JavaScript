@@ -1,23 +1,59 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/*display flex hızalamak ıstedıgınız kutunun tasıyıcısına contaynerına verılır ?/
 
-body{
-    background-image:url(../00-İmage/bilgmasa.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-
-}
-div span{
-    background-color: chartreuse;
+/*  height: 100%;
     display: flex;
-    /* display: flex; CSS özelliği, bir container (kap) elementinin içindeki öğeleri düzenlemek ve hizalamak için esnek bir model sağlar. Bu özellik, öğeleri yatay veya dikey düzende hizalayabilmenizi, boşlukları ayarlayabilmenizi ve ekstra özelliklerle bir dizi düzenleme seçeneği sunar. */
-    height: 10vh;
-    width: 15vw;
-    justify-content: center; */
-    align-items: center; 
-    border-radius: 3px solid red;
+     display: flex; CSS özelliği, bir container (kap) elementinin içindeki öğeleri düzenlemek ve hizalamak için esnek bir model sağlar. Bu özellik, öğeleri yatay veya dikey düzende hizalayabilmenizi, boşlukları ayarlayabilmenizi ve ekstra özelliklerle bir dizi düzenleme seçeneği sunar. 
+    justify-content: center; 
+    bunu kullanabılmek ıcın tasıyıcıya yukseklık vermek gerekıyor -->align-items: center; */
+* {
+  margin: 20px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+  background-image: url(../00-İmage/bilgmasa.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+ul * {
+  background-color: fuchsia;
+}
+
+ul {
+  background-color: rgb(29, 220, 8) transparent;
+  list-style-type: none;
+  height: 50vh;
+  padding: 1rem 0;
+  display: flex; /*hizalamak ıstedıgın elemanların tasıyıcısına verılır */
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  border-radius: 10px;
+  padding: 1rem;
+  border: 2px solid red;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(255, 0, 0);
+}
+
+.li1 {
+  order: 1;
+  padding: 2rem;
+}
+.li2 {.
+  order: 2;
+  padding: 3rem 0;
+}
+.li3 {
+  order: 3;
 }
