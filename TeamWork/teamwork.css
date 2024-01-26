@@ -1,7 +1,7 @@
 .container{
     background-color: aquamarine;
-    height: 150px;
-    margin: 100px;
+    height: 450px;
+    margin: 50px;
     padding: 20px;
     display: flex;
     justify-content: center;
