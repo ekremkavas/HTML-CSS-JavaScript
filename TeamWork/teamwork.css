@@ -1,0 +1,21 @@
+.container{
+    background-color: aquamarine;
+    height: 150px;
+    margin: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; 
+
+
+}
+
+.container div{
+background-color: brown;
+display: flex;
+width: 5rem;
+height: 4rem;
+justify-content: center;
+align-items: center;
+}
