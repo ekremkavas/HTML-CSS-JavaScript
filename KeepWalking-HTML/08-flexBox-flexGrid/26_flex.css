@@ -1,21 +1,6 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     height: 100%;
     box-sizing: border-box;
-}
-
-.container{
-    /* background-color: orange; */
-    background-color: rgb(187, 231, 9) ;
-    height: 50vh;
-    padding: 1rem;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.container *{
-    
-    background-color: blueviolet;
-    height: 5vh;
-}
+} */
