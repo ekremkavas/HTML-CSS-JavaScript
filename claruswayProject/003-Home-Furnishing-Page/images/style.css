@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: solid 1px red;
+}
+
+.container{
+    background-color: rgb(141, 229, 26);
+}
+.iconbox{
+    background-color: antiquewhite;
+   
+}
