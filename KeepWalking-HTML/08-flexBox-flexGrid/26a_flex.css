@@ -47,7 +47,10 @@ align-items: flex-end; sona ortalar
 
   flex-wrap: wrap;
 
-  /* yanyana kutucukların ekran kucultunce ekrana sıgmaması background ın dışında kalması düzelmesi için   flex-wrap: wrap; diyeince ekrana sığmasa bile alt atar */
+  /* yanyana kutucukların ekran kucultunce ekrana sıgmaması background ın dışında kalması düzelmesi için   flex-wrap: wrap; diyeince ekrana sığmasa bile alt atar
+  */
+
+  /* flex direction column olursa yatada ve dıkeyde hızalamak ıcın justfy content center , allign ıtems center ters mantık calısır   */
 
   gap: 1rem;
    /* gap: 1rem 0 ;
@@ -87,6 +90,14 @@ ul li {
  width: 40%;
 } */
 
+
+/* *****ORDER**********
+
+**********************************
+
+KUTUCUKLARI ISTEDIGIM SIRALAMADA YER DEĞİŞTİRMEMI SAĞLAR
+
+*/
 .li1 {
   order: 5;
   padding: 2rem 0;
