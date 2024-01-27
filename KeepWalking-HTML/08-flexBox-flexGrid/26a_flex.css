@@ -1,24 +1,59 @@
 * {
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
   box-sizing: border-box;
 }
 
 body {
-  padding: 1rem;
+  padding: 3rem;
+  /*  PADDİNG ALANDA KALDIĞI İÇİN UL VE Lİ NOKTALARI,NOKTALARINI GÖRÜRSÜN*/
 }
 
 ul {
   background-color: rebeccapurple;
   list-style-type: none;
-  /* height: 50vh; */
+  /* NOKTALARI KAYBEDER */
   padding: 1rem 0;
+  /*  ***MUHTEŞEM 3LÜ ORTALAMAK İÇİN***
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 1rem;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
+  
+  */
+  display: flex;
+  /* Blok seviyesindeki elemanları inline blok haline getirdi , bunlar satırı komple kaplarken yana yana bloklar oldu */
+  /*display: flex;
+   flex-direction: row; yanyana sola dizen default özelliği -reverse dersen sağa dizer */
+  /* flex-direction: column; */
+  /* column dersem tekrar alt alta dizer ,column reverse dersen tersten alt alta dize */
+  justify-content: center;
+  justify-content: space-evenly;
+  
+
+/* justify-content: flex-start; baş kısma alır
+justify-content: flex-end; son kısma alır
+justify-content: space-between; araları açarak tum satırı kaplar
+justify-content: space-evenly; satıra esıt yayılır
+*/
+align-items: center;
+
+
+/* align-items: center; in kullanılması için taşıyıcının yukseklık değeri olması lazım yukseklık yoksa dıkeyde ortalamaz 
+daha sonra sutunlar sünerek uzun uzun gelirse bunu sebebi default olarak allign-items streç gelmesi
+align-items: flex-start; başa ortalar
+align-items: flex-end; sona ortalar
+*/
+  flex-direction: row;
+
+  flex-wrap: wrap;
+
+  /* yanyana kutucukların ekran kucultunce ekrana sıgmaması background ın dışında kalması düzelmesi için   flex-wrap: wrap; diyeince ekrana sığmasa bile alt atar */
+
+  gap: 1rem;
+   /* gap: 1rem 0 ;
+   1 rem satır boşuğu  (------)
+   0 rem sutun arası boşluk (|||||)
+   demek satır ve sutunlar arası boşluk bırakmak demek */
 }
 
 ul * {
@@ -98,12 +133,11 @@ ul li {
 
 .container header {
   flex-basis: 100%;
-
 }
 
 .container footer {
   flex-basis: 100%;
- } 
+}
 
 .container aside {
   /* flex-basis: 20%; */
@@ -120,82 +154,78 @@ ul li {
   flex-grow: 1;
 }
 
-.shrink{
-    background-color: indigo;
-    margin-top: 50px;
-    display: flex;
-    gap:1rem
+.shrink {
+  background-color: indigo;
+  margin-top: 50px;
+  display: flex;
+  gap: 1rem;
 }
 
-.shrink *{
-    /* width: 200px; */
-    height: 100px;
+.shrink * {
+  /* width: 200px; */
+  height: 100px;
 }
 
-.box1{
-    background-color: orange;
-    /* flex-grow: 1;
+.box1 {
+  background-color: orange;
+  /* flex-grow: 1;
     flex-shrink: 0; */
-    /* flex: 1 1 0; */
-    flex: 1 0 5rem;
+  /* flex: 1 1 0; */
+  flex: 1 0 5rem;
 }
 
-.box2{
-    background-color: crimson;
-    /* flex-grow: 1;
+.box2 {
+  background-color: crimson;
+  /* flex-grow: 1;
     flex-shrink: 5; */
-    /* flex: 1 1 0; */
-    flex: 5;
+  /* flex: 1 1 0; */
+  flex: 5;
 }
 
-.box3{
-    background-color: greenyellow;
-    /* flex-grow: 1;
+.box3 {
+  background-color: greenyellow;
+  /* flex-grow: 1;
     flex-shrink: 2; */
-    /* flex: 1 1 0; */
-    flex: 1;
+  /* flex: 1 1 0; */
+  flex: 1;
 }
 
 .container2 {
-    margin-top: 20px;
-    background-color: purple;
-    padding: 1rem;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  margin-top: 20px;
+  background-color: purple;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-  }
-  
-  .container2 * {
-    background-color: orange;
-    height: 50px;
+.container2 * {
+  background-color: orange;
+  height: 50px;
+}
 
-  }
-  
-  .container2 header {
-    width: 100%;
-    background-image: url("https://picsum.photos/id/237/600/400");
-    background-size: contain;
-  
-  }
-  
-  .container2 footer {
-    width: 100%;
+.container2 header {
+  width: 100%;
+  background-image: url("https://picsum.photos/id/237/600/400");
+  background-size: contain;
+}
 
-   } 
-  
-  .container2 aside {
-    /* width: calc((33.3333%) - (2rem/3)); */
-    width: 20%;
-  }
-  
-  .container2 main {
-    /* width: calc((33.3333%) - (2rem/3)); */
-    width: 55%;
-  }
-  
-  .container2 article {
-    /* width: calc((33.3333%) - (2rem/3)); */
-    width: 20%;
-  }
+.container2 footer {
+  width: 100%;
+}
+
+.container2 aside {
+  /* width: calc((33.3333%) - (2rem/3)); */
+  width: 20%;
+}
+
+.container2 main {
+  /* width: calc((33.3333%) - (2rem/3)); */
+  width: 55%;
+}
+
+.container2 article {
+  /* width: calc((33.3333%) - (2rem/3)); */
+  width: 20%;
+}
