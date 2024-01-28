@@ -1,0 +1,28 @@
+.shrink{
+    background: lawngreen;
+    margin: 30px;
+    display: flex;
+}
+
+/* SHİRNK KÜÇÜLME ORANI DEMEK*/
+
+.shrink *{
+    width: 200px;
+    height: 100px;
+}
+
+.box1{
+    background-color: chocolate;
+    flex-shrink: 0;
+    /* bu hiç kuculmesın ıstersem*/
+}
+
+.box2{
+    background-color: fuchsia;
+    flex-shrink: 5;
+}
+
+.box3{
+    background-color: yellow;
+    flex-shrink: 2;
+}

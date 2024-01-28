@@ -1,9 +1,69 @@
 *{
-    margin: 0;
-    padding: 15rem;
-    box-sizing: border-box;
-    background-color: aquamarine;
+  margin: 0 ;
+  padding: 0;
+  box-sizing: border-box;
 }
 
   /* yanyana kutucukların ekran kucultunce ekrana sıgmaması background ın dışında kalması düzelmesi için   flex-wrap: wrap; diyeince ekrana sığmasa bile alt atar
   */
+
+  .wrap{
+    margin:20px ;
+    background-color: orangered;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    /* justify-content: space-between;  */
+    /* her tarafa yaymak için dip kısımlara dayalı*/
+    /* justify-content: space-around; */
+      /* her tarafa yaymak için kenarlarda boşluk olarak  dayalı*/
+      flex-wrap: wrap;
+
+      /* step3 flex wrap aktıf hale geldı ekrandakı kaymalar asagıya gecer */
+      justify-content: center;
+  }
+
+  .wrap *{
+    background-color: rgb(184, 229, 22);
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    
+
+  }
+
+  header {
+    flex-basis: 100%;
+    /* step1 felx basis kalan boslukta nasıl davranacagını gösterir
+    itemlere verılen özelıktır 
+
+    step2 pekı yuzdeyuz vermeme ragmen neden asagıya gıtmedı flex wrap(contaıner sevıyesınde verılır) acık olamdıgı ıcın
+    
+    */
+    
+  }
+
+  aside {
+    /* flex-basis: 25%; */
+    flex-grow: 2;
+  }
+
+  /* flex grow kalan boşuklarda nasıl davranacagını belırlemek ıcın kullanılır  flex grow 1 demek tum boslugu hesapla 1 bırımını sen al demek*/
+
+  main {
+    /* flex-basis: 50%; */
+    flex-grow: 1;
+  }
+
+  article {
+    /* flex-basis: 25%; */
+    /*neden arcle aşağıa attı cunku gab verdım arasında 1 rem asıde main artcle yuzde 100 olsa da o yuzden bosluk oldugu ıcın asagıya attı */flex-grow: 4;
+  }
+
+  footer {
+    flex-basis: 100%;
+    
+  }
