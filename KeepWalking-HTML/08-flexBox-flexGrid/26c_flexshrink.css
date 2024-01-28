@@ -26,3 +26,10 @@
     background-color: yellow;
     flex-shrink: 2;
 }
+
+/* flex: 1 2 0.5rem 
+1 flex grow
+2 flex shrink
+3 flex basis özelliği olarak alır
+
+*/
