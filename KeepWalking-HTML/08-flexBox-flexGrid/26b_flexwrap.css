@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 15rem;
+    box-sizing: border-box;
+    background-color: aquamarine;
+}
+
+  /* yanyana kutucukların ekran kucultunce ekrana sıgmaması background ın dışında kalması düzelmesi için   flex-wrap: wrap; diyeince ekrana sığmasa bile alt atar
+  */
