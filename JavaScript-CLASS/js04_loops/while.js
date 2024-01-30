@@ -2,21 +2,21 @@
 // *            DONGULER(LOOPS)- WHILE
 // * ============================================
 
-console.log("****** WHILE *******")
+console.log("****** WHILE *******");
 
 //? Ornek1
-let i = 1
+let i = 1;
 while (i <= 10) {
-  console.log(i, "Cohort16")
-  i++
+  console.log(i, "Cohort16");
+  i++;
 }
-console.log("**************")
+console.log("**************");
 
 for (let i = 1; i <= 10; i++) {
-  console.log(i, "Cohort16")
+  console.log(i, "Cohort16");
 }
 
-console.log("Dongu Bitti")
+console.log("Dongu Bitti");
 
 //? Ornek2
 //? Kullanicidan 0-100 arasinda bir not isteyen ve girilen not
@@ -30,6 +30,13 @@ console.log("Dongu Bitti")
 // if (sayi < 0 || sayi > 100) {
 //   alert("Sayi 0-100 arasinda degil")
 // }
+
+let sayix = +prompt("0-100 arasinda bir sayi griniz:");
+while (sayix < 0 || sayix > 100) {
+  console.log("Girlen sayi 0-100 arasında olmalıdır");
+  sayix + prompt("0-100 arasinda bir sayi griniz:");
+}
+console.log("Girilen sayi:", sayix);
 
 // let sayi1 = +prompt("0-100 arasinda bir sayi griniz:")
 // let cikis = false //?Flag mechanism
@@ -45,16 +52,16 @@ console.log("Dongu Bitti")
 // }
 // cikis ? console.log("Cikis yapildi") : console.log("Girilen sayi:", sayi1)
 
-let sayi2 = +prompt("0-100 arasinda bir sayi griniz:")
-let cikis1 = false //?Flag mechanism
+let sayi2 = +prompt("0-100 arasinda bir sayi griniz:");
+let cikis1 = false; //?Flag mechanism
 for (; sayi2 < 0 || sayi2 > 100; ) {
-  console.log("Girlen sayi 0-100 arasında olmalıdır")
+  console.log("Girlen sayi 0-100 arasında olmalıdır");
   sayi2 = prompt(
     "0-100 arasinda bir sayi griniz veya çıkmak için Q tuşuna basiniz"
-  )
+  );
   if (sayi2 === "q") {
-    cikis1 = true
-    break
+    cikis1 = true;
+    break;
   }
 }
-cikis1 ? console.log("Cikis yapildi") : console.log("Girilen sayi:", sayi2)
+cikis1 ? console.log("Cikis yapildi") : console.log("Girilen sayi:", sayi2);
