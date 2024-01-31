@@ -37,22 +37,42 @@
 
 //Sistemde kayıtlı id ve password bu olsun
 
-let kayitli_ID = "Clarusway";
-let kayitli_password = "fullstack16";
-let girisHakki = 3;
+// let kayitli_ID = "Clarusway";
+// let kayitli_password = "fullstack16";
+// let girisHakki = 3;
 
-while (girisHakki > 0) {
-  let ID = prompt("Lütfen kullanıcı adınızı giriniz:");
-  let password = prompt("Lütfen şifrenizi giriniz:");
-  if(ID == kayitli_ID && password == kayitli_password) {
-    console.log("Clarusway kariyer yolculuğuna hoş geldiniz")
-    break;
-  }else {
-    girisHakki--;
-    if(girisHakki > 0){
-      console.log(`Kullanıcı adı veya şifre yanlış. ${girisHakki} giriş hakkınız kaldı.`);
-    }else {
-    console.log("Giriş hakkınız tükendi.");
-    }
-  }
-}
+// while (girisHakki > 0) {
+//   let ID = prompt("Lütfen kullanıcı adınızı giriniz:");
+//   let password = prompt("Lütfen şifrenizi giriniz:");
+//   if(ID == kayitli_ID && password == kayitli_password) {
+//     console.log("Clarusway kariyer yolculuğuna hoş geldiniz")
+//     break;
+//   }else {
+//     girisHakki--;
+//     if(girisHakki > 0){
+//       console.log(`Kullanıcı adı veya şifre yanlış. ${girisHakki} giriş hakkınız kaldı.`);
+//     }else {
+//     console.log("Giriş hakkınız tükendi.");
+//     }
+//   }
+// }
+
+// *******iki sayı arasındakı rakamları toplamı***********
+
+
+// //Pratik-9
+// let sayi1 = Number(prompt("1.sayıyı giriniz"))
+// let sayi2 = Number(prompt("2.sayıyı giriniz"))
+// let toplam = 0
+// if(sayi1 <= sayi2 ){
+//     for(sayi1; sayi1<=sayi2; sayi1++)
+//     toplam += sayi1
+// }else if(sayi2 <= sayi1){
+//     for(sayi2; sayi2<=sayi1; sayi2++)
+//     toplam += sayi2
+// }else{
+//     console.log("yeniden değer giriniz");
+// }
+// console.log(`Sayılar arasındaki toplam: ${toplam}`);
+
+// *********************************************************
