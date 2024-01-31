@@ -21,3 +21,4 @@ function topla(s1, s2){
 }
 
 topla(7,5)
+
