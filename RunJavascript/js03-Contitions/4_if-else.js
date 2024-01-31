@@ -113,27 +113,52 @@
 
 // *************4 İŞLEM*******************
 
-let değer1 = Number(prompt("Lütfen bir sayı giriniz"));
-let değer2 = Number(prompt("Lütfen bir sayı giriniz"));
-let islem = prompt("Lütfen yapmak istediğiniz işlemi seçiniz");
+// //Pratik-5
+// let değer1 = Number(prompt("Lütfen bir sayı giriniz"));
+// let değer2 = Number(prompt("Lütfen bir sayı giriniz"));
+// let islem = prompt("Lütfen yapmak istediğiniz : '+' , '-' , ' '*', '/' işlemi seçiniz ");
 
-if (true) {
-  switch (islem) {
-    case "+":
-      console.log(değer1 + değer2);
-      break;
-    case "-":
-      console.log(değer1 - değer2);
-      break;
-    case "*":
-      console.log(değer1 * değer2);
-      break;
-    case "/":
-      console.log(değer1 / değer2);
-      break;
-    default:
-      console.log("Geçerli değerleri giriniz");
-  }
+// if (true) {
+//   switch (islem) {
+//     case "+":
+//       console.log(değer1 + değer2);
+//       break;
+//     case "-":
+//       console.log(değer1 - değer2);
+//       break;
+//     case "*":
+//       console.log(değer1 * değer2);
+//       break;
+//     case "/":
+//       console.log(değer1 / değer2);
+//       break;
+//     default:
+//       console.log("Geçerli değerleri giriniz");
+//   }
+// }else{
+//   alert("istenilen değerleri giriniz")
+// }
+
+// ***************DERS NOTU**************
+
+// Pratik-6
+
+let dersnotu = Number(prompt("Ders notunuzu giriniz"))
+if( dersnotu >= 0 && dersnotu <= 20){
+  console.log("Aldığınız not F ");
+}else if( dersnotu >= 21 && dersnotu <= 40){
+  console.log("Aldığınız not D ");
+}else if( dersnotu >= 41 && dersnotu <= 60){
+  console.log("Aldığınız not C ");
+}else if( dersnotu >= 61 && dersnotu <= 80){
+  console.log("Aldığınız not B ");
+}else if( dersnotu >= 81 && dersnotu <= 100){
+  console.log("Aldığınız not A ");
+}else if( dersnotu < 0 || dersnotu > 100){
+  console.log("0-100 arasında değer giriniz");
 }else{
-  alert("istenilen değerleri giriniz")
+  alert("Tekrar istenilen değerleri girerek deneyiniz")
 }
+
+
+
