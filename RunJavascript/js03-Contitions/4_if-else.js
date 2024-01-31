@@ -141,24 +141,24 @@
 
 // ***************DERS NOTU**************
 
-// Pratik-6
+// // Pratik-6
 
-let dersnotu = Number(prompt("Ders notunuzu giriniz"))
-if( dersnotu >= 0 && dersnotu <= 20){
-  console.log("Aldığınız not F ");
-}else if( dersnotu >= 21 && dersnotu <= 40){
-  console.log("Aldığınız not D ");
-}else if( dersnotu >= 41 && dersnotu <= 60){
-  console.log("Aldığınız not C ");
-}else if( dersnotu >= 61 && dersnotu <= 80){
-  console.log("Aldığınız not B ");
-}else if( dersnotu >= 81 && dersnotu <= 100){
-  console.log("Aldığınız not A ");
-}else if( dersnotu < 0 || dersnotu > 100){
-  console.log("0-100 arasında değer giriniz");
-}else{
-  alert("Tekrar istenilen değerleri girerek deneyiniz")
-}
+// let dersnotu = Number(prompt("Ders notunuzu giriniz"))
+// if( dersnotu >= 0 && dersnotu <= 20){
+//   console.log("Aldığınız not F ");
+// }else if( dersnotu >= 21 && dersnotu <= 40){
+//   console.log("Aldığınız not D ");
+// }else if( dersnotu >= 41 && dersnotu <= 60){
+//   console.log("Aldığınız not C ");
+// }else if( dersnotu >= 61 && dersnotu <= 80){
+//   console.log("Aldığınız not B ");
+// }else if( dersnotu >= 81 && dersnotu <= 100){
+//   console.log("Aldığınız not A ");
+// }else if( dersnotu < 0 || dersnotu > 100){
+//   console.log("0-100 arasında değer giriniz");
+// }else{
+//   alert("Tekrar istenilen değerleri girerek deneyiniz")
+// }
 
 
 
