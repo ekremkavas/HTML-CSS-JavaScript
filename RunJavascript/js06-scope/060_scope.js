@@ -23,3 +23,23 @@ if (sayi1 === 33) {
 }
 
 console.log(result) //* global scope result (Hi)
+
+//**************************** */
+
+let sayı2 = 5;
+const fonk2 = function () {
+  sayı2 = 10; 
+  console.log(`fonk ıcı ${sayı2}`);
+};
+fonk2();
+console.log(`Fonkdısı ${++sayı2}`);
+
+//***************************** */
+
+let sayı2 = 5;
+const fonk2 = function () {
+   let sayı2 = 10;  // let verirsen yenı deger ataması olur
+  console.log(`fonk ıcı ${sayı2}`);
+};
+fonk2(); // burda fonk2 yenıden cagırdık
+console.log(`Fonkdısı ${++sayı2}`);
