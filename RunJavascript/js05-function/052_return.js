@@ -1,4 +1,4 @@
-//! RETURN -GERİYE DEĞER DÖNDÜREN FONKISYON
+//! GERİYE DEĞER DÖNDÜREN(RETURN) FONKISYON
 
 
 //? 1-return bır değeri metodun dısırısına cıkarmak ve tasımak ıcın kullanılır
