@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
+/* google fonttan ekledık ardından font-family: 'Josefin Slab', serif; bu kısmı yazı tıpını degıstırkmek ıstedıgımız yere yapıstırdık*/
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200&display=swap');
 
@@ -6,6 +7,8 @@
 
 :root{
 
+
+    /* burada --renk ile tanımladığımız kaynak yeri buradan örnek  background-color: var(--white); diyerek istediğin yeri biçimlendir */
     /* COLORS */
     --white:#ececec;
     --orange: #e8a935;
@@ -65,7 +68,7 @@ p{
     width: 150px;
     height: 150px;
     background-color: var(--green-3);
-    background-color: var(--grey-5);
+    background-color: var(--green-4);
     font-family: var(--ff-sevillana);
 }
 
