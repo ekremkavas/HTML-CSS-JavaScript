@@ -19,3 +19,20 @@ console.log("Bir\biki");         // Bir karakter geriye gider
 console.log('Tek tırnak: \' ');  // Tek tırnak kullanımı
 console.log("Cift tırnak: \" "); // Çift tırnak kullanımı
 console.log("Ters eğik çizgi: \\ "); // Ters eğik çizgi kullanımı
+
+/* unicode karakterler*/
+console.log("\u2615")
+console.log("\uD83C\uDF39")
+console.log("\uD83D\uDCB2")
+console.log("\u00A9")
+
+
+/* -------------------------------------------------------------------------- */
+//!                         STRING PROPERTY AND METHODS                       */
+/* -------------------------------------------------------------------------- */
+
+//! ************STRING PROPERTY (Özellikleri) ************
+// Property bir stringin kendi özelliğidir bir method(fonksiyon) değildir bu nedenle parantez açıp kapatmaya gerek yoktur
+
+//? lenght
+//? prototype
