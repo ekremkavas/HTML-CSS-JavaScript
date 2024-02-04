@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Workbench&display=swap');
 
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200&display=swap');
+
+@import './themes.css';
+
+>>>>>>> 067dcf8170393dc66cf0a480d8380e572f8656e0
 :root{
 
     /* COLORS */
@@ -11,6 +18,7 @@
     --yesil: #3fe408;
     --yesil-koyu: #0e4216;
 
+<<<<<<< HEAD
     /* FONT */
     
 }
@@ -18,15 +26,51 @@
 body{
     background-color: var(--white);
     /* font-family: 'Workbench', sans-serif; */
+=======
+    /* renk paleti */
+    --green-1:#042940;
+    --green-2:#005C53;
+    --green-3:#9FC131;
+    --green-4:#DBF227;
+    --green-5:#D6D58E;
+
+
+    /* FONT */
+    --ff-workbench:'Workbench', sans-serif;;
+    --ff-Josefin:'Josefin Slab', serif;
+
+    /* FONT_SIZES */
+
+    --fs-lg:1.4rem;
+    --fs-xl:2rem;
+    --fs-xxl:3rem;
+}
+
+
+body{
+    background-color: var(--white);
+    /* font-family: 'Workbench', sans-serif; */
+    /* font-family: 'Josefin Slab', serif; */
+>>>>>>> 067dcf8170393dc66cf0a480d8380e572f8656e0
 }
 
 h1{
     background-color: var(--blue);
+<<<<<<< HEAD
+=======
+    font-family: var(--ff-Josefin);
+>>>>>>> 067dcf8170393dc66cf0a480d8380e572f8656e0
 }
 
 p{
     background-color: var(--blue-dark);
     color: var(--orange-dark);
+<<<<<<< HEAD
+=======
+    font-family: var(--ff-workbench);
+    font-size: var(--fs-lg);
+    /* font-family: var(--ff-Josefin); */
+>>>>>>> 067dcf8170393dc66cf0a480d8380e572f8656e0
 }
 
 .container{
@@ -39,11 +83,45 @@ p{
 .light{
     width: 150px;
     height: 150px;
+<<<<<<< HEAD
     background-color: var(--yesil);
+=======
+    background-color: var(--green-3);
+    background-color: var(--grey-5);
+    font-family: var(--ff-sevillana);
+>>>>>>> 067dcf8170393dc66cf0a480d8380e572f8656e0
 }
 
 .dark{
     width: 150px;
     height: 150px;
+<<<<<<< HEAD
     background-color: var(--yesil-koyu);
 }
+=======
+    background-color: var(--green-2);
+    font-family: var(--ff-yeon);
+}
+
+
+@media screen and (min-width:850px) and (max-width:950px) {
+    body{
+        background-color: red;
+    }
+}
+@media screen and (max-width:850) {
+    body{
+        background-color: darkorange;
+    }
+}
+@media screen and (max-width:600px) {
+    body{
+        background-color: olive;
+    }
+}
+@media screen and (max-width:300px) {
+    body{
+        background-color: fuchsia;
+    }
+}
+>>>>>>> 067dcf8170393dc66cf0a480d8380e572f8656e0
