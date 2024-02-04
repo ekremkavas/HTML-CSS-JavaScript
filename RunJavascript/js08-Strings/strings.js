@@ -24,7 +24,7 @@ console.log("©")
 
 //  \ Escape karakterler \işareti ile kullanılır
 
-// \ hemen yanındaki karkateri göz ardı edilmesini sağlar
+//? \ hemen yanındaki karkateri göz ardı edilmesini sağlar
 
 let metin='Ömer\'in kalemi'
 let path="c:\\Users\\Kullanıcılar"
@@ -53,12 +53,12 @@ Gününüz güzel geçsin`)
 
 let course="Clarusway"
 console.log(course)
-
-console.log(course[0])
+// soldan başlar 0 1 2 3 4 5 6 7 diye
+console.log(course[0]) // C cıkar
 console.log(course[4])
 console.log(course[7])
 // Stringler,primitive bir tür olduğu için parça olarak değiştiremezsiniz
-// immutable - not mutable
+// immutable (değitirilebilir değildir)- not mutable
 course[4]="a" // değişim yapılamaz
 course="Clarusway Bootcamp"
 console.log(course)
@@ -75,14 +75,14 @@ for (let i=0; i<=17;i++){
 // Property bir stringin kendi özelliğidir bir method(fonksiyon) değildir bu nedenle parantez açıp kapatmaya gerek yoktur
 
 //? length
-//? prototype
+//? prototype const str5=new String("new string") dersen görürsün
 
 console.log(course.length)
 
 for (let i=0; i<course.length;i++){
     console.log(course[i])
 }
-console.clear()
+// console.clear()
 for (let i=course.length-1; i>=0;i--){
     console.log(course[i])
 }
@@ -120,18 +120,18 @@ console.log(emoji.length)
 /* -------------------------------------------------------------------------- */
 //! String Birleştirme
 
-const name="John"
+const name1="John"
 const surname="Due"
 const job="Developer"
 
 // + 
-console.log("Our customer's name: "+name+" surname:"+surname+" and his job:"+job)
-console.log(`our customers's name:${name} surname:${surname} and his job: ${job}`)
-const fullname=name.concat(surname)
+console.log("Our customer's name: "+name1+" surname:"+surname+" and his job:"+job)
+console.log(`our customers's name:${name1} surname:${surname} and his job: ${job}`)
+const fullname=name1.concat(surname)
 console.log(fullname)
 
-// toLowerCase()
-// console.log(fullname.toLowerCase())
+ //küçük harfe çevirir toLowerCase()
+
 
 // const giris="clarusway"
 // const girisKodu=prompt("Giriş kodunu girin:")
@@ -141,20 +141,21 @@ console.log(fullname)
 // else{
 //     console.log("giriş hatalı")
 // }
-console.clear()
-// toUpperCase()  Büyük harfe çevirir
+// console.clear()
+// toUpperCase() // Büyük harfe çevirir
 
 const statement="Güzel bir gün, kahve ve hurma ile iyi gidiyor"
 console.log(statement.toUpperCase())
-console.log(statement)
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-//!                              String PARÇALAMA                             */
-/* -------------------------------------------------------------------------- */
+console.log(statement.toLowerCase())
+console.log(statement.replace); //  bu metodlar kalıcı değişikliğe sebep olmaz
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------- */
+//!                             String PARÇALAMA                        */
+/* -------------------------------------------------------------------- */
 
-/* -------------------------------------------------------------------------- */
-/*                                   split()                                  */
-/* -------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/*                                   split()                        */
+/* ----------------------------------------------------------------- */
 //split parçaladığı bölümleri diziye çevirir.
 // str.split(seperator) => seperator bir ayraç, "" , " " , ", ", "/"
 
