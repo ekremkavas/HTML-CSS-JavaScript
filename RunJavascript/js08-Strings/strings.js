@@ -21,6 +21,7 @@ console.log("©")
 
 // "Escape characters" (kaçış karakterleri), özel bir anlamı olan karakterlerin belirtilmiş bir amaç için kullanılmasını sağlayan karakterlerdir
 
+
 //  \ Escape karakterler \işareti ile kullanılır
 
 // \ hemen yanındaki karkateri göz ardı edilmesini sağlar
