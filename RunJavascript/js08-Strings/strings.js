@@ -156,14 +156,19 @@ console.log(statement.replace); //  bu metodlar kalıcı değişikliğe sebep ol
 /* ---------------------------------------------------------------- */
 /*                                   split()                        */
 /* ----------------------------------------------------------------- */
-//split parçaladığı bölümleri diziye çevirir.
+//split parçaladığı bölümleri diziye(ARRAY) çevirir.
 // str.split(seperator) => seperator bir ayraç, "" , " " , ", ", "/"
 
 let text="Clarusway It bootcamp"
 console.log(text.split(""))
-const splittedText=text.split(" ")
+
+const splittedText=text.split(" ") // texe git ardakı boşluklardan parçala
 console.log(splittedText)
 console.log(splittedText[2])
+
+for (let i=0; i < splittedText.length; i++){
+    console.log(splittedText[i])
+}
 
 for (let i=splittedText.length-1;i>=0;i--){
     console.log(splittedText[i])
@@ -171,11 +176,13 @@ for (let i=splittedText.length-1;i>=0;i--){
 
 let months="Jan / Feb / Mar / Apr / May / Jun / Jul / Aug / Sep / Oct / Nov / Dec"
 
-console.log(months.toUpperCase().split("/"))
+console.log(months.split("/")); //  bu / işaretten ayır anlamında
+
+console.log(months.toUpperCase().split("/")) // touppurcase strıng metodu 
 
 let  liste="Harry Trump ;Fred Barney; Helen Rigby ; Bill Abel ;Chris Hand"
-let yeniListe=liste.split(";")
-console.log(yeniListe[2])
+let yeniListe=liste.split(";") // split  içindeki değer ; den ayır anlamında
+console.log(yeniListe[2]) // çıkış aray oldugu ıcın ulasabılır 2 ye
 
 //! DİKKAT JOİN ve REVERSE string metodu değildir ama splitle çok kullanılır
 
