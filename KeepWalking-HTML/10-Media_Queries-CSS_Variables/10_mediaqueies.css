@@ -7,7 +7,7 @@
 }
 
 .container{
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
     max-width: 1200px;
     margin: 2rem auto;
 }
@@ -28,7 +28,9 @@ nav img{
 }
 
 .section-btn{
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
+    
+
 }
 
 button{
@@ -37,9 +39,27 @@ button{
     border-radius: 5px;
     box-shadow: var(--shadow-light);
     font-family: var(--ff-yeon);
-    margin: 1rem 0.8rem;
-    white-space: nowrap; 
-    /* ne kadar daraltırsan daralt yazılar aşağıya ınmez white-space: nowrap;  yaparsan */
+    margin: 1rem 0.5rem;
+    white-space: nowrap;
+    font-size: var(--fs-lg);
+    /* ne kadar daraltırsan daralt yazılar aşağıya ınmez white-space: nowrap;  yaparsan */  
+    flex-wrap: wrap; 
+}
+button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.btn-light{
+    background-color: var(--white);
+    color: var(--red-dark);
+       width: 250px;
+}
+
+.btn-dark{
+    background-color: var(--red-dark);
+    color: var(--white);
+    width: 250px;
 }
 
 /*! MEDİA SORGULARI */
@@ -48,8 +68,22 @@ button{
         flex-direction: column;
     }
     nav img{
-        width: 340px;
+        width: 250px;
     }
     
- 
+}
+@media screen and (max-width: 420px){
+
+    .section-btn{
+        display: flex;
+        flex-direction: column;
+   
+    }
+
+    .section-btn button{
+        margin: 0.75rem;
+        
+    }
+
+    
 }
