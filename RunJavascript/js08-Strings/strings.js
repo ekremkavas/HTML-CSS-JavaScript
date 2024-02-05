@@ -184,19 +184,22 @@ let  liste="Harry Trump ;Fred Barney; Helen Rigby ; Bill Abel ;Chris Hand"
 let yeniListe=liste.split(";") // split  içindeki değer ; den ayır anlamında
 console.log(yeniListe[2]) // çıkış aray oldugu ıcın ulasabılır 2 ye
 
-//! DİKKAT JOİN ve REVERSE string metodu değildir ama splitle çok kullanılır
+//! DİKKAT JOİN(BİRŞEŞTİRME) ve REVERSE(TESİNE ÇEVİRME) -ARAY METODU string metodu değildir ama splitle çok kullanılır
 
 let cumle="Merhaba Değerli Cohort 16 sakinleri"
 // bu cümleyi terseten string olarak yazın
 let yeniCumle=cumle.split(" ")
 console.log(yeniCumle)
 console.log(yeniCumle[2])
+
 // reverse tersten yazdırma  - Array metodu
+console.log(yeniCumle.reverse);
 console.log(yeniCumle.reverse().join(" - "))
+// joine hiçbirşey vermezsenız aralarına virgül koyar
 
 // Join - array metodu
 
-// polindrom kelime : Girilen kelime polindrom mudur
+// polindrom kelime : Girilen kelime polindrom mudur(tersten de düzden de yazılışı aynı olan kelimelerdir)
 // let kelime=prompt("Kelime Girin:")    
 // let tersten=kelime.split("").reverse().join("")
 // console.log(tersten)
