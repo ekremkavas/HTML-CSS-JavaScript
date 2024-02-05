@@ -206,41 +206,48 @@ console.log(yeniCumle.reverse().join(" - "))
 
 // kelime===tersten ? console.log("polindrom") : console.log("polindrom değil")
 
-/* -------------------------------------------------------------------------- */
+/* ------------------------------------------------------ */
+
 //!Slice 
 //? String içinde bir bölümü almak için kullanılır. (immmutable, kalıcı değişiklik olmaz)
 // Slice(başlangıç index numarası, bitiş index numarası(bu numara dahil değildir))
+// slice(Başlat,Bitir)
 
 let ataSoz="Oku da adam ol"
 console.log(ataSoz.slice(7,11))
 console.log(ataSoz.slice(7))
 
 // tersten de erişim sağlanabilir : negatif değer kullanılır
+console.log(ataSoz.slice(-14,-6))
 console.log(ataSoz.slice(-6,-2))
+
 
 //! substring(başlangıç index numarası,bitiş index numarası) 
 // slicedan tek farkı negatif değer kullanılmaz
 console.log(ataSoz.substring(3,8))
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/*                        //!Stringde Değişiklik yapma                        */
-/* -------------------------------------------------------------------------- */
+
+
+
+/* --------------------------------------------------- */
+/* ------------------------------------------------- */
+/*             //!Stringde DeğişikliK yapma          */
+/* --------------------------------------------------- */
 // ! replace(aranan,değişirilecek) - ReplaceAll( aranan,değişirilecek)
 let ozlusoz="Tecrübe tarak gibidir; ama hayat insana kel olduğu zaman verir."
 
 console.log(ozlusoz.replace("kel","saçlı"))
-
+// replace(BUnual ,BUNUNLADEĞİŞTİR)
 let variable="kullanıcı adı"
-let yeni=variable.replace(" ","_")
+let yeni=variable.replace(" ","_") // TEK DEĞER DEĞİŞTİRRİR İLK GÖRDÜĞÜ DEĞERİ
 console.log(yeni)
 
-let yeniDeger=yeni.replaceAll("a","â")
+let yeniDeger=yeni.replaceAll("a","â") // TUM İSTENILENI DEGISTIRIR
 console.log(yeniDeger)
 
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/*                      //!String içinde Arama işlemleri                      */
-/* -------------------------------------------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/*            //!String içinde Arama işlemleri   */
+/* ----------------------------------- */
 // includes, indexOf, search ,match() metodlarını kullanabiliriz
 
 //! includes()   ... yı içeriyor mu -> true yada false bir değer döndürür.caseSensitive (küçük büyük harfe duyarlı) bir özelliktir.
@@ -272,17 +279,19 @@ console.log(msg)
 
 //! search()
 
-// bir string içindeki aranan elemanda ilk bulduğunun index numarasını yazar. Bulamazsa -1 dönderir.
+// bir string içindeki aranan elemanda ilk bulduğunun index numarasını yazar. Bulamazsa -1 döndürür.
 
 let metin1="Clarusway it bootcamp IT .Clarusway develop you IT field"
 
-console.log(metin1.search("IT"))
-console.log(metin1.search("it"))
+console.log(metin1.search("IT")) // sonuç 44
+console.log(metin1.search("it")) // SONUÇ 10
 
 // Regex - regular Expression 
 //   / ile ifade edilir
 //  /g => global , bütün cümle içinde uygula
-// /i => case sensitive özlliğini kaldır.Küçük büyük olmasına bakmadan bul
+
+//? /i => case sensitive özlliğini kaldır.Küçük büyük olmasına bakmadan bul -gi-
+
 console.log(metin1.search(/[aeiıoöuü]/ig))
 console.log(metin1.replace(/IT/gi,"Communication"))
 
@@ -298,7 +307,7 @@ console.log(değistirilmisMetin.length)
 
 
 
-// trim ,startsWith , endsWith
+// trim- BOŞLUKLARI SİLER ,startsWith-BAŞLIYORMU , endsWith-BİTİYORMU
 let sentence1="     Clarusway  "
 console.log(sentence1.trim())
 
