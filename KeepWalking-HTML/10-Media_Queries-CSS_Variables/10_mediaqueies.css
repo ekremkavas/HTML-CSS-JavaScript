@@ -43,7 +43,7 @@ button{
     white-space: nowrap;
     font-size: var(--fs-lg);
     /* ne kadar daraltırsan daralt yazılar aşağıya ınmez white-space: nowrap;  yaparsan */  
-    flex-wrap: wrap; 
+
 }
 button:hover{
     opacity: 0.9;
