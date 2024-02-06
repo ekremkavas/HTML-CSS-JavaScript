@@ -55,6 +55,11 @@ button{
     
 }
 
+h3{
+    text-indent: 30px;
+    /* text-align: center;  */
+}
+
 /* pargaraf başı */
 
 button:hover{
