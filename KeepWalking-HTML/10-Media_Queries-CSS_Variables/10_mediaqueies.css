@@ -18,6 +18,9 @@ nav{
     align-items: center;
     padding: 1rem;
     flex-wrap: wrap;
+    border: 20px;
+    box-shadow: var(--shadow-dark);
+    margin-bottom: 2rem;
 
 }
 
@@ -45,6 +48,15 @@ button{
     /* ne kadar daraltırsan daralt yazılar aşağıya ınmez white-space: nowrap;  yaparsan */  
 
 }
+
+.paragraf{
+    text-indent: 30px;
+    text-align: justify;
+    
+}
+
+/* pargaraf başı */
+
 button:hover{
     opacity: 0.9;
     cursor: pointer;
@@ -69,6 +81,8 @@ header.hero{
     gap: 1rem;
     padding: 1rem;
     text-align: justify;
+    border: 20px;
+    box-shadow: var(--shadow-dark);
 
 }
 header.hero h1, p{
@@ -95,6 +109,12 @@ header.hero h1, p{
 
 main .tek{
     display: flex;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+    border: 20px;
+    box-shadow: var(--shadow-dark);
+    margin: 2rem 0;
 }
 main article{
     flex: 1;
