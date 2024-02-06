@@ -5,11 +5,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    /* background-image: url(./arkaplanuzay.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+}
 
 .container{
     /* background-color: cornflowerblue; */
     max-width: 1200px;
     margin: 2rem auto;
+    
 }
 
 nav{
@@ -52,6 +59,7 @@ button{
 .paragraf{
     text-indent: 30px;
     text-align: justify;
+    /* color: antiquewhite; */
     
 }
 
