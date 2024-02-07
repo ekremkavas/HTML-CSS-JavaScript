@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+}
+
+.container{
+    background-color: darkseagreen;
+    padding: 20px;
+    display: grid;
+    height: 800px;
+    gap: 15px;
+    /* column-gap: ;
+    row-gap: ;  satır ve sutun sevıyesınde bosluk uygular*/
+
+    /********* sütunlar için colums  *************/
+    grid-template-columns: 150px 200px 150px;
+    /* bir grid container'daki sütunların boyutunu belirlemek için kullanılır. Bu özellik, bir grid içindeki her sütunun genişliğini ve esnekliğini tanımlamanıza olanak tanır. */
+    grid-template-columns: 200px auto auto;
+    /*3 kolon bir tanesi 200 px iken 2 tane auto kalan alan kadar alır sayfa buyutup kuculttukce kendını ayarlar */
+    grid-template-columns: 30% 20% 12% 40%;
+    /*yuzdelık dılım de tanımlayabılırsın */
+    grid-template-columns: auto auto auto;
+    /* yada aynı kısayol repat */
+    grid-template-columns: repeat(3, auto);
+    grid-template-columns: 1fr 2fr 1.5fr;
+    /*toplam alandan 1 bırım sola kolon 2 bırım saga kolon  oluştur */
+
+
+    /********* satırlar için row  *************/
+    grid-template-rows: 1fr 3fr;
+    /* bir ve ikinci satıra 1 3fr ver  */
+    grid-auto-rows:2fr ;
+    /* kalan alanlarda 2fr ver */
+
+
+
+}
+
+.item{
+    background-color: blueviolet;
+    padding: 15px;
+    /* margin: 10px; */
+    color: azure;
+    font-size: 25px;
+    
+}
+
+.item:first-child{
+    grid-column-start: 3;
+}
