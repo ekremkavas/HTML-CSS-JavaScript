@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: minmax(200px,1fr) 1fr 1fr ;
+    /* minmax(200px,1fr)  min 200px al max 1 fr sayfa buyutup kucultunce*/
+    grid-template-columns:repeat(3,minmax(200px,1fr))  ;
+    /* üçü ıcın uygulamak ıstersem */
+    grid-template-columns:repeat(auto-fill, minmax(200px,1fr));
+    /* bu sekılde dersem sayfa kuculdukce ınmesı gereken kadar ıner*/
+    grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+    /* sayfaya yayılır*/
+    background-color: rgb(235, 194, 14);
+    padding: 20px;
+    gap: 10px;
+}
+
+.item{
+    background-color: rgba(4, 124, 74, 0.808);
+    padding: 15px;
+    color: antiquewhite;
+    font-size: 18px;
+}

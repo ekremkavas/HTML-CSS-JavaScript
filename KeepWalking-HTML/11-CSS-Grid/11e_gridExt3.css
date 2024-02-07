@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 20%) ;
+    grid-template-rows: repeat(2 20%);
+    background-color: rgb(77, 235, 14);
+    padding: 20px;
+    gap: 10px;
+    height: 900px;
+    /* align-items: center;
+    align-items: end;
+    align-items: baseline;
+    align-items: start;
+    align-items: normal;
+
+    justify-items: end;
+    justify-items: center;
+    justify-items: start;
+    justify-items: normal; */
+
+    /* justify-content: end;
+    justify-content: center;
+
+    align-content: center; */
+
+}
+
+
+.item{
+    background-color: rgba(2, 63, 38, 0.808);
+    padding: 50px;
+    color: antiquewhite;
+    font-size: 18px;
+}
+
+.item:first-child{
+    align-self: center;
+/* tek işlem yapmak ıcın self */
+justify-self: center;
+}
