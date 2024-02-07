@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    background-color: darkseagreen;
+    padding: 20px;
+    grid-template-columns: 200px 200px 200px 100px;
+    gap:20px;
+    grid-template-rows: 100px 400px;
+}
+
+.item{
+    background-color: blueviolet;
+    padding: 15px;
+    /* margin: 10px; */
+    color: azure;
+    font-size: 25px;
+}
