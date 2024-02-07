@@ -9,6 +9,9 @@ body{
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas: "header header header"
+    "nav main aside"
+    "footer footer footer";
 }
 
 header, footer, main, aside, nav{
@@ -19,11 +22,26 @@ header, footer, main, aside, nav{
 
 }
 
+/* isim vererek de bunları alanlarını yönlendirebilirsin */
+
 header{
-    grid-column: 1/span 3;
+    /* grid-column: 1/span 3; */
+    grid-area: header;
 }
 
+main{
+    grid-area: main;
+}
+
+aside{
+    grid-area: aside;
+}
+
+nav{
+    grid-area: nav;
+}
 footer{
-    grid-column: 1/span 3;
+    /* grid-column: 1/span 3; */
+    grid-area: footer;
 
 }
