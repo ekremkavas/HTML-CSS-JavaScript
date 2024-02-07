@@ -53,5 +53,7 @@ body {
   /* yada 2 den başla 3 tane kapsa demek istersen span kullan */
 
   grid-area: 1 / 2 / span 3 / span 2;
-  /* 1.satır  2.kolondan başla 3 birimlik row 2 bırım column  yer kapla*/
+  /* row-start/col-start/row-end/col-end */
+
+  /* 1.satır - 2.kolondan başla- 3 birimlik row- 2 bırım column : yer kapla*/
 }
