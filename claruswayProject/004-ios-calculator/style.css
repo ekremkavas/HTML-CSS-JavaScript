@@ -1,47 +1,48 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 20px;
     box-sizing: border-box;
 }
 
-body{
-    background-color: dimgray;
-
-}
-
 .container{
-    background-color: rgba(0, 0, 0, 0.685);
-    height: 51vh;
-    width: 14.5vw;
-    /* margin: 30px auto; */
-    border-radius: 12px;
-   
-
+    border-radius: 20px;
+   padding-top: 200px;
+    height: 100%;
+    width: 370px;
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5 ,1fr);
+    gap: 5px;
+    margin: auto;
 
 }
-
-div{
-    padding: 3.2px;
-    margin-left: 7px;
-
- 
-  
-}
-
 
 button{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;   
-}
-
-button:hover{
-    cursor: pointer;
-
-
+   height: 80px;
+   width: 80px;
+   border-radius: 50%;
+  
+ 
 }
 input{
-    padding: 40px;
-    margin:  10px;
-    border-radius: 8px;
+    width: 50vw;
+    height: 10vh;
+    grid-template-columns:1/ span 4;
+    background-color: blueviolet;
+}
+.genis{
+    background-color: aquamarine;
+     width: 165px;
+     border-radius: 40px;
+     grid-area: 5 / 1 / 6 / 3;
+     /* row-start/col-start/row-end/col-end */
+   
+     /* 1.satır - 2.kolondan başla- 3 birimlik row- 2 bırım column : yer kapla*/
+   }
+
+}
+
+.x{
+
 }
