@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    font-size: 16px;
+
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+}
+
+header, footer, main, aside, nav{
+    background-color: brown;
+    color: azure;
+    padding: 20px;
+    border: 3px sandybrown solid;
+
+}
+
+header{
+    grid-column: 1/span 3;
+}
+
+footer{
+    grid-column: 1/span 3;
+
+}
