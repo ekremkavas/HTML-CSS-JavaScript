@@ -12,6 +12,8 @@ string içerisinde yazılan sayılar string kabul edili
 // ve dinamik
 // çok fazla yerde kullanılır
 
+
+
 //! DATA TYPES
 //? typeof veri türünü gösterir
 

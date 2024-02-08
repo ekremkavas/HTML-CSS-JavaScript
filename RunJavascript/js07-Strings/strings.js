@@ -21,10 +21,9 @@ console.log("©")
 
 // "Escape characters" (kaçış karakterleri), özel bir anlamı olan karakterlerin belirtilmiş bir amaç için kullanılmasını sağlayan karakterlerdir
 
-
 //  \ Escape karakterler \işareti ile kullanılır
 
-//? \ hemen yanındaki karkateri göz ardı edilmesini sağlar
+// \ hemen yanındaki karkateri göz ardı edilmesini sağlar
 
 let metin='Ömer\'in kalemi'
 let path="c:\\Users\\Kullanıcılar"
@@ -53,12 +52,12 @@ Gününüz güzel geçsin`)
 
 let course="Clarusway"
 console.log(course)
-// soldan başlar 0 1 2 3 4 5 6 7 diye
-console.log(course[0]) // C cıkar
+
+console.log(course[0])
 console.log(course[4])
 console.log(course[7])
 // Stringler,primitive bir tür olduğu için parça olarak değiştiremezsiniz
-// immutable (değitirilebilir değildir)- not mutable
+// immutable - not mutable
 course[4]="a" // değişim yapılamaz
 course="Clarusway Bootcamp"
 console.log(course)
@@ -75,14 +74,14 @@ for (let i=0; i<=17;i++){
 // Property bir stringin kendi özelliğidir bir method(fonksiyon) değildir bu nedenle parantez açıp kapatmaya gerek yoktur
 
 //? length
-//? prototype const str5=new String("new string") dersen görürsün
+//? prototype
 
 console.log(course.length)
 
 for (let i=0; i<course.length;i++){
     console.log(course[i])
 }
-// console.clear()
+console.clear()
 for (let i=course.length-1; i>=0;i--){
     console.log(course[i])
 }
@@ -117,21 +116,26 @@ console.log(emoji.length)
 // toUpperCase()	    Converts a string to uppercase letters.
 // trim()	            Removes whitespace from both ends of a string.
 // valueOf()	        Returns the primitive value of a String object.
-/* -------------------------------------------------------------------------- */
+/* 
+
+
+
+
+-------------------------------------------------------------------------- */
 //! String Birleştirme
 
-const name1="John"
+const name="John"
 const surname="Due"
 const job="Developer"
 
 // + 
-console.log("Our customer's name: "+name1+" surname:"+surname+" and his job:"+job)
-console.log(`our customers's name:${name1} surname:${surname} and his job: ${job}`)
-const fullname=name1.concat(surname)
+console.log("Our customer's name: "+name+" surname:"+surname+" and his job:"+job)
+console.log(`our customers's name:${name} surname:${surname} and his job: ${job}`)
+const fullname=name.concat(surname)
 console.log(fullname)
 
- //küçük harfe çevirir toLowerCase()
-
+// toLowerCase()
+// console.log(fullname.toLowerCase())
 
 // const giris="clarusway"
 // const girisKodu=prompt("Giriş kodunu girin:")
@@ -141,34 +145,54 @@ console.log(fullname)
 // else{
 //     console.log("giriş hatalı")
 // }
-// console.clear()
-// toUpperCase() // Büyük harfe çevirir
+console.clear()
+// toUpperCase()  Büyük harfe çevirir
 
 const statement="Güzel bir gün, kahve ve hurma ile iyi gidiyor"
 console.log(statement.toUpperCase())
-console.log(statement.toLowerCase())
-console.log(statement.replace); //  bu metodlar kalıcı değişikliğe sebep olmaz
-/* ------------------------------------------------------------------ */
-/* ------------------------------------------------------------------- */
-//!                             String PARÇALAMA                        */
-/* -------------------------------------------------------------------- */
+console.log(statement)
 
-/* ---------------------------------------------------------------- */
-/*                                   split()                        */
-/* ----------------------------------------------------------------- */
-//split parçaladığı bölümleri diziye(ARRAY) çevirir.
+
+//? lastIndeksof istediğim karakteri son ındeksını getırır
+const jobx="Developerrreerr echo"
+let sonindeks =jobx.lastIndexOf("e")
+console.log(sonindeks);
+
+
+//? slice -başla ,bitir arasını getir
+
+let bastanSona = jobx.slice(0,5)
+console.log(bastanSona);
+
+//? substring bu ındeksten başla -bu kadar ındeks daha al
+
+let substringanlamı =jobx.substring(1,3)
+
+
+
+//?  replace yer değiştir ("a","x")  ("a" harfın yerıne "x yaz")
+
+let yerDegis = jobx.replace("e" , "i")
+console.log(yerDegis);
+
+
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+//!                              String PARÇALAMA                             */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                   split()                                  */
+/* -------------------------------------------------------------------------- */
+//split parçaladığı bölümleri diziye çevirir.
 // str.split(seperator) => seperator bir ayraç, "" , " " , ", ", "/"
 
 let text="Clarusway It bootcamp"
 console.log(text.split(""))
-
-const splittedText=text.split(" ") // texe git ardakı boşluklardan parçala
+const splittedText=text.split(" ")
 console.log(splittedText)
 console.log(splittedText[2])
-
-for (let i=0; i < splittedText.length; i++){
-    console.log(splittedText[i])
-}
 
 for (let i=splittedText.length-1;i>=0;i--){
     console.log(splittedText[i])
@@ -176,78 +200,66 @@ for (let i=splittedText.length-1;i>=0;i--){
 
 let months="Jan / Feb / Mar / Apr / May / Jun / Jul / Aug / Sep / Oct / Nov / Dec"
 
-console.log(months.split("/")); //  bu / işaretten ayır anlamında
-
-console.log(months.toUpperCase().split("/")) // touppurcase strıng metodu 
+console.log(months.toUpperCase().split("/"))
 
 let  liste="Harry Trump ;Fred Barney; Helen Rigby ; Bill Abel ;Chris Hand"
-let yeniListe=liste.split(";") // split  içindeki değer ; den ayır anlamında
-console.log(yeniListe[2]) // çıkış aray oldugu ıcın ulasabılır 2 ye
+let yeniListe=liste.split(";")
+console.log(yeniListe[2])
 
-//! DİKKAT JOİN(BİRŞEŞTİRME) ve REVERSE(TESİNE ÇEVİRME) -ARAY METODU string metodu değildir ama splitle çok kullanılır
+//! DİKKAT JOİN ve REVERSE string metodu değildir ama splitle çok kullanılır
 
 let cumle="Merhaba Değerli Cohort 16 sakinleri"
 // bu cümleyi terseten string olarak yazın
 let yeniCumle=cumle.split(" ")
 console.log(yeniCumle)
 console.log(yeniCumle[2])
-
 // reverse tersten yazdırma  - Array metodu
-console.log(yeniCumle.reverse);
 console.log(yeniCumle.reverse().join(" - "))
-// joine hiçbirşey vermezsenız aralarına virgül koyar
 
 // Join - array metodu
 
-// polindrom kelime : Girilen kelime polindrom mudur(tersten de düzden de yazılışı aynı olan kelimelerdir)
+// polindrom kelime : Girilen kelime polindrom mudur
 // let kelime=prompt("Kelime Girin:")    
 // let tersten=kelime.split("").reverse().join("")
 // console.log(tersten)
 
 // kelime===tersten ? console.log("polindrom") : console.log("polindrom değil")
 
-/* ------------------------------------------------------ */
-
+/* -------------------------------------------------------------------------- */
 //!Slice 
 //? String içinde bir bölümü almak için kullanılır. (immmutable, kalıcı değişiklik olmaz)
 // Slice(başlangıç index numarası, bitiş index numarası(bu numara dahil değildir))
-// slice(Başlat,Bitir)
 
 let ataSoz="Oku da adam ol"
 console.log(ataSoz.slice(7,11))
 console.log(ataSoz.slice(7))
 
 // tersten de erişim sağlanabilir : negatif değer kullanılır
-console.log(ataSoz.slice(-14,-6))
 console.log(ataSoz.slice(-6,-2))
-
 
 //! substring(başlangıç index numarası,bitiş index numarası) 
 // slicedan tek farkı negatif değer kullanılmaz
 console.log(ataSoz.substring(3,8))
-
-
-
-/* --------------------------------------------------- */
-/* ------------------------------------------------- */
-/*             //!Stringde DeğişikliK yapma          */
-/* --------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                        //!Stringde Değişiklik yapma                        */
+/* -------------------------------------------------------------------------- */
 // ! replace(aranan,değişirilecek) - ReplaceAll( aranan,değişirilecek)
 let ozlusoz="Tecrübe tarak gibidir; ama hayat insana kel olduğu zaman verir."
 
 console.log(ozlusoz.replace("kel","saçlı"))
-// replace(BUnual ,BUNUNLADEĞİŞTİR)
+
 let variable="kullanıcı adı"
-let yeni=variable.replace(" ","_") // TEK DEĞER DEĞİŞTİRRİR İLK GÖRDÜĞÜ DEĞERİ
+let yeni=variable.replace(" ","_")
 console.log(yeni)
 
-let yeniDeger=yeni.replaceAll("a","â") // TUM İSTENILENI DEGISTIRIR
+let yeniDeger=yeni.replaceAll("a","â")
 console.log(yeniDeger)
 
-/* ---------------------------------------- */
-/* ---------------------------------------- */
-/*            //!String içinde Arama işlemleri   */
-/* ----------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                      //!String içinde Arama işlemleri                      */
+/* -------------------------------------------------------------------------- */
 // includes, indexOf, search ,match() metodlarını kullanabiliriz
 
 //! includes()   ... yı içeriyor mu -> true yada false bir değer döndürür.caseSensitive (küçük büyük harfe duyarlı) bir özelliktir.
@@ -279,19 +291,17 @@ console.log(msg)
 
 //! search()
 
-// bir string içindeki aranan elemanda ilk bulduğunun index numarasını yazar. Bulamazsa -1 döndürür.
+// bir string içindeki aranan elemanda ilk bulduğunun index numarasını yazar. Bulamazsa -1 dönderir.
 
 let metin1="Clarusway it bootcamp IT .Clarusway develop you IT field"
 
-console.log(metin1.search("IT")) // sonuç 44
-console.log(metin1.search("it")) // SONUÇ 10
+console.log(metin1.search("IT"))
+console.log(metin1.search("it"))
 
 // Regex - regular Expression 
 //   / ile ifade edilir
 //  /g => global , bütün cümle içinde uygula
-
-//? /i => case sensitive özlliğini kaldır.Küçük büyük olmasına bakmadan bul -gi-
-
+// /i => case sensitive özlliğini kaldır.Küçük büyük olmasına bakmadan bul
 console.log(metin1.search(/[aeiıoöuü]/ig))
 console.log(metin1.replace(/IT/gi,"Communication"))
 
@@ -307,7 +317,7 @@ console.log(değistirilmisMetin.length)
 
 
 
-// trim- BOŞLUKLARI SİLER ,startsWith-BAŞLIYORMU , endsWith-BİTİYORMU
+// trim ,startsWith , endsWith
 let sentence1="     Clarusway  "
 console.log(sentence1.trim())
 

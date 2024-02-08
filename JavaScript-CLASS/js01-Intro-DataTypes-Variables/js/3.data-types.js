@@ -55,6 +55,15 @@ console.clear();
 /* -------------------------------------------------------------------------- */
 //! STRING DATA TYPE
 
+//Birleştirme
+let names = "Ekrem"
+let surnames = "KAVAS"
+let nameSurname = names + " " +surnames
+console.log(nameSurname);
+
+//Kaç karakter
+console.log(nameSurname.length);
+
 ad = "George";
 
 let str1 = 'merhaba dünya bugün" 17 Ocak';
@@ -65,6 +74,7 @@ let str4 = new String("merhaba dünya");
 console.log(typeof str4, str4);
 console.log(str1);
 
+//Karakter çekme
 console.log(str1[4]);
 // string bu şekilde içindeki değere ulaşılır ama değiştirilemez.
 // immutable

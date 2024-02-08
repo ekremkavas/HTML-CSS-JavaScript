@@ -116,7 +116,12 @@ console.log(emoji.length)
 // toUpperCase()	    Converts a string to uppercase letters.
 // trim()	            Removes whitespace from both ends of a string.
 // valueOf()	        Returns the primitive value of a String object.
-/* -------------------------------------------------------------------------- */
+/* 
+
+
+
+
+-------------------------------------------------------------------------- */
 //! String Birleştirme
 
 const name="John"
@@ -146,6 +151,32 @@ console.clear()
 const statement="Güzel bir gün, kahve ve hurma ile iyi gidiyor"
 console.log(statement.toUpperCase())
 console.log(statement)
+
+
+//? lastIndeksof istediğim karakteri son ındeksını getırır
+const jobx="Developerrreerr echo"
+let sonindeks =jobx.lastIndexOf("e")
+console.log(sonindeks);
+
+
+//? slice -başla ,bitir arasını getir
+
+let bastanSona = jobx.slice(0,5)
+console.log(bastanSona);
+
+//? substring bu ındeksten başla -bu kadar ındeks daha al
+
+let substringanlamı =jobx.substring(1,3)
+
+
+
+//?  replace yer değiştir ("a","x")  ("a" harfın yerıne "x yaz")
+
+let yerDegis = jobx.replace("e" , "i")
+console.log(yerDegis);
+
+
+
 /* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 //!                              String PARÇALAMA                             */
