@@ -5,44 +5,16 @@
 }
 
 .container{
-    border-radius: 20px;
-   padding-top: 200px;
-    height: 100%;
-    width: 370px;
-    background-color: burlywood;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5 ,1fr);
-    gap: 5px;
-    margin: auto;
+    grid-template-rows: repeat(6, 1fr);
 
 }
 
-button{
-   height: 80px;
-   width: 80px;
-   border-radius: 50%;
-  
- 
+.hesap{
+    grid-column: 1/5;
 }
-input{
-    width: 50vw;
-    height: 10vh;
-    grid-template-columns:1/ span 4;
-    background-color: blueviolet;
-}
-.genis{
-    background-color: aquamarine;
-     width: 165px;
-     border-radius: 40px;
-     grid-area: 5 / 1 / 6 / 3;
-     /* row-start/col-start/row-end/col-end */
-   
-     /* 1.satır - 2.kolondan başla- 3 birimlik row- 2 bırım column : yer kapla*/
-   }
-
-}
-
-.x{
-
+.genis0{
+    grid-column: 1/3;
+    grid-row: 6/7;
 }
