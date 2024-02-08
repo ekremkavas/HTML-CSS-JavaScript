@@ -11,14 +11,14 @@ console.log(yas)
 // ES6dan sonra gelen yapılardır
 // Değişken tanımlama için kullanılır
 
-//! CONST
+//! CONST (DEĞİŞTİRİLEMEZ)
 // const : constant : sabit 
 const tckimlik=12332213532
-// tckimlik=34534534534543
+// tckimlik=34534534534543 ,doğum yılı
 // ALınacak hata 
 //2-variables.js:18 Uncaught TypeError: Assignment to constant variable.
 
-//!LET 
+//!LET (DEĞİŞTİRİLEBİLİR)
 let toplam=0
 x=60
 y=70
@@ -53,6 +53,10 @@ var number=90
 }
 console.log(number+15)
 
+//! String bir ifade ile number ifade toplarsan sonuc strıng cıkar
+
+let a = 12
+console.log("ekrem"+a+"özlem");
 
 
 
