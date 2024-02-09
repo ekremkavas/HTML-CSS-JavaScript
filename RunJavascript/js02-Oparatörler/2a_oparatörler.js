@@ -63,11 +63,23 @@ console.log(Math.trunc(sayi))
 console.log(sayi)
 
 /* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
+//!  JavaScript'te, bir ifade veya değişken değeri bir koşul içinde değerlendirildiğinde, bazı değerler "falsy" olarak kabul edilir. Bir değerin "falsy" olması, bu değerin false olarak kabul edilmesi anlamına gelir. JavaScript'te, aşağıdaki değerler "falsy" olarak kabul edilir:
+
+//?  false: Boolean türünde false.
+//? 0: Number türünde sıfır.
+//? -0: Number türünde negatif sıfır.
+//? 0n: BigInt türünde sıfır.
+//? "": Boş string.
+//? null: Null değeri.
+//? undefined: Tanımsız değer.
+//? NaN: "Not-a-Number" değeri, sayısal olmayan bir işlem sonucu.
+//? Bunlar dışında, yukarıdaki değerler dışındaki tüm diğer değerler "truthy" olarak kabul edilir ve bir koşul içinde true olarak değerlendirilir.
+
+-------------------------------------------------------------------------- */
 /*                            COMPARISON OPERATORS                            */
 /* -------------------------------------------------------------------------- */
 
-// Karşılaştırma operatörleri bize Boolean sonuç döndürür.
+//! Karşılaştırma operatörleri bize Boolean sonuç döndürür.
 
 let c=2
 let d="2"
@@ -82,6 +94,8 @@ console.log(c!=d) // eşit değil mi - false 2  2 ye eşit
 console.log(c!==d) // eşit değil mi - true biri string biri number olduğu için eşit değil
 console.log(3>=2)
 
+let isim = "ekrem"
+console.log(Number("ekrem")); // NaN sonuc
 /* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 /*                              LOGICAL OPERATORS                             */

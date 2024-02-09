@@ -87,6 +87,17 @@ console.log(`Bizim evin tatlısı ${adSoyad}`);
 
 //! BOOLEAN
 
+console.log(true ,false ,"true", "false");
+let email = "ekremk@otokoc.com.tr";
+let iceriyormu = email.includes("@")
+console.log(iceriyormu);
+
+let listelerim = ["opel","reno", "Wv"]
+let varmii2 = listelerim.includes("W")
+
+let varmi2 =listelerim.includes("reno")
+
+
 let deger = undefined;
 console.log(Boolean(deger));
 
