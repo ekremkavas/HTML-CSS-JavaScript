@@ -1,3 +1,5 @@
+
+
 let sayac = 1;
 while (true) {
     console.log(sayac);

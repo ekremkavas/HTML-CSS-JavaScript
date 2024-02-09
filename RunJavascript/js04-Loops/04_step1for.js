@@ -1,14 +1,17 @@
 // ********************STEP_1*********
 
-// for (başlangıç; koşul; artış/değişim) {
-//     // Döngü içinde gerçekleştirilecek işlemler
-//   }
+//! for (başlangıç; koşul; artış/değişim) {
+// Döngü içinde gerçekleştirilecek işlemler
+//!   }
+
+//? Koşul sağlanana kadar döngü devam eder
 
 
 // *************5 e kadar yazdırma***********
 //   for (let i = 1; i <= 5; i++) {
 //     console.log(i);
 //   }
+
 
 // *************çift sayıları yazdırma**********
 // for (let i = 0; i <= 10; i += 2) {
@@ -27,7 +30,7 @@
 //         break;
 //     }
 
-//     console.log(i);|
+//     console.log(i);
 // }
 
 // *************************************
@@ -40,3 +43,10 @@
 //     }
 // }
     // ****************************
+
+    const adSoyad = ["ali", "veli" ,"deli"]
+    console.log(adSoyad.length);
+
+    for(let i =0; i < adSoyad.length; i++){
+        console.log(adSoyad[i]);
+    }
