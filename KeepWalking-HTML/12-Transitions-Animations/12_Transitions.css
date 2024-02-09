@@ -1,3 +1,14 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 .btn{
     font-size: 2rem;
     font-weight: 700;
@@ -6,6 +17,8 @@
     background-color: rgba(218, 72, 101, 0.705);
     border: 10px solid red;
     border-radius: 5px;
+    
+    
 }
 
 .btn:hover{

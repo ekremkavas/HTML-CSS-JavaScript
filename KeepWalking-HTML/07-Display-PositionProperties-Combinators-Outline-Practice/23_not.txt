@@ -14,4 +14,5 @@ https://codepen.io/suryawiguna/pen/wvGeqxy
 
 position sticy
 üstekı sticek gibi bir hane yana scroll cubugu verıdgınde ekranı kaydırman gerekse bıle ustte kalır
+lakın top:0 demen lazım dıkkat et
 
