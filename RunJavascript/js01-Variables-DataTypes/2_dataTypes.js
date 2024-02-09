@@ -20,7 +20,7 @@ string içerisinde yazılan sayılar string kabul edili
 x = 15;
 console.log(typeof x);
 
-//!                      PRIMITIVE DATA TYPES                                 */
+//!       PRIMITIVE DATA TYPES                                 */
 
 // Tek bir değer tutabilen değişkenler
 // Number,String,Null, Undefined,Boolean, BigInt
@@ -28,9 +28,12 @@ console.log(typeof x);
 //! Number Data Type
 // ondalıklı sayı,negatif yada pozitif sayı değerlerini tanımlandığı değişken türüdür
 
+
+
 sayi = 23;
 console.log(sayi * 5);
-
+console.log("ekrem" / sayi); // NaN Not a number sayı değil-Hata değil Nan
+console.log("dersi" + sayi + "kere tekrar ettim");
 const pi = Math.PI;
 console.log(pi);
 sonuc = sayi + 6;
