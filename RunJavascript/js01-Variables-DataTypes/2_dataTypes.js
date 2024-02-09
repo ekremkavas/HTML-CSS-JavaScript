@@ -12,6 +12,17 @@ string içerisinde yazılan sayılar string kabul edili
 // ve dinamik
 // çok fazla yerde kullanılır
 
+//!NULL
+
+
+let bu  ; // atama olmadığı ıcın tanımlanamayan
+console.log(bu,bu+5,`Bu iş ${bu}`); //sonuc = NaN       bu+5 tanımlanmayan ıfade ıle 5 ı topladıgında NaN bu number değil çıkar
+
+let personel = null; // bu değerdir başka zaman atama yapabilirsin boş değer gibi  düşün
+console.log(personel);
+console.log(personel + 5); // sonuc 5
+
+//! NaN - Not a number
 
 
 //! DATA TYPES
@@ -79,11 +90,7 @@ console.log(`Bizim evin tatlısı ${adSoyad}`);
 let deger = undefined;
 console.log(Boolean(deger));
 
-//!NULL
-let personel = null;
-console.log(personel);
 
-//! NaN - Not a number
 
 //NON PRiMİTİVE
 //Array, object ,function
