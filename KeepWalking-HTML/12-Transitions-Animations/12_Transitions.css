@@ -17,10 +17,16 @@ body{
     background-color: rgba(218, 72, 101, 0.705);
     border: 10px solid red;
     border-radius: 5px;
+    transition-property: background-color;
+    transition-duration: 1s; /* geçiş süresi*/
+    transition-delay: 1s; /* gecikme süresi*/
     
     
 }
 
 .btn:hover{
-    transform: translateY(-10px);
+    /* transform: translateY(-10px); */
+    background-color: blanchedalmond;
+    color: rgb(71, 5, 5)
+    
 }
