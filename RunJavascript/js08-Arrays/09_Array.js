@@ -18,34 +18,52 @@ console.log(colors); // ["Red", "Orange", "Blue", "Yellow"]
 // Dizinin uzunluğunu almak
 console.log(colors.length); // 4
 
-// Diziye eleman eklemek
+
+//! push 
+// Diziye en sonuna eleman eklemek
 colors.push("Purple");
 console.log(colors); // ["Red", "Orange", "Blue", "Yellow", "Purple"]
 
-// Dizi elemanını çıkarmak
+//! unshift en başa eleman ekle
+colors.unshift("Purple")
+console.log(colors); // (6) ['Purple', 'Red', 'Orange', 'Blue', 'Yellow', 'Purple']
+
+
+//! pop
+// Dizi sonunda eleman çıkarmak
 let removedColor = colors.pop();
-console.log(removedColor); // "Purple"
-console.log(colors); // ["Red", "Orange", "Blue", "Yellow"]
+console.log(removedColor); 
+console.log(colors); // ['Purple', 'Red', 'Orange', 'Blue', 'Yellow']
+
+
+//!shift dizinin başından eleman çıkarmak
+colors.shift()
+console.log(colors); // ['Red', 'Orange', 'Blue', 'Yellow']
+
+
+
+//! Short
 
 // Dizi elemanlarını sıralamak
 colors.sort();
-console.log(colors); // ["Blue", "Orange", "Red", "Yellow"]
+console.log(colors); // ['Blue', 'Orange', 'Red', 'Yellow']
+
 
 //!Splice
 // Bir dizi oluşturalım
-let meyveler = ["Elma", "Armut", "Muz", "Portakal", "Üzüm"];
+let meyvelera = ["Elma", "Armut", "Muz", "Portakal", "Üzüm"];
 
 // splice yöntemiyle diziden bir öğe silme
-let silinen = meyveler.splice(2, 1); // 2. indexteki ("Muz") öğeyi siler
+let silinen = meyvelera.splice(2, 1); // 2. indexteki ("Muz") öğeyi siler
 
 // splice (burdan başla , bukadar sil ,)
 console.log("Silinen meyve:", silinen); // Çıktı: ["Muz"]
-console.log("Yeni meyve dizisi:", meyveler); // Çıktı: ["Elma", "Armut", "Portakal", "Üzüm"]
+console.log("Yeni meyve dizisi:", meyvelera); // Çıktı: ["Elma", "Armut", "Portakal", "Üzüm"]
 
 // splice yöntemiyle dizinin belirli bir konumuna yeni öğeler ekleme
-meyveler.splice(2, 0, "Çilek", "Karpuz"); // 2. indexten başlayarak hiçbir öğe silmeden "Çilek" ve "Karpuz" öğelerini ekler
+meyvelera.splice(2, 0, "Çilek", "Karpuz"); // 2. indexten başlayarak hiçbir öğe silmeden "Çilek" ve "Karpuz" öğelerini ekler
 
-console.log("Yeni meyve dizisi:", meyveler); // Çıktı: ["Elma", "Armut", "Çilek", "Karpuz", "Portakal", "Üzüm"]
+console.log("Yeni meyve dizisi:", meyvelera); // Çıktı: ["Elma", "Armut", "Çilek", "Karpuz", "Portakal", "Üzüm"]
 
 // Bir dizi oluşturalım
 let arabalar = ["BMW", "Mercedes", "Audi", "Toyota", "Honda"];
@@ -62,12 +80,12 @@ let silinenHondalar = arabalar.splice(3); // 3. indexten başlayarak sonuna kada
 console.log("Silinen arabalar (sondan itibaren):", silinenHondalar); // Çıktı: ["Toyota", "Honda"]
 console.log("Yeni arabalar dizisi (sondan itibaren):", arabalar); // Çıktı: ["BMW", "Tesla", "Ford"]
 
-//!Join araya eleman ekleme
+//!Join dizi elemanlarının arasına istenilen ekleme
 // Bir dizi oluşturalım
-let meyveler = ["Elma", "Armut", "Muz", "Portakal", "Üzüm"];
+let meyvelerx = ["Elma", "Armut", "Muz", "Portakal", "Üzüm"];
 
 // join yöntemiyle dizi öğelerini birleştirme
-let birlesikMeyveler = meyveler.join(", "); // Dizi öğelerini virgülle ayırarak birleştirir
+let birlesikMeyveler = meyvelerx.join("*****"); // Dizi öğelerini virgülle ayırarak birleştirir
 
 console.log(birlesikMeyveler); // Çıktı: "Elma, Armut, Muz, Portakal, Üzüm"
 
@@ -101,8 +119,8 @@ dizi.reverse();
 
 console.log(dizi); // Çıktı: [5, 4, 3, 2, 1]
 
-let metin = "Merhaba";
-let tersMetin = metin.split("").reverse().join("");
+let metinx = "Merhaba";
+let tersMetin = metinx.split("").reverse().join("");
 
 console.log(tersMetin); // Çıktı: "abahreM"
 
@@ -119,47 +137,38 @@ let parcalar = adres.split("/"); // / karakterine göre adresi parçalar
 
 console.log(parcalar); // Çıktı: ["istanbul", "üsküdar", "çengelköy"]
 
-let metin = "Merhaba";
-let harfler = metin.split(""); // Her karakteri ayrı bir dizi öğesi olarak parçalar
+let metiny = "Merhaba";
+let harfler = metiny.split(""); // Her karakteri ayrı bir dizi öğesi olarak parçalar
 
 console.log(harfler); // Çıktı: ["M", "e", "r", "h", "a", "b", "a"]
 
 //!indexof
 // indexOf yöntemi, bir dize içinde belirli bir alt dizenin ilk bulunduğu dizin konumunu döndürür. Eğer alt dize bulunamazsa, -1 değeri döndürülür. İşte birkaç örnek
 
-let metin = "Merhaba, dünya!";
-let pozisyon = metin.indexOf("dünya");
+let metinz = ["Merhaba", "dünya" , "jüpiter"];
+let pozisyonx = metinz.indexOf("dünya");
 
-console.log(pozisyon); // Çıktı: 9 (dünya alt dizesi metin içinde 9. pozisyonda bulunuyor)
+console.log(pozisyonx); // Çıktı: 1 (dünya alt dizesi metin içinde 1. pozisyonda bulunuyor)
 
-let metin = "Merhaba, dünya!";
-let pozisyon = metin.indexOf("xyz");
+let metinn = "Merhaba, dünya!";
+let pozisyonn = metinn.indexOf("xyz");
 
-console.log(pozisyon); // Çıktı: -1 (xyz alt dizesi metin içinde bulunamadı)
+console.log(pozisyonn); // Çıktı: -1 (xyz alt dizesi metin içinde bulunamadı)
 
-let metin = "Merhaba, dünya!";
-let pozisyon = metin.indexOf("a", 3); // 3. pozisyondan itibaren arama yapar
-
-console.log(pozisyon); // Çıktı: 5 (a alt dizesi 3. pozisyondan sonra 5. pozisyonda bulunuyor)
-
-let metin = "Merhaba, dünya! Merhaba, evren!";
-let pozisyon = metin.indexOf("Merhaba");
-
-console.log(pozisyon); // Çıktı: 0 (ilk "Merhaba" alt dizesi metin içinde 0. pozisyonda bulunuyor)
 
 //!İncludes
 
 // Bu örneklerde görüldüğü gibi, includes yöntemi belirli bir alt dizenin ana dizide bulunup bulunmadığını kontrol eder. Eğer alt dize bulunursa true, bulunamazsa false döndürür. Ayrıca, ikinci bir parametre belirterek aramanın belirli bir konumdan başlayacağını belirtebilirsiniz.
 
-let metin = "Merhaba, dünya!";
-let sonuc = metin.includes("dünya");
+let mettin = "Merhaba, dünya!";
+let sonucc = mettin.includes("dünya");
 
-console.log(sonuc); // Çıktı: true
+console.log(sonucc); // Çıktı: true
 
-let metin = "Merhaba, dünya!";
-let sonuc = metin.includes("xyz");
+let metiiin = "Merhaba, dünya!";
+let sonuuc = metiiin.includes("xyz");
 
-console.log(sonuc); // Çıktı: false
+console.log(sonuuc); // Çıktı: false
 
 let metin = "Merhaba, dünya!";
 let sonuc = metin.includes("a", 3); // 3. pozisyondan itibaren arama yapar
