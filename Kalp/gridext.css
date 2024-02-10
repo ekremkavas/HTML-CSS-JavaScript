@@ -17,18 +17,19 @@
 
 div header{
     background-color: aquamarine;
-    width: 100%;
+    width: 94%;
     height: 15%;
 }
 
 div section{
     background-color: cadetblue;
-    width: 16%;
+    width: 18%;
+    min-width: 15%;
     height: 60%;
 }
 
 div footer{
     background-color: cornflowerblue;
-    width: 100%;
+    width: 94%;
     height: 15%;
 }
