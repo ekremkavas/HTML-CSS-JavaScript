@@ -1,0 +1,26 @@
+*{
+    margin: 0.3rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+
+}
+
+.container{
+    height: 80%;
+    width: 80%;
+    background-color: darkblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div header{
+    background-color: aquamarine;
+}
+
+div section{
+    background-color: cadetblue;
+}
+
+div footer{
+    background-color: cornflowerblue;
+}
