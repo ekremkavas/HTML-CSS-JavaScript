@@ -6,21 +6,29 @@
 }
 
 .container{
-    height: 80%;
+    height: 800px;
     width: 80%;
     background-color: darkblue;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 div header{
     background-color: aquamarine;
+    width: 100%;
+    height: 15%;
 }
 
 div section{
     background-color: cadetblue;
+    width: 16%;
+    height: 60%;
 }
 
 div footer{
     background-color: cornflowerblue;
+    width: 100%;
+    height: 15%;
 }
