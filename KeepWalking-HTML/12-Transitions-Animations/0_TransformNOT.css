@@ -1,0 +1,13 @@
+*{
+    /* transform: translate(50px 100px); x eksnınde 50 px y eksenınde 100 px hareket ettır demek */
+
+    /* transform: rotate(20deg) ;
+    20 derece saat yonunde cevır demek */
+
+    /* transform: scale(); 
+    transform: scaleX(); 
+    transform: scaleY(); 
+    x ve y eksınınde ayrıca vrılebılır zoom gıbı buyutuyor skalasını */
+
+    /* transform: skew();  x ve y eksenınde bükmek anlamında */
+}
