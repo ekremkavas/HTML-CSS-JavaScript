@@ -1,0 +1,66 @@
+
+
+.box{
+    background-color: crimson;
+    width: 100px;
+    height: 50px;
+    margin: 2px;
+}
+
+.x{
+    /* transform: translateX(150px); */
+    transition-property: all;
+    transition-duration: 2s;
+    /* transition-delay: 1s; */
+    transition-timing-function: ease-in-out;
+}
+.x:active{
+    transform: translateX(250px);
+    background-color: orange;
+    width: 300px;
+}
+
+.y{
+    transition: all 2s ease-in-out;
+}
+
+.y:active{
+    background-color: magenta;
+    transform: translateY(200px);
+    height: 100px;
+}
+
+.xy{
+    transition-property: all ;
+    transition-duration: 2s;
+
+}
+
+.xy:active{
+    transform: translate(100px, 50px);
+    background-color: blue;
+    width: 200px;
+    height: 100px;
+}
+
+.btn-div{
+    text-align: center;
+}
+
+.btn{
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.3rem;
+    /* transition-property:  background-color ;
+    transition-duration: 1s; */
+    transition: all 200ms ease-in-out;
+}
+
+
+.btn:active{
+    background-color: red;
+    color: wheat;
+    transform: scale(95%);
+}

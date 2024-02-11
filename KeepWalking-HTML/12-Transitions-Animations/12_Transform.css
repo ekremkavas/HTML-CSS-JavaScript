@@ -1,0 +1,92 @@
+/* transform: translate(50px 100px); x eksnınde 50 px y eksenınde 100 px hareket ettır demek */
+
+/* transform: rotate(20deg) ;
+    20 derece saat yonunde cevır demek */
+
+/* transform: scale(); 
+    transform: scaleX(); 
+    transform: scaleY(); 
+    x ve y eksınınde ayrıca vrılebılır zoom gıbı buyutuyor skalasını */
+
+/* transform: skew();  x ve y eksenınde bükmek anlamında */
+
+.yazi {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2.5rem auto;
+  width: 50vw;
+}
+
+/******** TRANSFORM ROTATE  ********/
+
+.yazi1 {
+  background-color: aquamarine;
+  transform: rotateX(50deg);
+
+  /* X eksenınde 90 -270(yukarı-asağı cevırmek olur) yaparsan tam yatay oldugundan  gozukmez */
+}
+.yazi1:active + .yazi2 {
+  background-color: gold;
+  /* yazi1 tıklayınca yazı 2 renk degıstırecek */
+}
+
+.yazi2 {
+  background-color: bisque;
+  transform: rotateY(50deg);
+  /* Y eksenınde 90 -270(saga sola cevırmek olur) yaparsan tam yatay oldugundan  gozukmez */
+}
+
+.yazi3 {
+  background-color: chocolate;
+  transform: rotate(30deg);
+  /* saat yonunde 30 (orta noktasını baz alarak dondurdu) derece dondu */
+  position: relative;
+  z-index: -2;
+}
+.yazi3a {
+  background-color: rgb(207, 237, 8);
+  transform: rotate(80deg);
+  transform-origin: left;
+  /* saat yonunde 110 derece sol tarafı referans alarak dondurdu (orta noktasını degıl) dondu */
+  position: relative;
+  z-index: +3;
+}
+
+.yazi3b {
+  background-color: rgb(153, 255, 0);
+}
+
+.yazi3b:active {
+  background-color: rgb(25, 9, 174);
+  transform: rotate(10deg) scale(2);
+}
+
+/******** TRANSFORM SCALE  ********/
+
+.yazi4 {
+  background-color: hotpink;
+  transform: scaleX(3.5);
+  /* x eksenınde 3.5 bırım buyuttuk zooma benzer gıbı*/
+  position: relative;
+  z-index: 5;
+}
+
+.yazi5 {
+  background-color: green;
+  transform: scaleY(3.5);
+}
+
+.yazi6 {
+  background-color: rgb(247, 8, 8);
+}
+
+.yazi6:active {
+  background-color: darkcyan;
+  transform: scale(3);
+  /* active yapar verırsen tıkladıgında 3 katına cıkar */
+}
+
+img {
+  transform: skew(20deg, 26deg);
+  /* x eksenı ve ye eksenı x e 90 dersen -270 dersen gozukmez*/
+}
