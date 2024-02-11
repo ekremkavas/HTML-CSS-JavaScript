@@ -31,7 +31,8 @@ Bu örnekte, bir düğmenin arka plan rengi fare üzerine gelindiğinde kırmız
   /* transform: translateX(150px); */
   transition-property: all;
   transition-duration: 2s;
-  /* transition-delay: 1s; */
+  transition-delay: 300ms; 
+  /*delay harketi yapma geçikmesi */
   transition-timing-function: ease-in-out;
 }
 .x:active {
@@ -75,6 +76,7 @@ Bu örnekte, bir düğmenin arka plan rengi fare üzerine gelindiğinde kırmız
   /* transition-property:  background-color ;
     transition-duration: 1s; */
   transition: all 200ms ease-in-out;
+  /* all demek butonla ılgılı tum degısıklıkleerı uygula demek  all yerıne transform yazarsanız sadece transformu takıp eder*/
 }
 
 .btn:active {
