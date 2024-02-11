@@ -1,66 +1,84 @@
-
-
-.box{
-    background-color: crimson;
-    width: 100px;
-    height: 50px;
-    margin: 2px;
+/**CSS'de transition özelliği, bir öğenin belirli bir durumdan diğerine geçişlerinin yumuşak olmasını sağlar. Bu geçişler genellikle fare durumu değişiklikleri, boyut değişiklikleri veya renk değişiklikleri gibi etkileşimlerle tetiklenir. transition özelliğini kullanırken, geçişin hangi özellikler üzerinde gerçekleşeceğini ve ne kadar süreceğini belirtmeniz gerekir.
+.element {
+    transition: property duration timing-function delay;
 }
+Burada:
 
-.x{
-    /* transform: translateX(150px); */
-    transition-property: all;
-    transition-duration: 2s;
-    /* transition-delay: 1s; */
-    transition-timing-function: ease-in-out;
-}
-.x:active{
-    transform: translateX(250px);
-    background-color: orange;
-    width: 300px;
-}
-
-.y{
-    transition: all 2s ease-in-out;
-}
-
-.y:active{
-    background-color: magenta;
-    transform: translateY(200px);
-    height: 100px;
-}
-
-.xy{
-    transition-property: all ;
-    transition-duration: 2s;
-
-}
-
-.xy:active{
-    transform: translate(100px, 50px);
+property: Geçişin uygulanacağı CSS özelliği veya özellikleri belirtir. Birden fazla özelliği belirtmek için virgülle ayrılır.
+duration: Geçişin süresini belirtir. Örneğin, 1s veya 500ms gibi bir süre değeri kullanılabilir.
+timing-function: Geçişin hız eğrisini belirtir. Örneğin, ease, linear, ease-in, ease-out, ease-in-out gibi değerler kullanılabilir.
+delay: Geçişin başlatılmasını ertelemek için bir süre belirtir. Opsiyoneldir.
+.button {
     background-color: blue;
-    width: 200px;
-    height: 100px;
+    transition: background-color 0.3s ease;
 }
 
-.btn-div{
-    text-align: center;
-}
-
-.btn{
-    background-color: aqua;
-    padding: 20px;
-    border-radius: 5px;
-    border: none;
-    font-size: 1.3rem;
-    /* transition-property:  background-color ;
-    transition-duration: 1s; */
-    transition: all 200ms ease-in-out;
-}
-
-
-.btn:active{
+.button:hover {
     background-color: red;
-    color: wheat;
-    transform: scale(95%);
+}
+Bu örnekte, bir düğmenin arka plan rengi fare üzerine gelindiğinde kırmızıya yumuşak bir geçişle değişir. transition özelliği background-color özelliği üzerinde 0.3 saniyelik bir sürede ease zamanlama fonksiyonu kullanarak uygulanmıştır.
+
+*/
+
+.box {
+  background-color: crimson;
+  width: 100px;
+  height: 50px;
+  margin: 2px;
+}
+
+.x {
+  /* transform: translateX(150px); */
+  transition-property: all;
+  transition-duration: 2s;
+  /* transition-delay: 1s; */
+  transition-timing-function: ease-in-out;
+}
+.x:active {
+  transform: translateX(250px);
+  background-color: orange;
+  width: 300px;
+}
+
+.y {
+  transition: all 2s ease-in-out;
+}
+
+.y:active {
+  background-color: magenta;
+  transform: translateY(200px);
+  height: 100px;
+}
+
+.xy {
+  transition-property: all;
+  transition-duration: 2s;
+}
+
+.xy:active {
+  transform: translate(100px, 50px);
+  background-color: blue;
+  width: 200px;
+  height: 100px;
+}
+
+.btn-div {
+  text-align: center;
+}
+
+.btn {
+  background-color: aqua;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.3rem;
+  /* transition-property:  background-color ;
+    transition-duration: 1s; */
+  transition: all 200ms ease-in-out;
+}
+
+.btn:active {
+  background-color: red;
+  color: wheat;
+  transform: scale(85%);
 }
