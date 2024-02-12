@@ -17,15 +17,17 @@ body{
     background-color: rgba(218, 72, 101, 0.705);
     border: 10px solid red;
     border-radius: 5px;
-    transition-property: background-color;
-    transition-duration: 1s; /* geçiş süresi*/
-    transition-delay: 1s; /* gecikme süresi*/
+    transition-property: transform; /*Neyi takip edecekse orası belirtilir , all dersende tüm değişiklikleri uygula anlamında*/
+    transition-duration: 2s; /* geçiş süresi*/
+    transition-delay: 400ms; /* gecikme süresi*/
+    transition-timing-function: ease-in-out; 
+    /* başta ve sonda yavaş ortada hızlı*/
     
     
 }
 
 .btn:hover{
-    /* transform: translateY(-10px); */
+    transform: translate(40px, 180px);
     background-color: blanchedalmond;
     color: rgb(71, 5, 5)
     
