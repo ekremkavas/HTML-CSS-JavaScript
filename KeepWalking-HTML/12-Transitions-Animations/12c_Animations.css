@@ -1,0 +1,36 @@
+/**  Animasyonlar, @keyframes kuralıyla tanımlanır ve öğeler üzerinde animation özelliğiyle kontrol edilir. İşte CSS animasyonlarını detaylı olarak açıklayan bazı önemli özellikler:
+
+@keyframes: Animasyonun zaman içindeki durumlarını tanımlar. Bu kural, belirli bir adla başlar ve ardından animasyonun hangi zaman dilimlerinde hangi özelliklere sahip olacağını belirten from ve to anahtar kelimeleri veya yüzdelik değerlerle tanımlanmış çeşitli durumlar içerir.
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+animation-name: Kullanılacak animasyonun adını belirtir. @keyframes kuralında tanımlanan adı burada kullanarak animasyonu seçersiniz.
+.box {
+  animation-name: slide-in;
+}
+
+animation-duration: Animasyonun bir döngüsünün ne kadar sürdüğünü belirtir. Varsayılan değeri saniye cinsinden ifade edilir.
+.box {
+  animation-duration: 2s;
+}
+
+animation-timing-function: Animasyonun nasıl ilerlediğini belirtir. Easing fonksiyonları, animasyonun başlangıcı ve bitişi arasındaki hızı değiştirmek için kullanılır. Örneğin, ease, linear, ease-in, ease-out, ease-in-out gibi yaygın kullanılan fonksiyonlardır.
+.box {
+  animation-timing-function: ease-in-out;
+}
+
+animation-delay: Animasyonun başlamasını geciktirir. İlgili değer saniye cinsinden ifade edilir.
+.box {
+  animation-delay: 1s;
+}
+animation-iteration-count: Animasyonun kaç kez tekrarlanacağını belirtir. Varsayılan olarak, bir animasyon yalnızca bir kez oynatılır. infinite değeri animasyonun sonsuza kadar tekrarlanacağını belirtir.
+.box {
+  animation-iteration-count: 3; /* 3 kez tekrarlanacak */
+
