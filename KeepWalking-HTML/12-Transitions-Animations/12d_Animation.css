@@ -1,0 +1,55 @@
+div{
+    text-align: center;
+}
+
+div i{
+    font-size: 12rem;
+    color: lightcoral;
+}
+
+.fa-bell{
+    /* transform: rotate(15deg);
+    transform: rotate(-15deg); */
+    /* position: relative;
+    display: inline-block; */
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes shake {
+    0%{
+        transform: rotate(15deg);
+        /* merkezden değilde zilin başından sallanmak isterse origin değeri vermen gerek */
+        transform-origin: top;
+    }
+
+    100%{
+        transform: rotate(-15deg);
+        transform-origin: top;
+        color: lightsalmon;
+    }
+}
+
+.fa-dollar-sign{
+    animation-name: money;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes money{
+    from{
+transform: rotate(0);
+    }
+
+
+    to{
+        transform: rotate(360deg);
+        font-size: 15rem;
+
+    }
+
+}
