@@ -20,7 +20,8 @@
       background-size: cover;
       box-shadow: 5px 5px 10px black;
       position: relative;
-      overflow: hidden;
+      overflow: hidden; 
+      /* alt zemın taşmaları engelledı */
   }
   
   .ground{
