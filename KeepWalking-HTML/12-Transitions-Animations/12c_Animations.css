@@ -41,7 +41,7 @@ animation-iteration-count: Animasyonun kaç kez tekrarlanacağını belirtir. Va
 }
 
 .in {
-    background-color: gray;
+    background-color: rgb(11, 181, 248);
     width: 50%;
     height: 50%;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
@@ -51,14 +51,22 @@ animation-iteration-count: Animasyonun kaç kez tekrarlanacağını belirtir. Va
     animation-delay: 300ms;
     /* bekleme süresi  başlaması için */
     animation-iteration-count: 3;
-    /* toplam tekrar sayısı */
+    /* toplam tekrar sayısı infinte dersen sonsuz tekrar eder */
     animation-direction: alternate;
     /* animasyon yönü 
-    altarnate
+    reverse tersten oynatır
+    altarnate gider gittiği yerden geri döner
+
     */
     animation-fill-mode: both;
+    /* gittiği yerde kalsın istiyorsam 
+    animation-fill-mode: fowards demem gerek 
+    animation-fill-mode: backwards aşağıdaki sarıdan başlaması için direk baştaki arka plan rengini almaz
+    animation-fill-mode: both her iki özelliğini de alsın istiyorsam
+    */
   
-    /* animation: travel 2s ease 1s infinite alternate both; */
+    animation: travel 2s ease 1s infinite alternate both;
+    /* hepsini tek satırda */
 }
 
 @keyframes travel {
