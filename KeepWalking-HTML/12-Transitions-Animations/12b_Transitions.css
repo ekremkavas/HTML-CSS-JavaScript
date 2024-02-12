@@ -84,3 +84,12 @@ Bu örnekte, bir düğmenin arka plan rengi fare üzerine gelindiğinde kırmız
   color: wheat;
   transform: scale(85%);
 }
+/*  Active: Bir öğe tıklanarak etkinleştirildiğinde uygulanır. Örneğin, bir düğme tıklandığında rengini veya boyutunu değiştirmek için active pseudo-sınıfını kullanabilirsiniz. Örneğin: button:active {
+    transform: scale(0.9); /* Düğmeyi küçültmek 
+} 
+Hover: Bir öğe üzerine fare imleci hareket ettirildiğinde etkileşimli davranışları tanımlar. Örneğin, bir düğmenin rengini değiştirmek veya altını çizmek için hover pseudo-sınıfını kullanabilirsiniz. Örneğin:
+button:hover {
+    background-color: #ff0000; 
+    /* Kırmızı arka plan rengi color: #ffffff;  Beyaz metin rengi
+}
+*/
