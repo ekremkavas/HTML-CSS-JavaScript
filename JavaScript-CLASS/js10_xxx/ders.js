@@ -7,6 +7,8 @@
  let ogrencilerİsim =["ahmet","ismet","saffet"]
  let ogrencilerSoyisim=["yılmaz","can","baki"]
  let ogrenciAdres = ["kadıköy","şeebinkarahisar","seferihisar"] //aslında bakıldığında tek başına array yeterli değil.bunları ayrı ayrı yapmak gerek ve mesel aahmetin bütün verilerine ulaşmak da aynı şekilde ayrı ayrı istemek zorunda kalabiliriz.bu şekilde verileir toplamak zor.
+
+ 
 //  !NOTTT!!!  Karmaşık ve lişkili verilerin arraylarda saklanması ve erişimi zordur.
 // obje içinde indisleme yok key ve valudan ulaşacağız.
 // key-value (pair)
