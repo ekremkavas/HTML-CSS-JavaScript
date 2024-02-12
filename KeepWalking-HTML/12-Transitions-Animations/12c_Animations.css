@@ -34,15 +34,52 @@ animation-iteration-count: Animasyonun kaç kez tekrarlanacağını belirtir. Va
 .box {
   animation-iteration-count: 3; /* 3 kez tekrarlanacak */
 
-  .outhere{
-    background-color: blue;
-    width: 500px;
-    height: 500px;
+.out {
+  background-color: blue;
+  width: 500px;
+  height: 500px;
+}
 
-  }
-
-  .inner{
-    background-color: rgb(22, 174, 245);
+.in {
+    background-color: gray;
     width: 50%;
     height: 50%;
-      }
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: travel;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 300ms;
+    /* bekleme süresi  başlaması için */
+    animation-iteration-count: 3;
+    /* toplam tekrar sayısı */
+    animation-direction: alternate;
+    /* animasyon yönü 
+    altarnate
+    */
+    animation-fill-mode: both;
+  
+    /* animation: travel 2s ease 1s infinite alternate both; */
+}
+
+@keyframes travel {
+    0% {
+      transform: translate(0);
+      background-color: yellow;
+      
+    }
+  
+    25% {
+      transform: translateY(100%);
+      border-radius: 50%;
+    }
+  
+    50% {
+      transform: translate(100%, 100%);
+    }
+  
+    100% {
+      transform: translateX(100%);
+      background-color: fuchsia;
+    }
+  }
+  
