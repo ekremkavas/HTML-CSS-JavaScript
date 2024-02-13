@@ -2,6 +2,12 @@
 //*                 (OBJECTS)
 //* =============================================
 
+/*
+array.forEach(element => { 
+  foreach void Function return YOK , döndürmek istiyorsan map(array döndürür) kullan ,seçme yapacaksan filter kullan(indirgenmiş kopya)
+  
+}); */
+
 //? Diziler sirali bellek bolgeleridir.Bu yuzden dizilere
 //? indeksleme ile erisebiliriz. Ancak daha karmasik (unstructured)
 //? verilerimiz icin  Object'leri kullanabiliriz.
