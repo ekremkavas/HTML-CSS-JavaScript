@@ -13,3 +13,7 @@ function sum(...numbers) {
   console.log(sum(1, 2, 3, 4, 5)); // Çıktı: 15
   
   // Bu örnekte, sum fonksiyonu için parametre olarak ...numbers kullanılmıştır. Bu, fonksiyona geçilen tüm argümanları numbers adlı bir diziye toplar. Ardından bu dizi içindeki tüm sayıları toplayarak bir toplam değeri döndürür.
+
+  const araclar = ["alfa romeo", "volswogen", "fiat", "renault"]
+  const[arac1, arac2, ...geriyekalan] = araclar
+  console.log(geriyekalan);
