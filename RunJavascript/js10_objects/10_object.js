@@ -32,3 +32,23 @@ console.log(summ); // Çıktı: 15
 let words = ["apple", "banana", "orange", "kiwi"];
 let totalLength = words.reduce((total, word) => total + word.length, 0);
 console.log(totalLength); // Çıktı: 21 (5 + 6 + 6 + 4)
+
+//başlangıç değeri olmazsa ilk objeyi başlangoç değeri alır
+
+const mayişlar = [40000, 30000, 20000, 100000]
+const toplamMaas = mayişlar. reduce ((t, m) => t + m, 0)
+console.log("Toplam:", toplamMaas)
+
+
+const sayilarim = [4, 5, 3, 2]
+const carpimlar = sayilarim. reduce ((t, m) => t * m, 1)
+console.log("Carpim: ", carpimlar)
+
+//! Ornek:
+
+const toplamZamliMaas= mayişlar
+.filter ((m) => m < 40000)
+.map((m) => m* 1.5)
+.reduce ((t, m) => t + m, 0)
+
+console.log(toplamZamliMaas)
