@@ -43,7 +43,7 @@ const kisi = {
   },
 }
 console.log(kisi)
-//! this keywordu iiçerisinde bulundğumuz objeyi refere eder.
+//! this keywordu iiçerisinde bulundğumuz objeyi temsil-refere eder.
 //! Global alanda yazılan this ise haliyle global objeyi refere eder.
 //! window tarayacının herşeyini barından temel bir objedir.
 console.log(this) //? global alanda (Window nesnesi gösterir.)
