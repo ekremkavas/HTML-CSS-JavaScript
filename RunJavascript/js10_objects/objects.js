@@ -43,13 +43,18 @@ const kisi = {
   },
 }
 console.log(kisi)
+
 //! this keywordu iiçerisinde bulundğumuz objeyi temsil-refere eder.
 //! Global alanda yazılan this ise haliyle global objeyi refere eder.
 //! window tarayacının herşeyini barından temel bir objedir.
+
 console.log(this) //? global alanda (Window nesnesi gösterir.)
 
+
 //*  ---------- OKUMA  ----------------
+
 //? A-) . notasyonu ile erişim
+
 console.log(kisi.isim)
 console.log(kisi.maas)
 console.log(kisi.diller[2])
@@ -58,7 +63,9 @@ console.log(kisi.notlar.ece101) //? AA
 console.log(kisi.yasHesapla())
 // console.log(new Date().getDay())
 
+
 //? B-) Square bracket ile erişim
+
 console.log(kisi["kimlikNo"])
 console.log(kisi.kimlikNo)
 console.log(kisi["notlar"]["tur101"]) //? AA
@@ -73,6 +80,7 @@ console.log(kisi["notlar"]["tur101"]) //? AA
 // console.log(kisi.secici) //! . notasyonunda key bir degisken olamaz.
 
 //*  ---------- YAZMA  ----------------
+
 console.log(kisi)
 kisi.dogumTarihi = 2000
 kisi.diller = "Türkçe-İnglizce"
@@ -80,11 +88,13 @@ kisi.kilo = 80
 
 kisi["ehliyet"] = false
 
+
 //* ============================================
 //*               NESTED OBJECTS
 //* ============================================
 
 //! objeler itere edilebilr yapılar değildir.
+
 const kisiler = {
   ahmet: {
     soyİsim: "Yılmaz",
@@ -108,6 +118,10 @@ console.log(kisiler[isim])
 //* JSON => Javascript Object Notation
 //********************************************************
 
+//? JSON JavaScript Object Notation" veya kısaltmasıyla JSON, veri saklamak ve değiş tokuş etmek için kullanılan bir veri biçimidir. JSON, JavaScript diline özgü bir veri biçimi olmasına rağmen, dil bağımsızdır ve birçok programlama dili tarafından desteklenir.
+
+// JSON Yapısı:
+//JSON, anahtar-değer çiftlerinden oluşan bir veri yapısına dayanır ve iki ana veri türünü destekler: nesneler (objects) ve diziler (arrays). JSON'da veri, bir anahtar (key) ve ona karşılık gelen bir değer (value) arasında bir çift oluşturularak temsil edilir. Bu anahtar-değer çiftleri virgülle ayrılır ve nesneler süslü parantezler {} içine, diziler ise köşeli parantezler [] içine alınır.
 const people = [
   {
     isim: "Ahmet",
@@ -141,6 +155,7 @@ const people = [
 // people.forEach((p) => console.log(p[key]))
 
 //? Maasların toplami
+
 const toplamMaas = people.reduce((t, p) => t + p.maas, 0)
 console.log(toplamMaas)
 
