@@ -25,9 +25,10 @@ const ogrAdres = ["kadıköy", "şebinkarahisar", "seferihisar"]
 console.log(`${ogrİsim[0]} - ${ogrSoyisim[0]} - ${ogrAdres[0]} `)
 
 //! 3 farkli yontem ile Object olusturulabilir
-//* ---------------------------------------------------------
-//* 1- Object literal (En cok tercih edilen yontem)
-//* ---------------------------------------------------------
+
+//* ------------------------------------
+//* 1- Object literal(En cok tercih edilen yontem)
+//* ----------------------------------
 
 const kisi = {
   isim: "Ahmet", //ilk yazılan key :'den sonrası value
@@ -114,9 +115,9 @@ console.log(kisiler["mehmet"]["maas"])
 const isim = "ahmet"
 console.log(kisiler[isim])
 
-//********************************************************
+//***********************************
 //* JSON => Javascript Object Notation
-//********************************************************
+//***************************************
 
 //? JSON JavaScript Object Notation" veya kısaltmasıyla JSON, veri saklamak ve değiş tokuş etmek için kullanılan bir veri biçimidir. JSON, JavaScript diline özgü bir veri biçimi olmasına rağmen, dil bağımsızdır ve birçok programlama dili tarafından desteklenir.
 
