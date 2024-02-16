@@ -44,6 +44,7 @@ const kisi = {
   },
 }
 console.log(kisi)
+console.log(kisi.diller); 
 
 //! this keywordu iiçerisinde bulundğumuz objeyi temsil-refere eder.
 //! Global alanda yazılan this ise haliyle global objeyi refere eder.
