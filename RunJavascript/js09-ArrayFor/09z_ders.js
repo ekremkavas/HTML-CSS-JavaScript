@@ -92,6 +92,7 @@ console.log(maaslar)
 //*          CHAINING (PIPELINE)
 //* =======================================
 
+//* "pipeline chaining" veya "chaining pipeline", birden fazla işlemi birbirine bağlama veya ardışık hale getirme işlemine atıfta bulunur. Bu iş akışı içinde bir dizi işlem (örneğin, veri temizleme, dönüştürme, analiz etme) bir araya getirilir ve birbirine bağlanır. İşte bu bağlantıları oluşturarak her bir işlem sonucunu bir sonraki işleme girdi olarak iletmek, pipeline chaining'i oluşturur.
 //? ORNEK: maasi 50000'den az olanlar %20 zam yapalım (orjinal diziyi degistirerek)
 
 const salary = [90000, 75000, 60000, 40000, 30000]
