@@ -2,7 +2,12 @@
 //*                 (OBJECTS)
 //* =============================================
 
-/*
+// key-value 
+// property-value aynı şey javascripte böyle tanımlanıyor
+//! Objeler süslü parantez ile gösterilir {}
+//! Arraylar köşeli parantez ile gösterilir []
+
+/* 
 array.forEach(element => { 
   foreach void Function return YOK , döndürmek istiyorsan map(array döndürür) kullan ,seçme yapacaksan filter kullan(indirgenmiş kopya)
   
@@ -23,6 +28,8 @@ const ogrSoyisim = ["yılmaz", "can", "baki"]
 const ogrAdres = ["kadıköy", "şebinkarahisar", "seferihisar"]
 
 console.log(`${ogrİsim[0]} - ${ogrSoyisim[0]} - ${ogrAdres[0]} `)
+
+
 
 //! 3 farkli yontem ile Object olusturulabilir
 
