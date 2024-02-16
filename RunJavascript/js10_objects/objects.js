@@ -65,13 +65,14 @@ console.log(this) //? global alanda (Window nesnesi gösterir.)
 //? A-) . notasyonu ile erişim
 
 console.log(kisi.isim)
-console.log(kisi.maas)
-console.log(kisi.diller[2])
+console.log(kisi.maas) //.maaş ile key e eriştim
+console.log(kisi.diller[2]) //diller keyin indeksi 2 olan valuesune eriştim
 console.log(kisi.notlar.ece101) //? AA
 
 console.log(kisi.yasHesapla())
 // console.log(new Date().getDay())
 
+// Nokta notasyonu ile square bracet farkı şu [bunun içine bir değişken verebiliyoruz(stataement)] kodla dinamik erişebiliyoruz
 
 //? B-) Square bracket ile erişim
 
@@ -102,7 +103,7 @@ kisi["ehliyet"] = false
 //*               NESTED OBJECTS
 //* ============================================
 
-//! objeler itere edilebilr yapılar değildir.
+//! objeler itere edilebilr yapılar değildir.(klasik mantıkla bir döngüyle objeyi dolaşamazsınız)
 
 const kisiler = {
   ahmet: {
@@ -126,7 +127,7 @@ console.log(kisiler[isim])
 //***********************************
 //* JSON => Javascript Object Notation
 //***************************************
-
+//! DİZİ içerisindeki OBJELERE JSON diyoruz
 //? JSON JavaScript Object Notation" veya kısaltmasıyla JSON, veri saklamak ve değiş tokuş etmek için kullanılan bir veri biçimidir. JSON, JavaScript diline özgü bir veri biçimi olmasına rağmen, dil bağımsızdır ve birçok programlama dili tarafından desteklenir.
 
 // JSON Yapısı:
