@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+<!-- my-5 y eksenınde 5 bırım margın ver demek -->
+    <div class="container my-5">
+        <div class="rol">
+            <!-- d-sm-none demek display mi sm ekrandan sonra gösterme -->
+            <div class="col d-sm-none bg-success">SADECE XS</div>
+            <!-- display başta gözükmeyecek daha sonra blok olarak gözükecek -->
+            <div class="col d-none d-sm-block bg-danger">başta gözükmesin XS den sonra gözüksün</div>
+            <div class="col bg-secondary d-none d-md-block d-lg-none">SADECE MDde gözüksün</div>
+            <div class="col bg-warning d-sm-block d-md-none d-lg-block">SADECE MD de gözükme</div>
+            <div class="col bg-info d-none d-md-none d-lg-block">Large ekran ustu gozuksun</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+
+
+<!-- Sadece xs ekranlarda gözükecek bir element tasarlayınız.
+      Sadece xs ekranlarda gözükmeyecek bir element tasarlayınız.
+      Sadece md ekranlarda gözükecek bir element tasarlayınız.
+      Sadece md ekranlarda gözükmeyecek bir element tasarlayınız.
+      Sadece md+ ekranlarda gözükecek bir element tasarlayınız.
+       -->
