@@ -1,3 +1,6 @@
+
+
+
 console.log("***** SELECTORS *****")
 
 document.title = "FS16 🚧"
@@ -5,8 +8,10 @@ document.title = "FS16 🚧"
 // document objesıyle baslangız sayfa ısmımı değiştirdim
 
 
+
+
 //*===========================================
-//*            GETELEMENTBYID()
+//*            getElementById()
 //*===========================================
 // Bir HTML elementini İd göre secmenizi sağlar
 
@@ -59,17 +64,33 @@ document.getElementById("react-li").innerHTML =
 
 // innerHTML içinde HTML kodu varsa çalıştırır lakin textContent, innerText çalıştırmaz
 
-//?! input'ların degerinin okunması/yazılması
+//?! input'ların degerinin (Value ile)okunması/yazılması
+
 const myInput = document.getElementById("input")
 console.log(myInput.value)
+//input olduğu için direk okunamaz value sı vardır value uzerınden okunur.İnputun ıcınde başlangıc degerı olursa gorursun
 
 addBtn.value = "SUBMIT"
 
+
+
+
 //*===========================================
-//*          GETELEMENTSBYTAGNAME()
+//*         getElementsByTagName()
 //*===========================================
+
+// Belirli bir etikete sahip tüm elementleri seçmek ve onlarla işlem yapmak için kullanılır. 
+//Örneğin, tüm <li> elementlerini seçip stil eklemek veya içeriklerini değiştirmek gibi.
+
 const allLi = document.getElementsByTagName("li")
+
 console.log(allLi) //? HTML Collection
+// Array benzıyor ama degıl cunku bu yapı Js ıcınde bır yapı degıl DOM un kendı olusturdugu yapısı
+
+// getElementsByTagName() yöntemi, belirli bir HTML belgesinde belirtilen etikete (tag) sahip tüm elementleri seçmek için kullanılan bir DOM yöntemidir. Bu yöntem, bir etikete sahip olan tüm elementleri bir HTMLCollection nesnesi olarak döndürür
+
+// getElementsByTagName() yöntemi, belirtilen etikete sahip tüm elementleri döndürür. Ancak, döndürülen HTMLCollection canlı bir koleksiyondur, yani belirli bir anda elde edilen elementlerin bir listesidir. Yani, belirli bir etikete sahip yeni elementler eklenirse veya mevcut elementler kaldırılırsa, HTMLCollection otomatik olarak güncellenir.
+// Döndürülen HTMLCollection, bir diziyi andırır, ancak tam olarak bir dizi değildir. Bunun anlamı, bazı dizi özelliklerinin (örneğin, forEach(), map(), filter() gibi) doğrudan uygulanamayacağıdır.
 
 //?HTML collection'daki her bir elemente indisleme ile erişilebilir.
 console.log(allLi[1].textContent)
@@ -93,16 +114,32 @@ arrAllLi.forEach((li) => (li.style.color = "fuchsia"))
 //? 2-array.from()
 console.log(Array.from(allLi))
 Array.from(allLi).map((li) => (li.style.backgroundColor = "green"))
+
+
+
+
+
 //*===========================================
 //*          GETELEMENTSBYCLASSNAME()
 //*===========================================
+
+// getElementsByClassName() yöntemi, belirli bir HTML belgesinde belirtilen bir sınıfa sahip tüm elementleri seçmek için kullanılan bir DOM yöntemidir. Bu yöntem, bir sınıfa sahip olan tüm elementleri bir HTMLCollection nesnesi olarak döndürür
+
 const myList = document.getElementsByClassName("list")
 console.log(myList) //? HTML Collection
+
+// Kullanım Senaryoları:
+// Belirli bir sınıfa sahip tüm elementleri seçmek ve onlarla işlem yapmak için kullanılır. Örneğin, belirli bir sınıfa sahip olan tüm elementlerin stillerini değiştirmek veya içeriklerini güncellemek gibi.
 
 myList[0].innerText = "HTML Dersleri"
 
 //? Ornek
 document.getElementsByClassName("item-list")[0].style.color = "hotpink"
+
+
+
+
+
 
 //* ========================================
 //*              QUERYSELECTOR()
@@ -125,6 +162,12 @@ console.log(myH3)
 
 const xyz = document.querySelector(".item-list ul li:nth-child(3)")
 xyz.style.backgroundColor = "gray"
+
+
+
+
+
+
 
 //* ========================================
 //*              QUERYSELECTORALL()
