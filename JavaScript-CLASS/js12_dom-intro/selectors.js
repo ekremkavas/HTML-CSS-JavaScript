@@ -14,7 +14,9 @@ document.title = "FS16 🚧"
 
 console.log(document.getElementById("add-new-item"))
 
-// id'si add-new-item olan elementi secer
+//** getElementById*******/ 
+
+//id'si add-new-item olan elementi secer
 const headerText = document.getElementById("add-new-item")
 console.log(headerText)
 
@@ -29,17 +31,21 @@ headerText.style.border = "2px solid red"
 //? NOTE
 // headerText.style = "font-family: tahoma; font-size: 30px" //? CSS vari erişim
 
-// id'si btn olan elementi secer
+//** */ id'si btn olan elementi secer
 const addBtn = document.getElementById("btn")
 console.log(addBtn)
 
-//! HTML elementlerininin İçerikleri okuma ve değiştirme
+//** */ HTML elementlerininin İçerikleri okuma ve değiştirme
 //?----------------------------------------
 const htmlLi = document.getElementById("html-li")
+console.log(htmlLi);
+// seçip seçmediğimizi anlmak için console yazdırmakta fayda var
 htmlLi.style.color = "red"
 
-//? bir text elementinin içeriği aşağıdaki attribute'ler ile degisitirlebilir.
-//! textContent, innerText, innerHTML
+//bir text elementinin içeriği aşağıdaki attribute'ler ile degisitirlebilir.
+
+//***** textContent, innerText, innerHTML******
+
 console.log(htmlLi.textContent)
 htmlLi.textContent = "HTML5"
 htmlLi.textContent = "<h2>HTML5</h2>"
@@ -51,11 +57,14 @@ document.getElementById("react-li").innerHTML = "React JS"
 document.getElementById("react-li").innerHTML =
   "<h2 style='color: blue'>REACT JS</h2>"
 
+// innerHTML içinde HTML kodu varsa çalıştırır lakin textContent, innerText çalıştırmaz
+
 //?! input'ların degerinin okunması/yazılması
 const myInput = document.getElementById("input")
 console.log(myInput.value)
 
 addBtn.value = "SUBMIT"
+
 //*===========================================
 //*          GETELEMENTSBYTAGNAME()
 //*===========================================
