@@ -1,17 +1,26 @@
 console.log("***** SELECTORS *****")
 
 document.title = "FS16 🚧"
+
+// document objesıyle baslangız sayfa ısmımı değiştirdim
+
+
 //*===========================================
 //*            GETELEMENTBYID()
 //*===========================================
+// Bir HTML elementini İd göre secmenizi sağlar
+
+// getElementById() metodu, belirtilen bir ID'ye sahip olan bir HTML elementini seçmek için kullanılan bir DOM yöntemidir. Bu metodun kullanımı oldukça yaygındır ve genellikle belirli bir elemente erişmek veya onunla etkileşimde bulunmak için kullanılır.
+
 console.log(document.getElementById("add-new-item"))
 
-//? id'si add-new-item olan elementi secer
+// id'si add-new-item olan elementi secer
 const headerText = document.getElementById("add-new-item")
 console.log(headerText)
 
-//! secilen elementin style propertysini manipule ettik
+// secilen elementin style propertysini manipule ettik
 //? her sey key-value şeklinde yazılır.
+// yukarda add-new-item i headerText e atadık
 headerText.style.color = "blue"
 headerText.style.backgroundColor = "yellow"
 headerText.style.border = "2px solid red"
@@ -20,11 +29,11 @@ headerText.style.border = "2px solid red"
 //? NOTE
 // headerText.style = "font-family: tahoma; font-size: 30px" //? CSS vari erişim
 
-//? id'si btn olan elementi secer
+// id'si btn olan elementi secer
 const addBtn = document.getElementById("btn")
 console.log(addBtn)
 
-//? HTML elementlerininin İçerikleri okuma ve değiştirme
+//! HTML elementlerininin İçerikleri okuma ve değiştirme
 //?----------------------------------------
 const htmlLi = document.getElementById("html-li")
 htmlLi.style.color = "red"
