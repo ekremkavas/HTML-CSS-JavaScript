@@ -104,7 +104,7 @@ for (let li of allLi) {
 //! array-like grubunda direk array metotları kulanılamamz.
 // allLi.forEach((li) => console.log(li))
 
-//? Çözüm olarak array-like grubu array'e çevirilebilri.
+//? Çözüm olarak array-like grubu array'e çevirilebilir.
 
 //? 1-spread
 const arrAllLi = [...allLi]
@@ -126,7 +126,9 @@ Array.from(allLi).map((li) => (li.style.backgroundColor = "green"))
 // getElementsByClassName() yöntemi, belirli bir HTML belgesinde belirtilen bir sınıfa sahip tüm elementleri seçmek için kullanılan bir DOM yöntemidir. Bu yöntem, bir sınıfa sahip olan tüm elementleri bir HTMLCollection nesnesi olarak döndürür
 
 const myList = document.getElementsByClassName("list")
-console.log(myList) //? HTML Collection
+console.log(myList) 
+// list class'ındakılerı getırır
+//? HTML Collection
 
 // Kullanım Senaryoları:
 // Belirli bir sınıfa sahip tüm elementleri seçmek ve onlarla işlem yapmak için kullanılır. Örneğin, belirli bir sınıfa sahip olan tüm elementlerin stillerini değiştirmek veya içeriklerini güncellemek gibi.
@@ -142,10 +144,23 @@ document.getElementsByClassName("item-list")[0].style.color = "hotpink"
 
 
 //* ========================================
-//*              QUERYSELECTOR()
+//*              querySelector()
 //* ========================================
-// ! Query Selector ile id, tag, class seçilebilir.
-//! bu secici akısta gördügü ilk elementi secer.
+
+// ! Query Selector ile id, tag, class seçilebilir
+.
+// querySelector() yöntemi, CSS seçicileri kullanarak belirli bir HTML belgesinde bir veya daha fazla elementi seçmek için kullanılan bir DOM yöntemidir. Bu yöntem, belirtilen CSS seçicisine uyan ilk elementi döndürür. Eğer hiçbir element bulunamazsa null döner. bu secici akısta gördügü ilk elementi secer.
+
+//? Dikkat Edilmesi Gerekenler:
+
+// querySelector() yöntemi, CSS seçicilerini kullanarak elementleri seçmek için kullanılır. Bu, id, sınıf, etiket, nitelik seçicileri gibi çeşitli CSS seçici türlerini kullanmanıza olanak tanır.
+// Yöntem, belirtilen CSS seçicisine uyan ilk elementi seçer. Eğer birden fazla element seçmek istiyorsanız querySelectorAll() yöntemini kullanabilirsiniz.
+// Seçici, CSS seçici diline uygun olmalıdır. Örneğin, "#myDiv" bir id seçicisi, ".content" bir sınıf seçicisi, "p" bir etiket seçicisi gibi.
+
+//? Kullanım Senaryoları:
+
+// Belirli bir CSS seçiciye uyan ilk elementi seçmek için kullanılır. Örneğin, belirli bir id'ye sahip bir elementi veya belirli bir sınıfa sahip olan bir elementi seçmek için kullanılabilir.
+// Tek bir element seçmek için kullanılır ve querySelectorAll() metodu kullanılmadan daha spesifik bir seçim yapılmasını sağlar.
 
 //? id almak için (#)
 console.log(document.querySelector("#btn"))
