@@ -149,7 +149,8 @@ document.getElementsByClassName("item-list")[0].style.color = "hotpink"
 
 // ! Query Selector ile id, tag, class seçilebilir
 .
-// querySelector() yöntemi, CSS seçicileri kullanarak belirli bir HTML belgesinde bir veya daha fazla elementi seçmek için kullanılan bir DOM yöntemidir. Bu yöntem, belirtilen CSS seçicisine uyan ilk elementi döndürür. Eğer hiçbir element bulunamazsa null döner. bu secici akısta gördügü ilk elementi secer.
+// querySelector() yöntemi, CSS seçicileri kullanarak belirli bir HTML belgesinde bir veya daha fazla elementi seçmek için kullanılan bir DOM yöntemidir. Bu yöntem, belirtilen CSS seçicisine uyan ilk elementi döndürür. 
+//! Eğer hiçbir element bulunamazsa "null" döner. bu secici akısta gördügü ilk elementi secer.
 
 //? Dikkat Edilmesi Gerekenler:
 
@@ -181,14 +182,25 @@ xyz.style.backgroundColor = "gray"
 
 
 
-
-
-
 //* ========================================
-//*              QUERYSELECTORALL()
+//*              querySelectorAll()
 //* ========================================
+
+//querySelectorAll() yöntemi, CSS seçicileri kullanarak belirli bir HTML belgesinde tüm uygun elementleri seçmek için kullanılan bir DOM yöntemidir. Bu yöntem, belirtilen CSS seçicisine uyan tüm elementleri NodeList nesnesi olarak döndürür
+
 const liste = document.querySelectorAll(".item-list .list")
 console.log(liste) //? NodeList
 
 //* querySelectorAll bir nodelist dondurur. Nodelist dahili olarak forEach metodunu barindirir. Ama istenirse spread veya Array.from() ile yine Array'e donusum yapilabilir.
 liste.forEach((li) => console.log(li.innerText))
+
+//? Dikkat Edilmesi Gerekenler:
+
+// querySelectorAll() yöntemi, CSS seçicilerini kullanarak elementleri seçmek için kullanılır. Bu, id, sınıf, etiket, nitelik seçicileri gibi çeşitli CSS seçici türlerini kullanmanıza olanak tanır.
+// Yöntem, belirtilen CSS seçicisine uyan tüm elementleri seçer ve NodeList olarak döndürür. Bu NodeList, bir dizi benzeri bir nesnedir, ancak tam olarak bir dizi değildir ve bazı dizi özelliklerini (örneğin, forEach(), map(), filter() gibi) doğrudan uygulanamaz. Ancak, dizi gibi davranmak için NodeList nesnesini bir diziye dönüştürmek mümkündür.
+
+
+//? Kullanım Senaryoları:
+
+// Belirli bir CSS seçiciye uyan tüm elementleri seçmek için kullanılır. Örneğin, belirli bir sınıfa sahip olan tüm elementleri veya belirli bir etikete sahip olan tüm elementleri seçmek için kullanılabilir.
+// Birden fazla elementi seçmek ve her biriyle toplu işlemler yapmak için kullanılır. Örneğin, tüm seçilen elementlerin stillerini değiştirmek veya içeriklerini güncellemek gibi.
