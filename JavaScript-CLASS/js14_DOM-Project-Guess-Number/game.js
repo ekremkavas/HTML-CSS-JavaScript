@@ -1,3 +1,12 @@
+/*
+ADIM 1 PC random bir sayı tutacak
+ADIM 2 check butonuna basıldığında input ile bizim value karşılaştırılacak
+ADIM 3 Biz küçüksek artır yazacak ,büyüksek azalt
+ADIM 4 Tahmin yalnış oldukca skor azalacak
+ADIM 5 ARKA PLAN tuttuğun sayı doğruysa yeşil görünecek 
+*/
+
+
 
 //?PC'ye 1-20 arasında bir sayı tutturduk
 let rastgeleSayi =  Math.ceil(Math.random()*20)
