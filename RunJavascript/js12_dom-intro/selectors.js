@@ -4,6 +4,8 @@ document.title = "FS16 🚧"
 //*===========================================
 //*          getElementById()
 //*===========================================
+//!id E GÖRE ELEMENTİ YAKALAR
+
 console.log(document.getElementById("add-new-item"))
 
 //? id'si add-new-item olan elementi secer
