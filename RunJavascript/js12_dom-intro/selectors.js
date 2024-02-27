@@ -2,7 +2,7 @@ console.log("***** SELECTORS *****")
 
 document.title = "FS16 🚧"
 //*===========================================
-//*            GETELEMENTBYID()
+//*          getElementById()
 //*===========================================
 console.log(document.getElementById("add-new-item"))
 
@@ -48,7 +48,7 @@ console.log(myInput.value)
 
 addBtn.value = "SUBMIT"
 //*===========================================
-//*          GETELEMENTSBYTAGNAME()
+//*          getElementsByTagName()
 //*===========================================
 const allLi = document.getElementsByTagName("li")
 console.log(allLi) //? HTML Collection
@@ -76,7 +76,7 @@ arrAllLi.forEach((li) => (li.style.color = "fuchsia"))
 console.log(Array.from(allLi))
 Array.from(allLi).map((li) => (li.style.backgroundColor = "green"))
 //*===========================================
-//*          GETELEMENTSBYCLASSNAME()
+//*          getElementsByClassName()
 //*===========================================
 const myList = document.getElementsByClassName("list")
 console.log(myList) //? HTML Collection
@@ -87,7 +87,7 @@ myList[0].innerText = "HTML Dersleri"
 document.getElementsByClassName("item-list")[0].style.color = "hotpink"
 
 //* ========================================
-//*              QUERYSELECTOR()
+//*              querySelector()
 //* ========================================
 // ! Query Selector ile id, tag, class seçilebilir.
 //! bu secici akısta gördügü ilk elementi secer.
@@ -109,7 +109,7 @@ const xyz = document.querySelector(".item-list ul li:nth-child(3)")
 xyz.style.backgroundColor = "gray"
 
 //* ========================================
-//*              QUERYSELECTORALL()
+//*             querySelectorAll()
 //* ========================================
 const liste = document.querySelectorAll(".item-list .list")
 console.log(liste) //? NodeList

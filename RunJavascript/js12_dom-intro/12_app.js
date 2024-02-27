@@ -22,6 +22,7 @@ console.log(document);
 //! 4.itemdekı attrubute id olanı getir
 // value = document.links.item(4).getAttribute("id");
 // value = document.links.item(4).getAttribute("class");
+//! 4.itemdekı attrubute id olanı getir
 // value = document.links.item(4).classList[3];
 
 // value  = document.forms.item(1).children;
