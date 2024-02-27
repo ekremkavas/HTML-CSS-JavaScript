@@ -18,6 +18,8 @@ console.log(document);
 // value = document.title;
 // value = document.links.item(4);
 // value = document.links.item(4).id;
+//! 4.item attrıbute lerı getır
+//! 4.itemdekı attrubute id olanı getir
 // value = document.links.item(4).getAttribute("id");
 // value = document.links.item(4).getAttribute("class");
 // value = document.links.item(4).classList[3];
