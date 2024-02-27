@@ -6,6 +6,8 @@
 // 2-document.createTextNode(text) -->yani ikinci adımda ilgili element için bir textnode meydana getirmek gerejkiyor. bu da yeterli değil
 // 3- document.appendChild(text düğüm) --> oluşturduğumuz bu text nodu oluşturduğumuz textnoda bağlamamız gerek.
 // 4- element.removeChild(child düğüm)--> oluşturduğumuz yeni elemnti de domas bağlamamızx gerekiyor.
+
+
 //! **************************bu dört methoda örnek  ************************/
 // ? yeni bir li elementi oluşturp doma eklmek istiyorum bunu js ile yapmak istiyorum
 //? 1-YENİ BİR Lİ ELEMENTİ OLUŞTUR.
@@ -21,6 +23,8 @@ newLi.appendChild(textLi) //OLUŞTU FAKAT DOMA BAĞLI DEĞİL. DOM DA NEREYE BA�
 // document.querySelector("body").appendChild(newLi) // eklendi consoleda elemnt kısmına baktığımızda eklendiğini gördük ama en son akış  neredeyse oraya ekledi body seçtiğimniz için.
 //  UL'NİN SONUNA EKLMEK İSTİYORUZ. O YÜZDEN BODY YERİNE UL YAZACAĞIZ.
 document.querySelector("ul").appendChild(newLi) // artık ulnin en sonunda go görmüş oluyoruz.
+
+
 // ? ÖRNEK: 2. BİR Lİ OLUŞTURALIM
 const newLi2 = document.createElement("li");
 newLi2.textContent = "C++";
