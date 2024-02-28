@@ -1,18 +1,47 @@
+
+
 console.log("**** CREATE NODE ****")
 
-//? 1- yeni bir li elementi olustur
-const newLi = document.createElement("li")
+//! js tarafından yeni bir element oluşturmak istiyorsak İKİ ALTERNATİFİMİZ VAR:
 
-//? 2- Eger text tabanlı bir element ise text dugumunu olustur
+// 1- innerhtml --> az güvenlikli
+
+// 2.Sİ AŞAĞĞIDAKİ DÖRT YÖNTEM:
+
+
+
+//! 1- yeni bir li elementi olustur
+const newLi = document.createElement("li")
+//**burda yeni li elemnti oluşturduk ama içeriği boş ! hiç bir yere bağlı değilk yani doma bağlı değil bağımsız.içeriğinde bilgi de yok . şimdi buna bir de text oluşturalım:
+//document.createElement("html elemnti ismi mesala --> "div" dersek bu bize bir div oluşturr, "a","section" vs. bunları belirterek istediğimiz elementi oluşturabiliriz.)--> domda tanımlanmış methot .bir element oluşturabiliyoruz.
+// ama bu yeterli değil. o element oluştuktan sonra o elemnt bir yazı elemntiyse h1 gibi p gibi div section gibi yani içersinde textnode olan (first child)
+
+
+//! 2- Eger text tabanlı bir element ise text dugumunu olustur
 const textLi = document.createTextNode("Go")
 
-//? 3- Olusturulan text dugumunu yeni elemente bagla (append)
-newLi.appendChild(textLi)
+//*içerik oluşturdk ama hala göremiyoruz. çünkü hala bir yere bağlı değil.
+// document.createTextNode(text) -->yani ikinci adımda ilgili element için bir textnode meydana getirmek gerejkiyor. bu da yeterli değil
 
-//?4- Yeni olusan elementi DOM tree'ye ekle.
+//! 3- Olusturulan text dugumunu yeni elemente bagla (append)
+newLi.appendChild(textLi)
+//*OLUŞTU FAKAT DOMA BAĞLI DEĞİL. DOM DA NEREYE BAĞLAYACKSAK ORAYA append ETMELİYİZ.
+// 3- document.appendChild(text düğüm) --> oluşturduğumuz bu text nodu oluşturduğumuz textnoda bağlamamız gerek.
+
+
+//!4- Yeni olusan elementi DOM tree'ye ekle.
 document.querySelector("ul").appendChild(newLi)
 
-//?* 2. bir li olusturalım
+// document.querySelector("body").appendChild(newLi) // eklendi consoleda elemnt kısmına baktığımızda eklendiğini gördük ama en son akış  neredeyse oraya ekledi body seçtiğimniz için.
+//  UL'NİN SONUNA EKLMEK İSTİYORUZ. O YÜZDEN BODY YERİNE UL YAZACAĞIZ.
+// artık ulnin en sonunda go görmüş oluyoruz.
+
+
+// 4- element.removeChild(child düğüm)--> oluşturduğumuz yeni elemnti de domas bağlamamızx gerekiyor.
+
+
+//?**** 2. bir li olusturalım
+
 const newLi2 = document.createElement("li")
 newLi2.textContent = "C++"
 

@@ -1,8 +1,8 @@
 console.log("**** TRAVERSING DOM ****")
 
-//*===========================================
+//*=========================================
 //*            TRAVERSING DOM
-//*===========================================
+//*=========================================
 //? Bir HTML elementi uzerinden baska elementleri secmeye
 //? DOM traversing denilir. Ozellikle dinamik olarak degisen
 //? (silme veya yeni ekleme gibi) HTML elemanlarinin secerken
@@ -14,9 +14,11 @@ console.log("**** TRAVERSING DOM ****")
 //? - Yatay yonde (Sibling)
 
 
-//******************************************* */
+//****************************************** 
 //* 1- Yukari Yonde traverse
-//****************************************** */
+//****************************************** 
+
+
 //! parentElement, parentNode
 const h2 = document.getElementById("add-new-item")
 
