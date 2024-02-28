@@ -31,3 +31,19 @@ console.log(document);
 // value = document.contentType;
 
 console.log(value);
+
+//!STYLE ÖZELLIĞİ
+
+// style özellıgı ıle stıllerndırmeler degıstırerılebılır
+
+const todo = document.querySelector(".list-group-item")[0];
+// console.log(todo);
+
+
+todo.style.color = "red"; // W3Sholls da var DOM style özellıklerı
+todo.style.background = "purple";
+todo.style.fontWeight = "bold";
+todo.style.paddingTop = "10px";
+todo.style.paddingLeft = "60px";
+
+

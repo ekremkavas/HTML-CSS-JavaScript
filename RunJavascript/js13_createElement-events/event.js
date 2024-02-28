@@ -7,7 +7,7 @@ console.log("****** EVENTS *******")
 const yazdir = () => document.write("Hello FS16")
 yazdir()
 
-//? Selectorler
+//! Selectorler
 const h2 = document.querySelector(".add-item h2")
 const body = document.querySelector("body")
 const myInput = document.getElementById("input")
@@ -15,7 +15,9 @@ const addButton = document.getElementById("btn")
 const ul = document.querySelector("ul")
 const form = document.querySelector("form")
 
-//?event tanımlamalari
+
+
+//! Event tanımlamalari
 
 //* mouse h2 elemenitini üzerine geldiğinde tetiklenir
 h2.onmouseover = function () {
