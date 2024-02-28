@@ -13,8 +13,10 @@ console.log("**** TRAVERSING DOM ****")
 //? - Asagi yonde (children)
 //? - Yatay yonde (Sibling)
 
+
+//******************************************* */
 //* 1- Yukari Yonde traverse
-//*----------------------------------------------
+//****************************************** */
 //! parentElement, parentNode
 const h2 = document.getElementById("add-new-item")
 
@@ -33,8 +35,10 @@ console.log(htmlLi.closest("section.add-item")) //?null
 
 console.log(htmlLi.closest("main").querySelector("section.add-item")) //?section.add-item
 
+
+//**************************************** */
 //* 2- Asagi Yonde traverse
-//*----------------------------------------------
+//**************************************** */
 //? Children, firstElementChild, lastElementChild
 
 const section = document.querySelector("section.add-item")
@@ -48,8 +52,12 @@ console.log(section.lastElementChild)
 console.log(section.children) //? tum cocuklarını HTML Collectio olarak doner
 //? HTMLCollection(3) [h2#add-new-item, input#input, input#btn, add-new-item: h2#add-new-item, input: input#input, btn: input#btn]
 
-//* 3- Yatay Yonde traverse
-//*----------------------------------------------
+
+
+
+//*********************************** */
+//  3- Yatay Yonde traverse
+//*************************************
 //! nextElementSibling ,previousElementSibling
 
 console.log(htmlLi.nextElementSibling.innerText) // CSS
