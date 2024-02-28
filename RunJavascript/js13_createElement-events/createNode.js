@@ -31,13 +31,13 @@ newLi.appendChild(textLi)
 
 //!4- Yeni olusan elementi DOM tree'ye ekle.
 document.querySelector("ul").appendChild(newLi)
+// 4- element.removeChild(child düğüm)--> oluşturduğumuz yeni elemnti de domas bağlamamız gerekiyor.
 
 // document.querySelector("body").appendChild(newLi) // eklendi consoleda elemnt kısmına baktığımızda eklendiğini gördük ama en son akış  neredeyse oraya ekledi body seçtiğimniz için.
 //  UL'NİN SONUNA EKLMEK İSTİYORUZ. O YÜZDEN BODY YERİNE UL YAZACAĞIZ.
 // artık ulnin en sonunda go görmüş oluyoruz.
 
 
-// 4- element.removeChild(child düğüm)--> oluşturduğumuz yeni elemnti de domas bağlamamızx gerekiyor.
 
 
 //?**** 2. bir li olusturalım
@@ -45,14 +45,22 @@ document.querySelector("ul").appendChild(newLi)
 const newLi2 = document.createElement("li")
 newLi2.textContent = "C++"
 
-//? Element.before() veya element.after() ile bir elementi istediğmiz elementin onune veya devamına eklemek mümkündür.
+// ! MDN den baktık: element.before()  veya elemnet.after() bu şekilde önüne ve sonuna istediğimiz elemnti veya virgülle istediğimniz kadar element ekleyebiliriz.
+
+// element.before() veya elemnt.after() ile bir elementin önüne veya devamına eklemek mümkündür.
+
+// ? reactın önüne newli yi ekle yaptık
+
 const react = document.querySelector("ul li:nth-child(4)")
 react.before(newLi2, newLi)
 
-//* ------- ID, CLASS GIBI OZELLIKLERI ATAMA ------
 
-//? 1- element.attribute = "yeni deger"
+
+//**-- ID, CLASS GIBI OZELLIKLERI ATAMA ---
+
+//! 1- element.attribute = "yeni deger"
 //* yazma
+//burda da birden fazla class verebiliriz.
 newLi.className = "list bold text-success bg-warning"
 newLi.id = "new-li"
 newLi.name = "list"
@@ -60,13 +68,13 @@ newLi.name = "list"
 //* okuma
 console.log(newLi.className)
 
-//? 2- setAttribute(atr,"deger") getAttrbute("atr")
+//! 2- setAttribute(atr,"deger") getAttrbute("atr")
 newLi2.setAttribute("class", "list red bold")
 
 console.log(newLi2.getAttribute("id"))
 console.log(newLi2.getAttribute("class"))
 
-//? 3) Yontem (classList)
+//! 3- Yontem (classList)
 newLi.classList.add("border", "border-danger", "border-3")
 
 newLi.classList.remove("bold", "text-success")
@@ -76,8 +84,11 @@ console.log(newLi2.classList.contains("red"))
 newLi.classList.toggle("red")
 newLi2.classList.toggle("red")
 
-//* ------- YENI BIR ELEMENT OLUSTURMA (InnerHTML)------
 
+
+//** - YENI BIR ELEMENT OLUSTURMA (InnerHTML)--****
+// ?YENİ BİR İNPUT VE BUTTON EKLEMEYE ÇALIŞALIM BUNLAR DA BİR DİVİN İÇİNDE OLACAKLAR.ÖNCELİKLE NEYİN DEVAMINA EKLEYECEĞİZ ONA KARAR VERECEĞİZ. HTML SAYFASINDAKİ SON SECTİONDAN SONRA DİV İÇİNDE İNPUT VE BUTTON OLUŞTURMAK İSTiyoruz.o yüzden main seçtik.ama main seçince var olanlar silindi . bundan dolayoı inner.html den sonra += yaptık yani bundan önceki main gitmesin devamna eklensin.
+// bu yöntemle sanki bir html kodu yazar gibi yapabiliriz.
 document.querySelector("main").innerHTML += `
     <div class="d-flex gap-2">
         <input type="text" class="form-control"/>

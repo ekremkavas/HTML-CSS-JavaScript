@@ -3,6 +3,8 @@
 //? ÖRNEĞİN:    ADD NEW ITEM  başlığının üzerine mouse geldiğinde bir olay istiyorum bir değişiklik istiyorum .MESELA BİR ALERT ÇIKSIN İSTİYORUM.
 // selektorler
  const h2 =  document.querySelector(".add-item h2")
+
+
 //  event tanımlamaları
 // *mouse h2 elemntinin üzerine geldiğinde tetiklenir.
 h2.onmouseover = function(){
@@ -25,6 +27,8 @@ const body = document.querySelector("body")
 body.onload=function(){
     alert("uygulama yüklendi...")
 }
+
+
 // **DOM içeriklerinin tamamı yüklendikten sonra tetiklenen event (onload)
  // uygulama hemöen yüklendikten sonra inputun fokuslanmasını istiyorum.yani içerik yüklendikten sonra onload olduktan sonra hemen inputa yazab,ileyim.
 const myinput = document.getElementById("input")
