@@ -1,0 +1,11 @@
+$primaryColor:magenta;
+
+body{
+    background-color: olive;
+}
+h1{
+    background-color: $primaryColor;
+    p{
+        color: white;
+    }
+}
