@@ -117,7 +117,7 @@ header{
     color: black;
     gap: 1rem;
     padding: 1rem;
-// mixin ile tanımladığımız kod bloğunu iclude ile verdiğimiz isimle yapıştrıyoruz
+// mixin ile tanımladığımız kod bloğunu iclude ile verdiğimiz isimle yapıştrıyoruz ,mixib içindekı ık renk arkaplan rengı dıgerı yazı rengı tanımlamışız
     .card1{
         @include myBox(blue, yellow);
     }
@@ -142,6 +142,7 @@ header{
 //! @EXTEND
 //*****************
 
+// daha önce yazılmış hazır tüm classın içindeki özellikleri aktarmak için kullanılır
 .flex{
     display: flex;
     justify-content: center;
@@ -165,6 +166,7 @@ header{
     .article2{
         @extend .article1;
         background-color: purple;
+        // farklı istersem arka plan rengını altına ıstedıgım rengı yazıyorum
     }
 }
 
