@@ -7,6 +7,7 @@
 //********************************************/
 //* Variable Declaration
 //********************************************/
+// dolar $ işareti ile değiken tanımlıyoruz daha sonra uzun uzun yazmakla uğraşmıyoruz
 
 $bgColor:pink;
 $fontFamily:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -42,16 +43,18 @@ header{
         list-style-type: none;
 
         li{
+            // ul ıcınde lı lerı yanyana getırmek ıcın ınlıne block yazdık
             display: inline-block;
             padding: 0.5rem;
             &:hover{
                 text-decoration: underline;
+                // &: bu ısaret bu dizini seç demek burayı
             }
 
             a{
                 color: $fontColor;
                 text-decoration: none;
-
+// altındakı cızgıyı sıldık none ıle
             }
         }
     }
@@ -94,6 +97,7 @@ header{
 
 //*****************
 //! @MIXIN
+//?hazır kod bloğu gibi düşün 
 //*****************
 
 @mixin myBox($backColor,$color) {
@@ -113,7 +117,7 @@ header{
     color: black;
     gap: 1rem;
     padding: 1rem;
-
+// mixin ile tanımladığımız kod bloğunu iclude ile verdiğimiz isimle yapıştrıyoruz
     .card1{
         @include myBox(blue, yellow);
     }
