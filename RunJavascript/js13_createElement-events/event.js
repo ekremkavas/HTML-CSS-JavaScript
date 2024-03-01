@@ -124,8 +124,19 @@
 
 //? 3. **keyup**: Bir tuş serbest bırakıldığında tetiklenir.Tuştan elini kaldırdığında çalışır
 
+//! *****************************************
 
+// focus: Bir form öğesi (input, textarea, vb.) odaklandığında tetiklenir. Kullanıcı bu öğeye tıkladığında veya klavye üzerinde gezinirken (tab tuşuyla) bu olay tetiklenir.
 
+// blur: Bir form öğesi odaktan çıktığında tetiklenir. Kullanıcı bir form öğesinden başka bir yere tıkladığında veya tab tuşuyla başka bir yere geçtiğinde bu olay tetiklenir.
+
+// copy: Kullanıcı bir metni kopyaladığında (Ctrl+C veya sağ tıklama menüsüyle) tetiklenir. Bu olay, metin seçildiğinde veya kullanıcı kopyala komutunu verdiğinde gerçekleşir.
+
+// paste: Kullanıcı bir metni yapıştırdığında (Ctrl+V veya sağ tıklama menüsüyle) tetiklenir. Bu olay, kullanıcı metin alanına bir metin yapıştırdığında gerçekleşir.
+
+// cut: Kullanıcı bir metni kestiğinde (Ctrl+X veya sağ tıklama menüsüyle) tetiklenir. Bu olay, kullanıcı metin alanında bir metni keserse gerçekleşir.
+
+// select: Kullanıcı bir metni seçtiğinde tetiklenir. Bu olay, kullanıcı bir metin alanında bir metni fareyle veya klavyeyle seçtiğinde gerçekleşir.
 
 
 //! *****************************************

@@ -1,4 +1,5 @@
-/ ***********EVENTS****************//
+
+// ***********EVENTS****************//
 // ! event tanımlamaları ilk yöntem
 //? ÖRNEĞİN:    ADD NEW ITEM  başlığının üzerine mouse geldiğinde bir olay istiyorum bir değişiklik istiyorum .MESELA BİR ALERT ÇIKSIN İSTİYORUM.
 
