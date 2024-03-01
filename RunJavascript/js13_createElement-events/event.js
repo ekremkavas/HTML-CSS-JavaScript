@@ -46,7 +46,7 @@
 // };
 // Bu yöntemler, web sayfalarında kullanıcı etkileşimlerini dinlemek ve işlemek için yaygın olarak kullanılır. addEventListener yöntemi genellikle tercih edilir çünkü aynı öğeye birden fazla olay dinleyicisi eklemeye izin verir ve daha esnek bir kullanıma sahiptir.
 
-//! ***************************************************
+//! *****************************************
 
 // işte JavaScript'te sık kullanılan bazı olay örnekleri:
 
@@ -97,8 +97,38 @@
 // });
 // Bu örnekler, web sayfalarında sık kullanılan bazı olayların nasıl dinleneceğini ve işleneceğini göstermektedir. Olaylar, kullanıcı etkileşimlerini algılamak ve web sayfasının davranışını değiştirmek için çok önemlidir.
 
-//! ***************************************************
+//! ****************************************
+//?KLAVYE EVENTLERİ
 
+//? 1. **keydown**: Bir tuşa basıldığında tetiklenir.Hepsinde çalışr ,harf rakam ,şekil
+
+// document.addEventListener("keydown", run)
+
+// function run{
+//   console.log("Bir tuşa basıldı: " + run.key);
+// };
+
+//? 2. **keypress**: Bir karakter girildiğinde tetiklenir (bir tuş basıldığında bir karakter oluşturuyorsa).Harf ve rakamları algılar, diğer şekil ve tuşları algılamaz,shift ,ok gibi
+
+// ÖRNEK:
+// const cardTitle = document.querySelectorAll(".card-title")[0];
+
+// console.log(input);
+// input.addEventListener("keypress" ,run);
+
+// function run(e){
+//   console.log(e.target.value);
+// }
+//inputun ıcındekı degerı okuyabılmemız ıcın target ve value yı kullandık
+
+
+//? 3. **keyup**: Bir tuş serbest bırakıldığında tetiklenir.Tuştan elini kaldırdığında çalışır
+
+
+
+
+
+//! *****************************************
 
 console.log("****** EVENTS *******")
 

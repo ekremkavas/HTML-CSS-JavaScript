@@ -1,11 +1,14 @@
 / ***********EVENTS****************//
 // ! event tanımlamaları ilk yöntem
 //? ÖRNEĞİN:    ADD NEW ITEM  başlığının üzerine mouse geldiğinde bir olay istiyorum bir değişiklik istiyorum .MESELA BİR ALERT ÇIKSIN İSTİYORUM.
+
+
 // selektorler
  const h2 =  document.querySelector(".add-item h2")
 
 
 //  event tanımlamaları
+
 // *mouse h2 elemntinin üzerine geldiğinde tetiklenir.
 h2.onmouseover = function(){
     alert("mouse over")
@@ -65,6 +68,8 @@ ul.appendChild(li)
 myinput.value ="" //eklediğimizi silemk için yaptık.
 myinput.focus() // fokuslanıyor hemen onun için yaptık
 }
+
+
 // !alternatif yöntem indexte section form yaptık buttonu da submit yaparak bunu kullandık.
 // ?form içersindeki submit butonuna her basıldığında bu onsubmit eventi tetiklenir.
 // submit eventi otomatik olarak enter tuşunun kullanmını sağlar.
