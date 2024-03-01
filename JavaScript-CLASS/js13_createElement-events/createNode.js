@@ -1,15 +1,17 @@
 console.log("**** CREATE NODE ****")
 
-//? 1- yeni bir li elementi olustur
+//! 1- yeni bir li elementi olustur
 const newLi = document.createElement("li")
 
-//? 2- Eger text tabanlı bir element ise text dugumunu olustur
+
+
+//! 2- Eger text tabanlı bir element ise text dugumunu olustur
 const textLi = document.createTextNode("Go")
 
-//? 3- Olusturulan text dugumunu yeni elemente bagla (append)
+//! 3- Olusturulan text dugumunu yeni elemente bagla (append)
 newLi.appendChild(textLi)
 
-//?4- Yeni olusan elementi DOM tree'ye ekle.
+//!4- Yeni olusan elementi DOM tree'ye ekle.
 document.querySelector("ul").appendChild(newLi)
 
 //?* 2. bir li olusturalım

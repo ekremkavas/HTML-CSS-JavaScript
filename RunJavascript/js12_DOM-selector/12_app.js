@@ -85,3 +85,24 @@ value = todo.nextElementSibling; //kardeşe erişim
 
 
 console.log(value);
+
+//68.video
+const todo = document.childElement("li");
+const todoLink = document.childElement("a");
+const i = document.childElement("i");
+
+todoLİnk.href ="#"
+
+
+
+todo.className = "list-group-item d-flex justify-content-between"
+todo.innerHTML = "todo5"
+
+//remove moedo ile element silebilirsiniz 69.video
+//yada removeChild(todos[0]) ile de todo listesinin 0.indeksini silebilirsin yada removeChild(todos[todos.lenght-1]) yada todoList.removeChild(todoList.lastElementChild)
+
+//element değiştirmek 70.video replaseChild
+//replaceChild metodu, bir DOM düğümü altında belirtilen iki çocuk düğümünü değiştirir. Bu metod, bir düğümün altında bir çocuğu bir başka çocukla değiştirmek için kullanılır. 
+
+// scss snippet 
+// sass only
