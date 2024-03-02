@@ -96,6 +96,9 @@ header{
 //! @MIXIN
 //*****************
 
+// Mixin, CSS kodunun tekrarlanan kısımlarını bir araya getirerek, kodun daha sade, daha yönetilebilir ve daha yeniden kullanılabilir hale gelmesini sağlayan bir Sass özelliğidir.
+// Mixin'ler, bir veya daha fazla CSS özelliğini içeren bir blok kod parçasıdır ve genellikle @mixin anahtar kelimesiyle tanımlanır. Bu mixin'ler daha sonra @include yönergesi kullanılarak başka yerlerde çağrılabilir.
+
 @mixin myBox($backColor,$color) {
     background-color: $backColor;
     width: 25%;
@@ -137,6 +140,8 @@ header{
 //*****************
 //! @EXTEND
 //*****************
+
+// hazır yazılmış bir classs diğerlerine kolayca eklemek için kullanılır-brebir aynısını ekler ek kucuk değişiklik varsa altına örnek color:white yazdın sadece yazı rengını farklı yaparak aynısını oluşşturur
 
 .flex{
     display: flex;
