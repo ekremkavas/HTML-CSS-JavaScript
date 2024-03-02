@@ -7,7 +7,6 @@
 //********************************************/
 //* Variable Declaration
 //********************************************/
-// dolar $ işareti ile değiken tanımlıyoruz daha sonra uzun uzun yazmakla uğraşmıyoruz
 
 $bgColor:pink;
 $fontFamily:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -43,18 +42,16 @@ header{
         list-style-type: none;
 
         li{
-            // ul ıcınde lı lerı yanyana getırmek ıcın ınlıne block yazdık
             display: inline-block;
             padding: 0.5rem;
             &:hover{
                 text-decoration: underline;
-                // &: bu ısaret bu dizini seç demek burayı
             }
 
             a{
                 color: $fontColor;
                 text-decoration: none;
-// altındakı cızgıyı sıldık none ıle
+
             }
         }
     }
@@ -97,7 +94,6 @@ header{
 
 //*****************
 //! @MIXIN
-//?hazır kod bloğu gibi düşün 
 //*****************
 
 @mixin myBox($backColor,$color) {
@@ -117,7 +113,7 @@ header{
     color: black;
     gap: 1rem;
     padding: 1rem;
-// mixin ile tanımladığımız kod bloğunu iclude ile verdiğimiz isimle yapıştrıyoruz ,mixib içindekı ık renk arkaplan rengı dıgerı yazı rengı tanımlamışız
+
     .card1{
         @include myBox(blue, yellow);
     }
@@ -142,7 +138,6 @@ header{
 //! @EXTEND
 //*****************
 
-// daha önce yazılmış hazır tüm classın içindeki özellikleri aktarmak için kullanılır
 .flex{
     display: flex;
     justify-content: center;
@@ -166,7 +161,6 @@ header{
     .article2{
         @extend .article1;
         background-color: purple;
-        // farklı istersem arka plan rengını altına ıstedıgım rengı yazıyorum
     }
 }
 
