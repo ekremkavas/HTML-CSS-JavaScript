@@ -116,7 +116,7 @@ header{
     color: black;
     gap: 1rem;
     padding: 1rem;
-
+// mixin ile yazdığını include ile yediriyoruz
     .card1{
         @include myBox(blue, yellow);
     }
@@ -200,6 +200,7 @@ footer{
                 background-color: lighten(blue, $i * 5);
                 font-size: 1rem * $i ;
                 color: nth($textColor, $i );
+                // lighten açarak 5 renk fonunu yazar,darken yazarsan koyulaştırır ,lighten(blue, $i * 5);
             }
         }
 
