@@ -12,6 +12,8 @@ console.log("**** CREATE NODE ****")
 
 //! 1- yeni bir li elementi olustur
 const newLi = document.createElement("li")
+// createElement içine oluşturacağımız elementin etiketi yazılır divse div  
+
 //**burda yeni li elemnti oluşturduk ama içeriği boş, hiç bir yere bağlı değil yani doma bağlı değil bağımsız.içeriğinde bilgi de yok . şimdi buna bir de text oluşturalım:
 //document.createElement("html elemnti ismi mesala --> "div" dersek bu bize bir div oluşturr, "a","section" vs. bunları belirterek istediğimiz elementi oluşturabiliriz.)--> domda tanımlanmış methot .bir element oluşturabiliyoruz.
 // ama bu yeterli değil. o element oluştuktan sonra o elemnt bir yazı elemntiyse h1 gibi p gibi div section gibi yani içersinde textnode olan (first child)
@@ -21,7 +23,7 @@ const newLi = document.createElement("li")
 
 
 //! 2- Eger text tabanlı bir element ise text dugumunu olustur
-const textLi = document.createTextNode("Go")
+const textLi = document.createTextNode("Python")
 
 //*içerik oluşturdk ama hala göremiyoruz. çünkü hala bir yere bağlı değil.
 // bu textNode newli ye bağlammaız lazım bunun için 3.adaım appendChild yapacağız
@@ -66,6 +68,10 @@ const react = document.querySelector("ul li:nth-child(4)")
 react.before(newLi2, newLi)
 
 // ****************************************************
+
+
+
+
 
 //!-- ID, CLASS GIBI OZELLIKLERI ATAMA ---
 
