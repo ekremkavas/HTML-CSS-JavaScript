@@ -1,3 +1,22 @@
+//? DOM elemanlarına nasıl erişilir
+// Önce metodlarla erişilir sellectörlerle
+
+
+//! element.innerText = yeni içerik
+// Bir HTML elemanının içeriğini değiştirme
+
+//! element.attibute = yeni değer
+// Bir HTML elemanının özelliğini değiştirme
+
+//! element.setAttibute = (özellik , değer) 
+// Bir HTML elemanının özelliğini değiştirme
+
+//! element.style.color = yeni stil
+// Bir HTML elemanının stilini değiştirme
+
+
+
+
 
 // ***********EVENTS****************//
 // ! event tanımlamaları ilk yöntem

@@ -18,11 +18,15 @@ const newLi = document.createElement("li")
 
 // console.log(newLi);
 
+
+
 //! 2- Eger text tabanlı bir element ise text dugumunu olustur
 const textLi = document.createTextNode("Go")
 
 //*içerik oluşturdk ama hala göremiyoruz. çünkü hala bir yere bağlı değil.
 // bu textNode newli ye bağlammaız lazım bunun için 3.adaım appendChild yapacağız
+
+
 
 //! 3- Olusturulan text dugumunu yeni elemente bagla (append)
 newLi.appendChild(textLi)
@@ -38,6 +42,10 @@ document.querySelector("ul").appendChild(newLi)
 
 //  UL'NİN SONUNA EKLMEK İSTİYORUZ. O YÜZDEN BODY YERİNE UL YAZACAĞIZ.ul yazan yerde body vardı , öyle olunca yalnıs tree e ekledı
 // artık ulnin en sonunda go görmüş oluyoruz.
+
+
+
+
 
 
 // ************************************************
