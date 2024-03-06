@@ -8,5 +8,3 @@ newEkle.appendChild(textEkle)
 //selecktor ıle secıp yenı olusan elementı DOM tree ye eklemıs olduk
 document.querySelector("ul").appendChild(newEkle)
 
-newEkle.className = "list"
-newEkle.id = "new-li"
