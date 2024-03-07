@@ -1,3 +1,5 @@
+
+
 const h2 = document.querySelector(".add-item h2") // class olursa secmek ıcın nokta sart
 // console.log(h2);
 
@@ -16,3 +18,26 @@ h2.onmouseout = function(){
 
 //!onload
 //uygulamanın yuklendıkten sonra calısan kısımlarını tetıkleyen event
+
+const body = document.querySelector("body")
+
+body.onload = function(){
+    // alert("Onload çalıştı")
+    body.classList.add("bg-success")
+    //sayfa yuklendıgınde arka plan yesıl olsun
+}
+
+const myInput = document.getElementById("input")
+
+body.onload = function(){
+    myInput.focus() //ınput alanına focuslansın
+
+}
+
+//!onclick
+
+const addButton =document.getElementById("btn")
+
+addButton.onclick = function(){
+    alert("ekle tıklandı onclick çalıştı")
+}
