@@ -65,5 +65,23 @@ addButton.onclick = function(){
     //li yı ul ıcınde append ettık
     myInput.value =""
     //yazdıktan sonra ınput alanı kalıyor ınputu boslatmak ıcın yapıyoruz
+    myInput.focus()
+    //sildıkten sonra tekrar yazmak ıcın focuslanmıs olur
+    if(!myInput.value.trim()){
+        //trım boslukları keser space basıldıgında falan 
+        alert("lütfen boş değer girmeyiniz")
+        return // boş ekleme yapmasın dıye return kullandık
+        //yada ıf blogunu komple kod ıcıne alıp dıger durumları else bloguna yazarsın
 
+    }
+
+}
+
+
+//!onsubmit 
+//sayfa otomatık olarak refresh eder buton ıcı otomatık olarak silinir
+
+//!klavyeye basıldıgında
+myInput.onkeydown =function(e){
+    console.log(e);
 }
