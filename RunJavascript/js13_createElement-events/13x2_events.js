@@ -38,6 +38,32 @@ body.onload = function(){
 
 const addButton =document.getElementById("btn")
 
+// addButton.onclick = function(){
+//     alert("ekle tıklandı onclick çalıştı")
+// }
+
+// addButton.onclick = (e) => {
+//     console.log(e);
+//     console.log(e.target);
+//     console.log(e.target.value);
+//     console.log(e.target.Id);
+// } 
+// arrow fonkısyon ılede yazılabılır
+// target. vs dıyerek ıstedıgınız degerlerede ulasabılırsın consoleden
+
+
+//** ÖNEMLİ UYGULAMA */ 
+//**butona tıklandıgında ınputun ıcındekı degerın lıstemın altına yenı bır li elementı ıle yazmasını ıstıyorum
+const ul = document.querySelector("ul")
+// li yi ul ye append etmem lazım eklemem ıcın
+
 addButton.onclick = function(){
-    alert("ekle tıklandı onclick çalıştı")
+    const li =document.createElement("li")
+    li.textContent = myInput.value
+    // console.log(li);
+    ul.appendChild(li) 
+    //li yı ul ıcınde append ettık
+    myInput.value =""
+    //yazdıktan sonra ınput alanı kalıyor ınputu boslatmak ıcın yapıyoruz
+
 }
