@@ -13,9 +13,28 @@ document.querySelector("ul").appendChild(newEkle)
 
 const element = document.querySelector("li")
 
-// Öznitelik eklemek için setAttribute kullanımı
+//! Öznitelik eklemek için setAttribute kullanımı
 element.setAttribute("class", "newClass");
 
 
 const thirdItem = document.querySelector("li:nth-child(3)")
 thirdItem.setAttribute("id" , "new-li3")
+
+//!classList ile eklemek
+element.classList.add("border" , "border-danger" , "border-2" , "bg-warning")
+
+//kaldırmak ıcın remove
+element.classList.remove("border-2")
+
+//toggle varsa kaldırır yoksa ekler
+element.classList.toggle("border-5")
+
+//! innerHTML ile YENİ ELEMENT OLUŞTURMA
+
+document.querySelector(".mainblok").innerHTML = `
+<div>
+<input type="text" />
+<button class="btn btn-danger">Submit</button>
+</div>
+
+`
