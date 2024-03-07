@@ -16,8 +16,11 @@
 //? Dosya Okuma/Yazma islemleri gibi zaman tuketen kodlarda Asyn Programlama
 //? kullanilmasi cok onemlidir.
 
-//* Senkron
+
 //* ------------------------------------------------
+
+//! Senkron
+
 // const gecikme = (sure) => {
 //   //? Senkron blocking code
 //   const basla = new Date().getTime()
@@ -32,25 +35,29 @@
 
 // console.log("FS16")
 
-//* Asenkron (setTimeout()) - Belirli sure sonraya zaman kurar.
+
 //* ------------------------------------------------
-// const timeoutID = setTimeout(() => {
-//   console.log("Timeout1 doldu")
-// }, 2000)
+//! Asenkron 
+//?(setTimeout()) - Belirli sure sonraya zaman kurar.
 
-// setTimeout(() => {
-//   console.log("Timeout2 doldu")
-// }, 1000)
+const timeoutID = setTimeout(() => {
+  console.log("Timeout1 doldu")
+}, 2000)
+//?2000ms sonra komutları çalıştırıyor çalıştır demek
 
-// console.log("Start")
+setTimeout(() => {
+  console.log("Timeout2 doldu")
+}, 1000) //bitirme sırasına göre konsaola yazdırır
 
-// setTimeout(() => {
-//   clearTimeout(timeoutID)
-// }, 500)
+console.log("Start")
 
-// console.log("Uygulama bitti")
+setTimeout(() => {
+  clearTimeout(timeoutID)
+}, 500)
 
-//* Asenkron (setInterval, clearInterval) - Periyodik bir aralik belirler
+console.log("Uygulama bitti")
+
+//! Asenkron (setInterval, clearInterval) - Periyodik bir aralik belirler
 //*------------------------------------------------
 // let sayac = 0
 
