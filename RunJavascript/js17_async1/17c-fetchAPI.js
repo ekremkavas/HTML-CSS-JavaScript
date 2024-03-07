@@ -13,7 +13,7 @@
 console.log("FETCH")
 
 // let userData = ""
-fetch("https://api.github.com/users")
+fetch("https://api.github.com/users") //GET İSTEĞİ
   .then((res) => {
     console.log(res)
     //? Fetch api'da hatayi bizim yakalamiz gerekiyor.
