@@ -99,7 +99,7 @@ setTimeout(() => {
   }, 1000);
 }, 1000);
 
-//? COZUMLER:
+//? TARIHCE GELİŞİM
 //?----------------------------------------------------
 //* 1- XMLHttpRequest (Eski yontem, Ornek: AJAX)
 //? https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
