@@ -16,7 +16,6 @@
 //? Dosya Okuma/Yazma islemleri gibi zaman tuketen kodlarda Asyn Programlama
 //? kullanilmasi cok onemlidir.
 
-
 //* ------------------------------------------------
 
 //! Senkron
@@ -35,58 +34,70 @@
 
 // console.log("FS16")
 
-
 //* ------------------------------------------------
-//! Asenkron 
+//! Asenkron
 //?(setTimeout()) - Belirli sure sonraya zaman kurar.
-
+//zamana baglı her yerde setTimeout kullanılabılır mesela 5 sn sonra reklam cıksın gıbı
 const timeoutID = setTimeout(() => {
-  console.log("Timeout1 doldu")
-}, 2000)
+  console.log("Timeout1 doldu");
+}, 2000);
 //?2000ms sonra komutları çalıştırıyor çalıştır demek
 
 setTimeout(() => {
-  console.log("Timeout2 doldu")
-}, 1000) //bitirme sırasına göre konsaola yazdırır
+  console.log("Timeout2 doldu");
+}, 1000); //bitirme sırasına göre konsaola yazdırır
 
-console.log("Start")
+console.log("Start");
 
 setTimeout(() => {
-  clearTimeout(timeoutID)
-}, 500)
+  clearTimeout(timeoutID);
+}, 500);
 
-console.log("Uygulama bitti")
+console.log("Uygulama bitti");
 
 //! Asenkron (setInterval, clearInterval) - Periyodik bir aralik belirler
 //*------------------------------------------------
-// let sayac = 0
+// Her 1 saniyede bir "Merhaba dünya!" yazdıran basit bir setInterval örneği
+setInterval(function() {
+  console.log("Merhaba dünya!");
+  }, 1000);
 
-// const intervalId = setInterval(() => {
-//   console.log(++sayac)
-//   if (sayac >= 5) {
-//     clearInterval(intervalId)
-//   }
-// }, 1000)
+  //? Her 1 saniyede bir sayacı arttıran ve 5'e ulaştığında interval'i temizleyen örnek
+let count = 0; // Başlangıç sayısı
+
+function increaseCount() {
+  count++; // Sayacı arttır
+  console.log("Sayac:", count);
+
+  if (count >= 5) {
+    clearInterval(intervalID); // Sayac 5'e ulaştığında interval'i temizle
+    console.log("Interval durduruldu.");
+  }
+}
+
+// 1 saniyede bir increaseCount fonksiyonunu çağıran interval
+const intervalID = setInterval(increaseCount, 1000);
+
+//-----------------------------------------------------
 
 //! Callback Hell (nested ve birbirine bagli callback'ler)
-//!-----------------------------------------------------
+
 //* Eger birbirine bagimli asenkron kodlarin yazilmasi gerekirse,nested callback
 //* yapisinin kullanilmasi gerekebilir. Fakat bu iyi bir programlama yaklasimi degildir.
 // !callback hell olarak adlandirilan bu yapinin anlasilmasi ve surdurulebilirligi oldukca zordur.
 
 setTimeout(() => {
-  console.log("john:Hi") //? veri isteği (req)
+  console.log("john:Hi"); //? veri isteği (req)
   setTimeout(() => {
-    console.log("Sarah: Hello") //? res geliyor
+    console.log("Sarah: Hello"); //? res geliyor
     setTimeout(() => {
-      console.log("John: How Are you?") //? veri gonder
+      console.log("John: How Are you?"); //? veri gonder
       setTimeout(() => {
-        console.log("Sarah:Fine and you?") //?gondermeye baslaniyor
-      }, 1000)
-    }, 1000)
-  }, 1000)
-}, 1000)
-
+        console.log("Sarah:Fine and you?"); //?gondermeye baslaniyor
+      }, 1000);
+    }, 1000);
+  }, 1000);
+}, 1000);
 
 //? COZUMLER:
 //?----------------------------------------------------
