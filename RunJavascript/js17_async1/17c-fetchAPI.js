@@ -37,3 +37,6 @@ const showUser = (data) => {
   const userSection = document.getElementById("users")
 // userSection.innerHTML += 
 }
+
+
+//!EKRANA BASMAK İÇİN
