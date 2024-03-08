@@ -28,7 +28,7 @@ fetch("https://api.github.com/users") //GET İSTEĞİ
     // console.log(userData)
     showUser(data)
   })
-  .catch((err) => document.write(err))
+  .catch((err) => document.write(err)) //BAŞARISIZ OLURSA BU BLOGA GİRER
 
 // console.log(userData)
 
