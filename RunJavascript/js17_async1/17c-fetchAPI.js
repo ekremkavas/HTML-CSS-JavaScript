@@ -17,7 +17,7 @@ fetch("https://api.github.com/users") //GET İSTEĞİ
   .then((res) => {
     console.log(res)
     //? Fetch api'da hatayi bizim yakalamiz gerekiyor.
-    if (!res.ok) {
+    if (!res.ok) { //responsive içerisindeki ok kısmı false ise demek
       throw new Error(`Something went wrong ${res.status}`)
     }
     return res.json()
