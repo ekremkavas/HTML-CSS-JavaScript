@@ -1,8 +1,11 @@
 
 // console.log("merhaba")
 const getBtn = document.getElementById("button");
-// const value = document.querySelector("#searchText").value;//*inputun o anki değerini yakaladığı için sağlıklı çalışmaz.
 // console.log("🚀 ~ getBtn:", getBtn)
+
+// const value = document.querySelector("#searchText").value;
+//*inputun o anki değerini yakaladığı için sağlıklı çalışmaz.
+
 const cardsDiv = document.getElementById("cards");
 // console.log("🚀 ~ cardsDiv:", cardsDiv)
 
