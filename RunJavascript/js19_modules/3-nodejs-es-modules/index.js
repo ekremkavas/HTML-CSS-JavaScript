@@ -5,7 +5,7 @@
 
 import { topla } from "./hesap.js"
 import * as emoji from "node-emoji"
-
+//  * node emoji kutuphanesınden herseyı getır demek
 console.log(topla(3, 5))
 
 console.log(emoji.random())
