@@ -1,4 +1,4 @@
-##NEDEN FRONTEND GELİŞTİRMEDE NODEJS KULLANILIR?
+<!-- ##NEDEN FRONTEND GELİŞTİRMEDE NODEJS KULLANILIR?
 
 - NodeJS, JS ile Backend Uygulamalarinin geliştirilebilmesi için yazildi.
 - Bu sebeple, Chrome browser'ların JS motoru, PC ve Server'larda çalışabilecek şekilde implement edildi.
@@ -10,4 +10,4 @@
 - Ancak, browser'larda bulunan bir çok API Nodejs tarafından desteklemediği için uygulama NodeJS üzerinde geliştirilse bile yine Browser'larda çalıştırılmalıydı.
 - İşte bu ikisi (NodeJS ve Browser) arasindaki uyumu sağlamak için yani NodeJS üzerinde geliştirilen uygulamarın paketlenerek bir bundle (Bir çok harici kod ve modülün birleştirilmesi işlemi) oluşturulup Browser'lara sunulabilmesi için Webpack, Rollup, Parcel gibi bundler'lar kullanıldı.
 - Günümüzde birçok FE kütüphanesi (React,Vue,Angular v.b) yukarıda bahsedilen şekilde frontend geliştirilmesine imkan sağlamış oluyor. Son yıllarda Vite gibi tool'lar yardımıyla FE geliştirmedeki tüm bu süreçler daha kolay bir şekilde yönetilebilmektedir.
-  -Sonuç olarak, NodeJS her ne kadar Backend geliştirme için yazılmış olsa da bir çok avantajından dolayı FE geliştirmede de yaygın bir şekilde kullanılmaktadır.
+  -Sonuç olarak, NodeJS her ne kadar Backend geliştirme için yazılmış olsa da bir çok avantajından dolayı FE geliştirmede de yaygın bir şekilde kullanılmaktadır. -->

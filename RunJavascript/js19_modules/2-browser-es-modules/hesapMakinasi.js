@@ -26,4 +26,5 @@ const message = () => {
 }
 
 export default message
+//tek bır tane deger göndermek için export default mantıklı 
 

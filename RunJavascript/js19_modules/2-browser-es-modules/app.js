@@ -6,6 +6,10 @@
 //? JS kodlarının kolay ve performansli bir şekilde farklı dosyalara ayrilmasina ve gerektiginde birleştirmesine olanak saglamaktadir.
 //? Bir degisken,dizi,obje, fonksiyon, class v.b "export" deyimi ile başka dosyalarinin kullanimina açilmabilir.
 //** */ Kullanima acilanlar(export yapılanlar) ise import deyimi ile istenilen dosyaya eklenebilir.
+//import sytnax ı ŞÖYLE YAZILIYOR
+
+//! import {neyi import edeceksen o} form "./dosyaadı"
+
 import { add as extAdd } from "./hesapMakinasi.js"
 import { sub, mul, div } from "./hesapMakinasi.js"
 
@@ -14,7 +18,7 @@ console.log("SUB:", sub(3, 5))
 console.log("MUL:", mul(6, 5))
 console.log("DIV:", div(8, 5))
 
-import { PI as pi } from "./hesapMakinasi.js" //? Hoisted
+import { PI as pi } from "./hesapMakinasi.js" //? Hoisted as yazmak isim değişikliği yapmak istediğimde yazılır PI yerıne pi mesela
 console.log(pi)
 
 import giveMessage from "./hesapMakinasi.js"
