@@ -1,7 +1,8 @@
 console.log("APP JS")
 
 
-//? Globa Registration yöntemi ile kodları parçalara ayırma işlemi
+//! Global Registration yöntemi ile kodları parçalara ayırma işlemi
+
 const h1 = document.querySelector("h1")
 h1.textContent = "Without module"
 
@@ -26,7 +27,7 @@ const products = [
 ]
 
 console.log("Total Price:", totalPrice(products))
-
+//calculte js de bır fonks yazdık burda kullanmak ıcın
 
 //? Uygulamalar büyüdükçe kodlari tek bir JS dosyasına koymak bu kodun sürdürülebilirliğini ve anlaşılabiliriliğini imkansız hale getirmeye başlar.
 

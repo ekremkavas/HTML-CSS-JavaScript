@@ -5,7 +5,7 @@
 //? Günümüzde birçok browser ES modül yapısını desteklemektedir.
 //? JS kodlarının kolay ve performansli bir şekilde farklı dosyalara ayrilmasina ve gerektiginde birleştirmesine olanak saglamaktadir.
 //? Bir degisken,dizi,obje, fonksiyon, class v.b "export" deyimi ile başka dosyalarinin kullanimina açilmabilir.
-//? Kullanima acilanlar ise import deyimi ile istenilen dosyaya eklenebilir.
+//** */ Kullanima acilanlar(export yapılanlar) ise import deyimi ile istenilen dosyaya eklenebilir.
 import { add as extAdd } from "./hesapMakinasi.js"
 import { sub, mul, div } from "./hesapMakinasi.js"
 
