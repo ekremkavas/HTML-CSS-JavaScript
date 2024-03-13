@@ -15,8 +15,13 @@ const addTask = () =>{
     if(todoInput.value===""){
         alert("lutfen ekle butonunu doldurarak tıklayın")
     }else{
+todoInput.value=""
+todoInput.focus();
         //
-}
+}}
+
+
+//!todo eklemeye kendın bak burda kaldım
 
 addTaskButton.addEventListener("click", addTask)
 //clıkc eventı ıle addTask function olusturduk ust kısmında fonksıyon calısıyormu denedık
