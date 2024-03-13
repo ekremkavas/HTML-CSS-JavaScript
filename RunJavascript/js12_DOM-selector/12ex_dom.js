@@ -21,3 +21,4 @@ artirButon.addEventListener("click", () => {
 //!arrow funcıon ıcıne yazılan (e) event anlamında event yazar ekrana basarsan nelerını kullanabılırsın gorursun artirButon.addEventListener("click", (event) => {
 //     console.log("click artır çalışıyor",event.target );
 // })
+
