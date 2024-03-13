@@ -8,7 +8,10 @@ console.log(ad);
 //  const -- sabit değiştirilmeyenlet değiştirilebilir
 // var değiştirilir fakat çok kullanılmaz
 
+// let durum = "232"
+//? let-keyword   durum-variable   232-değişken
 //! CONST
+//?CONSTANT değişken olmayan sebit
 // const tckimlik = 443434343444;
 // tckimlik = 42244434441;
 
@@ -39,4 +42,12 @@ const sayi = 5;
 
 //!VAR
 
-// Her yerden ulaşılabılıyor
+//JS ilk başlarından berı kullanılan barıable anımlama yöntemıydı, Her yerden ulaşılabılıyor(GLOBAL SCOPE) hafızayı şişirebilir
+
+//**VARRİBALE İSİM TANIMLAMA KURALLARI
+
+// const 1asas = "rakam ile başlamaz"
+// const 1a½½##$sas = "sembol kullanma"
+// const for = "özel anlamlı ifadeler kullanılmaz"
+// const 1aSas = "Büyük küçük harf duyralılığı var"
+// const 1aS-as = "Normal - kullanılmaz"

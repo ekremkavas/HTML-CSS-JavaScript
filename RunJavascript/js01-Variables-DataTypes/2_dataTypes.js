@@ -31,7 +31,7 @@ console.log(personel + 5); // sonuc 5
 x = 15;
 console.log(typeof x);
 
-//!       PRIMITIVE DATA TYPES                                 */
+//!       PRIMITIVE DATA TYPE        */
 
 // Tek bir değer tutabilen değişkenler
 // Number,String,Null, Undefined,Boolean, BigInt
