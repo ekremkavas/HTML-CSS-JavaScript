@@ -58,3 +58,22 @@ console.log(kareAliver(5));
 
 const kareAl = (x) => x * x;
 console.log(kareAl(7));
+
+
+
+
+function findMax(a, b) {
+  if (a > b) {
+      return a;
+  } else {
+      return b;
+  }
+}
+
+console.log(findMax(10, 5)); // 10
+console.log(findMax(3, 8)); // 8
+
+// findMax adında bir fonksiyon tanımlanır.
+// Fonksiyon, iki parametre alır (a ve b) ve bu parametreler arasındaki maksimum değeri bulur.
+// if koşuluyla, a ve b değerleri karşılaştırılır ve büyük olan değer return ifadesiyle döndürülür.
+// Eğer a ve b eşitse veya a küçükse, else bloğu çalışır ve b değeri döndürülür.

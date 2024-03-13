@@ -15,7 +15,7 @@ console.log(person.name); // "Alice"
 console.log(person["age"]); // 30
 
 //!---------------------------------------
-// key-value 
+// key(property)-value 
 // property-value aynı şey javascripte böyle tanımlanıyor
 //! Objeler süslü parantez ile gösterilir {}
 //! Arraylar köşeli parantez ile gösterilir []
@@ -34,10 +34,6 @@ array.forEach(element => {
 //? Herhangi bir veriyi erismek icin property (key) adi kullanilir.
 
 console.log("*** Objects ***")
-
-
-
-
 
 
 //! 3 farkli yontem ile Object olusturulabilir
@@ -61,6 +57,7 @@ const kisi = {
 }
 console.log(kisi)
 console.log(kisi.diller); 
+console.log(Object.values(kisi));
 
 //! this keywordu iiçerisinde bulundğumuz objeyi temsil-refere eder.
 //! Global alanda yazılan this ise haliyle global objeyi refere eder.

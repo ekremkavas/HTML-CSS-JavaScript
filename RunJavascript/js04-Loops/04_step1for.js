@@ -5,6 +5,26 @@
 //!   }
 
 //? Koşul sağlanana kadar döngü devam eder
+// let i let index kısaltması
+
+const user =[
+    {id : 0, names : "mehmet", age : 25}  
+    {id : 1, names : "ahmet", age : 35}  
+    {id : 3, names : "ahmet", age : 45}  
+   
+]
+for(let index = 0; index < user.length ; index++){
+    console.log(user[index]);
+}
+
+const kırktanKucukler =[]
+for(let index = 0; index < user.length ; index++){
+    if(user[index].age < 40){
+        kırktanKucukler.push(user[index].name)
+    }
+}
+
+console.log(kırktanKucukler);
 
 
 // *************5 e kadar yazdırma***********

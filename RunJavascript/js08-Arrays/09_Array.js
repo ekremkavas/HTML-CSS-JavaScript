@@ -203,6 +203,7 @@ let sonuc = metin.includes("a", 3); // 3. pozisyondan itibaren arama yapar
 console.log(sonuc); // Çıktı: true
 
 //? Array'lerde ilişkisel veriler
+
 const ogrİsim = ["ahmet", "ismet", "saffet"]
 const ogrSoyisim = ["yılmaz", "can", "baki"]
 const ogrAdres = ["kadıköy", "şebinkarahisar", "seferihisar"]
