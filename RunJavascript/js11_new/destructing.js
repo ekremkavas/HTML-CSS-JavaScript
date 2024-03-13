@@ -1,4 +1,32 @@
-//? Elbette, "destructuring" (yapı parçalama) bir JavaScript özelliğidir ve ES6 ile birlikte tanıtılmıştır. Bu özellik, karmaşık veri yapılarını (nesneleri ve dizileri) parçalara ayırarak, içlerindeki değerlere erişmeyi ve bu değerleri değişkenlere atamayı sağlar. Destructuring, kodu daha okunabilir ve daha kısa hale getirebilir.
+//? "destructuring" (yapı parçalama) bir JavaScript özelliğidir ve ES6 ile birlikte tanıtılmıştır. Bu özellik, karmaşık veri yapılarını (nesneleri ve dizileri) parçalara ayırarak, içlerindeki değerlere erişmeyi ve bu değerleri değişkenlere atamayı sağlar. Destructuring, kodu daha okunabilir ve daha kısa hale getirebilir.
+//* Destructuring, JavaScript'te bir nesne veya dizi içindeki değerlere kolay bir şekilde erişmek için kullanılan bir özelliktir. Hem nesneler hem de diziler için kullanılabilir
+
+//! Array Destructuring:
+// Array destructuring, bir dizi içindeki öğeleri tek tek almak için kullanılır. Bu, dizi içindeki değerleri değişkenlere atamak için kullanışlı bir yöntemdir.
+const numbers = [1, 2, 3];
+
+const [a, b, c] = numbers;
+
+console.log(a); // 1
+console.log(b); // 2
+console.log(c); // 3
+
+//! Object Destructuring:
+// Object destructuring, bir nesnenin özelliklerine erişmek ve bu özellikleri değişkenlere atamak için kullanılır. Nesne içindeki özelliklerin adlarına göre, değişkenler tanımlanır ve bu değişkenler nesne özelliklerine atanır.
+
+const peerson = {
+  name: 'John',
+  age: 30,
+  city: 'New York'
+};
+
+const { name, a1ge, ccity } = peerson;
+
+console.log(name); // John
+console.log(a1ge);  // 30
+console.log(ccity); // New York
+
+
 //! ****************************************************
 const person = {
     firstName: 'John',
