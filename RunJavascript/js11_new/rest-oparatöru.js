@@ -1,4 +1,4 @@
-//! rest operatörü (rest parameter) JavaScript'te ES6 ile tanıtılan bir özelliktir. Bu operatör, bir fonksiyona geçilen argümanların geri kalanını tek bir dizi olarak toplar. 
+//! rest operatörü GERİ KALAN(rest parameter) JavaScript'te ES6 ile tanıtılan bir özelliktir. Bu operatör, bir fonksiyona geçilen argümanların geri kalanını tek bir dizi olarak toplar. 
 
 //Rest operatörü üç nokta üst üste (...) şeklinde ifade edilir. Genellikle üç nokta ile ifade edilen bu operatörün adı "rest"tir, çünkü geri kalan tüm argümanları toplar.Mutlaka yazılan parantezın ııcnde en sonda olması lazım , mantık olarak gerı kalanları aldıgı ıcın en sonda olması lazım
 
