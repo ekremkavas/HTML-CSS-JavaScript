@@ -1,3 +1,5 @@
+
+
 /* koşul (trueise) &&  (burayı çalıştırır , sağ tarafını) yoksa diğer sağ tarafı umursamaz(ignore eder) aşağıdaki kod bloguna geçer ,  tek bır durum varsa bunu kullanmak mantıklı*/
 
 

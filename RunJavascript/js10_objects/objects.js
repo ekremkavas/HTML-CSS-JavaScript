@@ -2,6 +2,19 @@
 //*                 (OBJECTS)
 //* =============================================
 
+//!JavaScript'te bir nesne (object), birden fazla değeri tek bir değişken altında saklamak için kullanılan bir veri yapısıdır. Nesneler, anahtar-değer çiftlerini içerir ve bu çiftlerin her birine özellik (property) denir. Anahtarlar bir string veya sembol olabilirken, değerler herhangi bir veri türünden olabilir.
+//?Nesneler, süslü parantezler {} içinde tanımlanır ve özellikler virgülle ayrılarak belirtilir.
+//!---------------------------------------
+let person = {
+  name: "Alice",
+  age: 30,
+  city: "New York"
+};
+// Yukarıdaki örnekte, person adında bir nesne tanımlanmıştır. Bu nesne üç özelliğe (name, age, city) sahiptir ve her özellik bir anahtar-değer çifti şeklinde belirtilmiştir. name özelliğinin değeri "Alice", age özelliğinin değeri 30 ve city özelliğinin değeri "New York" olarak belirlenmiştir.
+console.log(person.name); // "Alice"
+console.log(person["age"]); // 30
+
+//!---------------------------------------
 // key-value 
 // property-value aynı şey javascripte böyle tanımlanıyor
 //! Objeler süslü parantez ile gösterilir {}
@@ -22,12 +35,8 @@ array.forEach(element => {
 
 console.log("*** Objects ***")
 
-//? Array'lerde ilişkisel veriler
-const ogrİsim = ["ahmet", "ismet", "saffet"]
-const ogrSoyisim = ["yılmaz", "can", "baki"]
-const ogrAdres = ["kadıköy", "şebinkarahisar", "seferihisar"]
 
-console.log(`${ogrİsim[0]} - ${ogrSoyisim[0]} - ${ogrAdres[0]} `)
+
 
 
 

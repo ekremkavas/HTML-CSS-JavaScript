@@ -1,3 +1,5 @@
+
+
 /* ternary de ? koşul yapısıdır bir şart sonrası değil mi sorusu gibi ? nın sol tarafı yani koşul true ise ? dan sonra gelen kısım çalışır eğer false ise : sağındaki ifade çalışır */
 
 

@@ -12,10 +12,38 @@ string içerisinde yazılan sayılar string kabul edili
 // ve dinamik
 // çok fazla yerde kullanılır
 
+
+//! JavaScript'de undefined ve null, iki farklı değerdir ve farklı durumları ifade ederler.
+
+// undefined: Bu değer, bir değişkenin atanmamış veya tanımsız olduğunu belirtir. Bir değişken tanımlanmış ancak değeri atanmamışsa veya bir fonksiyonun bir değer döndürmemesi durumunda varsayılan olarak undefined döner. 
+
+
+let x;
+console.log(x); // undefined
+
+function foo() {}
+console.log(foo()); // undefined
+
+
+// null: Bu değer, bir değişkenin bilinçli olarak hiçbir şeyi temsil etmediğini belirtir. Yani, bir değerin "hiçlik" olduğunu ifade eder. 
+
+
+let y = null;
+console.log(y); // null
+
+
+// Özetle, undefined, bir şeyin tanımsız veya atanmamış olduğunu belirtirken, null bir değişkenin bilinçli olarak hiçbir şeyi temsil etmediğini belirtir.
+
+//!UNDEFİNED
+
+let ornekUndefined; //tanımlanmayan
+console.log(ornekUndefined);
+ornekUndefined = 5; //daha sonra tanımlayabılırsın
+console.log(ornekUndefined);
+
+
 //!NULL
-
-
-let bu  ; // atama olmadığı ıcın tanımlanamayan
+let bu  ; // atama olmadığı ıcın tanımlanamayan(undefined)
 console.log(bu,bu+5,`Bu iş ${bu}`); //sonuc = NaN       bu+5 tanımlanmayan ıfade ıle 5 ı topladıgında NaN bu number değil çıkar
 
 let personel = null; // bu değerdir başka zaman atama yapabilirsin boş değer gibi  düşün

@@ -4,7 +4,10 @@
 
 //! ARİTMATİK OPERATÖRLER
 
-/* -------------------->  = atama operatörüdür */
+// Math.
+//?yazarak matematik operatörlerine ulaşabilirsin logaritma sinüs vs
+
+/* ------------->  = atama operatörüdür */
 
 let not1 = 60;
 let not2 = 70;
@@ -75,9 +78,10 @@ console.log(sayi)
 //? NaN: "Not-a-Number" değeri, sayısal olmayan bir işlem sonucu.
 //? Bunlar dışında, yukarıdaki değerler dışındaki tüm diğer değerler "truthy" olarak kabul edilir ve bir koşul içinde true olarak değerlendirilir.
 
--------------------------------------------------------------------------- */
-/*                            COMPARISON OPERATORS                            */
-/* -------------------------------------------------------------------------- */
+//----------------------------------- */
+//      COMPARISON OPERATORS            */
+/* --
+----------------------------------------- */
 
 //! Karşılaştırma operatörleri bize Boolean sonuç döndürür.
 
@@ -96,10 +100,9 @@ console.log(3>=2)
 
 let isim = "ekrem"
 console.log(Number("ekrem")); // NaN sonuc
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/*                              LOGICAL OPERATORS                             */
-/* -------------------------------------------------------------------------- */
+//------------------------------------- */
+/*              LOGICAL OPERATORS        */
+/* -----------------------------------------------
 
 //! AND  - && ( ve anlamındadır)
 // ANd mükemmeliyetçidir
