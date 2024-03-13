@@ -1,3 +1,5 @@
+
+
 //1-butonu html den al
 //2-butonu dinle
 //3-tıklanırsa 
@@ -11,6 +13,8 @@ console.log(azaltButon);
 const rakam = document.querySelector("#numara")
 console.log(rakam);
 
+//!************************************************
+
 let sayac = 0;
 
 artirButon.addEventListener("click", () => {
@@ -22,3 +26,8 @@ artirButon.addEventListener("click", () => {
 //     console.log("click artır çalışıyor",event.target );
 // })
 
+azaltButon.addEventListener("click", () => {
+    // console.log(azaltButon);
+    sayac--
+    rakam.innerHTML = `${sayac}`
+})
