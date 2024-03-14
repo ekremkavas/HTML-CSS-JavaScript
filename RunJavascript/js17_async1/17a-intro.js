@@ -1,9 +1,13 @@
-//*==================================================
+
+//!Senkron işlemler sırayla gerçekleştirilirken
+//*Asenkron işlemler görevlerin bağımsız olarak ve aynı anda gerçekleşmesine izin verir,arka planda çalışan işinizi engellenemeyen yardımcı API lar
+
+//*=============================================
 //*        1- Senkron-Asenkron Programlama
-//*==================================================
+//*============================================
 
 //! Javascript, single-threaded ve Asenkron Programlama dilidir.
-
+//?Js aslında asenkron bir değildir yardımcı API sayesınde destekler
 //? Asenkron Programlama
 //? --------------------------------------------------------------
 //? Asenkron Programlama, bir alt gorevin uygulamanin asil thread'inden
@@ -18,25 +22,30 @@
 
 //* ------------------------------------------------
 
-//! Senkron
+//! SENKRON KOD
 
 // const gecikme = (sure) => {
-//   //? Senkron blocking code
+//   //? uzun süren bir kodu simüle ettik
 //   const basla = new Date().getTime()
 //   while (new Date().getTime() < basla + sure) {}
 // }
 
 // console.log("Senkron")
-// // alert("Blocking") //? Senkron calismada bir komut cok uzun sürerse uygulamayı bloklar.
+// alert("Blocking")
+//? Senkron calismada bir komut cok uzun sürerse uygulamayı bloklar.
 // console.time("timer")
 // gecikme(2000)
 // console.timeEnd("timer")
 
 // console.log("FS16")
 
-//* ------------------------------------------------
-//! Asenkron
-//?(setTimeout()) - Belirli sure sonraya zaman kurar.
+//* -----------------------------------------------
+
+
+//! ASENKRON KOD
+
+//*(setTimeout()) - Belirli sure sonraya zaman kurar.
+
 //zamana baglı her yerde setTimeout kullanılabılır mesela 5 sn sonra reklam cıksın gıbı
 const timeoutID = setTimeout(() => {
   console.log("Timeout1 doldu");
