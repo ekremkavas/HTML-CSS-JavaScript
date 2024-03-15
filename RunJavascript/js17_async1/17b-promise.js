@@ -2,8 +2,7 @@
 //*                2- Promises
 //* =================================================
 
-//? Promise(Bir obje , date neyse promise böyle bir obje), asenkron bir islemin basariyla ve basarisizlikla bittigini gosteren
-//? ve ayni zamanda basariyla bittiginde sonuc verilerini temsil eden bir nesne yapisidir.
+//? Promise(Bir obje , newdate neyse promise böyle bir obje js kullanılan), asenkron bir islemin basariyla ve basarisizlikla bittigini gosteren ve ayni zamanda basariyla bittiginde sonuc verilerini temsil eden bir nesne yapisidir.
 
 //? SYTNAX
 //?----------
@@ -35,6 +34,8 @@
 console.log("Promise")
 //?atacağım promise isteği başarlı bittiğinde resolve çalışacak
 //?atacağım promise isteği başarsız bittiğinde reject çalışacak
+
+
 // Basit bir Promise örneği
 const promiseExample = new Promise((resolve, reject) => {
   // Asenkron bir işlem simüle edelim, örneğin 1 saniye sonra bir sonuç dönecek

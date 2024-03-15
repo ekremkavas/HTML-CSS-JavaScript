@@ -44,29 +44,47 @@
 
 //! ASENKRON KOD
 
-//*(setTimeout()) - Belirli sure sonraya zaman kurar.
+//*(setTimeout()) - Belirli sure sonraya zaman kurar,ve sonra çalışır
 
 //zamana baglı her yerde setTimeout kullanılabılır mesela 5 sn sonra reklam cıksın gıbı
-const timeoutID = setTimeout(() => {
+const timeoutID = setTimeout(() => { //sonra burası-4
   console.log("Timeout1 doldu");
 }, 2000);
 //?2000ms sonra komutları çalıştırıyor çalıştır demek
 
 setTimeout(() => {
   console.log("Timeout2 doldu");
-}, 1000); //bitirme sırasına göre konsaola yazdırır
+}, 1000); //daha sonra burası-3
 
-console.log("Start");
+console.log("Start"); //önce burası calıştı-1
 
-setTimeout(() => {
+setTimeout(() => { //en son burası 4 u sıfırladı bacground sıfırladı ekrana gelmedı
   clearTimeout(timeoutID);
 }, 500);
 
-console.log("Uygulama bitti");
+console.log("Uygulama bitti"); //sonra burası-2
+
+
 
 //! Asenkron (setInterval, clearInterval) - Periyodik bir aralik belirler
-//*------------------------------------------------
+//asenkron kodların sıralı bir akışı yoktur yazdıgınız durumuna göre calısır
+//? setInterval periodik aralıklarla timeout oluşturur
+//!------------------------------------------------
 // Her 1 saniyede bir "Merhaba dünya!" yazdıran basit bir setInterval örneği
+
+let sayac = 0 //* burda sayac sayamaya devam eder  bu setinteval işlemleri bacground oldugu için eger if dışarı yazılırsa sıfırlamaz
+const saydir =setInterval( () => { 
+  console.log(++sayac);
+  if (sayac >= 8) {
+  clearInterval(saydir)
+}
+},1000)
+
+//!--------------------------------------------------
+
+
+
+
 setInterval(function() {
   console.log("Merhaba dünya!");
   }, 1000);
@@ -88,6 +106,8 @@ function increaseCount() {
 const intervalID = setInterval(increaseCount, 1000);
 
 //-----------------------------------------------------
+
+
 
 //! Callback Hell (nested ve birbirine bagli callback'ler)
 
