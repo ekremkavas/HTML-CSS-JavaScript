@@ -67,6 +67,7 @@ promiseExample.then((result) => {
 
 const request = new Promise((resolve, reject) => {
   const data = { name: "Can", surname: "Canan" } //? mock data
+  //MOCK DATA APİdöndüreceği veriyi eğer apı hazır degılse localde kendınız olusturup promıse calısyor mu denersınız (sankı ordan gelıyormus gıbı, varsayalım bız ıstek attık ıstek gerı donus yaoacak gıbı)
 
   const success = Math.floor(Math.random() * 5) //? 0 1 2 3 4
 
@@ -78,7 +79,7 @@ const request = new Promise((resolve, reject) => {
 })
 
 request
-  .then((res) => {
+  .then((res) => { //resolve gönderdiği callback yakalar buraya yazar
     //? basarili durumlari islemek icin then() metotlari kullanilr.
     console.log(res)
     return res
