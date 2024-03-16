@@ -28,20 +28,21 @@
 //?____________________________________________
 //! then() yöntemi, bir Promise'in başarılı olduğunda veya başarısız olduğunda yapılacak işlemleri tanımlamak için kullanılır. Yani, then() yöntemiyle, isteğin sonucu elde edilir ve bu sonuca göre uygun işlemler gerçekleştirilebilir.
 
+//Biz bir istek attığımızda REQUESTS göndermiş oluyoruz o bize RESPONSES döndürüyor
+//responsive kabuklu hali res.json da içine bakmış olduk json fonk responsive içimde farklı foksiyonlar barındırıyor
 //?_________________________________________
 
-console.log("FETCH");
+console.log("fetch isteği");
 
-// let userData = ""
 fetch("https://api.github.com/users") //GET İSTEĞİ
-  .then((res) => {
-    console.log(res);
-    //? Fetch api'da hatayi bizim yakalamiz gerekiyor.
-    if (!res.ok) {
+  .then((response) => {
+    console.log(response); //ham veri 
+    //? Fetch api'da hatayi bizim yakalamiz, ok=true or false göre, gerekiyor.
+    if (!response.ok) {
       //responsive içerisindeki ok kısmı false ise demek
-      throw new Error(`Something went wrong ${res.status}`);
-    }
-    return res.json();
+      throw new Error(`Birşeyler ters gitti ${res.status}`);
+    }//burdakı res status hata seklını belıtır ve burdan return eder
+    return response.json(); // Ham veririnin jsonlaştırılmış hali
   })
   .then((data) => {
     // console.log(data)
@@ -64,6 +65,7 @@ const showUser = (data) => {
 //?______________________________________________
 
   //!EKRANA BASMAK İÇİN
+  
   data.forEach((user) => {
     userSection.innerHTML += `
     <h1>${user.login}</h1>
