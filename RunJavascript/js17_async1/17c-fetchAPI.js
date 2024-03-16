@@ -26,6 +26,9 @@
 //*              header : {'X-auto-token' : 'abd23ft güvenlik şifresi'}
 //*            })
 //?____________________________________________
+//! then() yöntemi, bir Promise'in başarılı olduğunda veya başarısız olduğunda yapılacak işlemleri tanımlamak için kullanılır. Yani, then() yöntemiyle, isteğin sonucu elde edilir ve bu sonuca göre uygun işlemler gerçekleştirilebilir.
+
+//?_________________________________________
 
 console.log("FETCH");
 
@@ -55,7 +58,11 @@ const showUser = (data) => {
   const userSection = document.getElementById("users");
   // userSection.innerHTML +=
 
-  
+
+  //* Yukarıdaki örnekte, fetch() fonksiyonu ile belirtilen URL'ye bir HTTP GET isteği gönderilir. Ardından, then() yöntemiyle, gelen cevap işlenir ve response.ok durumu kontrol edilir. Eğer cevap başarılıysa, JSON verisi alınır ve ikinci then() bloğunda bu veri kullanılır. Eğer cevap başarısızsa, catch() yöntemiyle hata işlenir.
+
+//?______________________________________________
+
   //!EKRANA BASMAK İÇİN
   data.forEach((user) => {
     userSection.innerHTML += `
