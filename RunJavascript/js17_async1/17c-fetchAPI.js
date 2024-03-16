@@ -8,6 +8,24 @@
 //? Javascript ortaminda en cok kullanilan Asenkron islem orneklerinin basinda gelmektedir.
 //* fetch() fonksiyonu veri getirmek istediginiz kaynagin yolunu gosteren zorunlu
 //! bir parametre almaktadir ve bu istegin cevabini gosteren bir Promise dondurmektedir.
+//?____________________________________________
+
+//fetch("url") bunun ıcındekı API endpoints yanı adresı oluyor
+//*Bunu direk fetch("url") böyle yazarsak bu GET isteği olur
+//bunu yaptıktan sonra then zıncırlerı ıle verıyı ısleyebılıyorsunuz
+//başarısız olursa catch() bloguna gırer
+//en son ıstersenız finaly() bitişi bildirebilirsiniz
+//ASENKRON yapıdır 2.kuyruga gider (1.si callback-2.si Microtask)
+//Biz bazen serverdekı bilgileri cekmek isteriz GET isteği yaparız- CRUD(create-read-uptade-delete)
+//Yazma isteği POST-Bazen patch yada push Update işlemi yaparız-DElete isteği atarız
+//JSON.strigfy(data) datayı strigleştirir
+//Başka bir istek için GET değilde başka istek söyle yapılır
+//*           fetch ("url" , {
+//*              method : 'POST',
+//*              body : JSON.strigfy(data)
+//*              header : {'X-auto-token' : 'abd23ft güvenlik şifresi'}
+//*            })
+//?____________________________________________
 
 console.log("FETCH");
 
@@ -36,6 +54,8 @@ const showUser = (data) => {
   console.log(data);
   const userSection = document.getElementById("users");
   // userSection.innerHTML +=
+
+  
   //!EKRANA BASMAK İÇİN
   data.forEach((user) => {
     userSection.innerHTML += `
