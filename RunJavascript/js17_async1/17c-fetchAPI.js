@@ -42,6 +42,8 @@ fetch("https://api.github.com/users") //GET İSTEĞİ
       //responsive içerisindeki ok kısmı false ise demek
       throw new Error(`Birşeyler ters gitti ${res.status}`);
     }//burdakı res status hata seklını belıtır ve burdan return eder
+    //!eğer bunu yazıp hata fırlatmazsak zincir kırılmaz kod blogu altını okur eee resposıve verı yok nasıl jsonlaştırcaksın
+    //*thow new Error ü görürse çıkar doğrudan catch e gider ve hata var diye uyardıgınız yer mantıklı calısır
     return response.json(); // Ham veririnin jsonlaştırılmış hali
   })
   .then((data) => {

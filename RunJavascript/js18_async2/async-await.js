@@ -19,7 +19,7 @@
 //* Yapilan istek yerine getirilip sonuc degerlerinin dondurulmesi ile kodun calismasi devam eder.
 
 const getNews = async () => {
-  //?   https://newsapi.org/v2/top-headlines?country=tr&apiKey=1a1a999e0d7240a6bd2dead87bcca78e&category=technology
+  //   https://newsapi.org/v2/top-headlines?country=tr&apiKey=1a1a999e0d7240a6bd2dead87bcca78e&category=technology
 
   const BASE_URL = `https://newsapi.org/v2/`
   const API_KEY = `ccdd9fe450ef48d480be0d234470aa1c`
