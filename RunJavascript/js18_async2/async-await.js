@@ -1,25 +1,24 @@
 //*=================================================
 //*               ASYNC-AWAIT
 //*=================================================
+
+//!AWAİT yapsını kullanmamız için mecburen ASYNC  bir fonksiyonun içersinde olmamız gerekiyor
 //? Async-Await ECMAScript 2017 ile Javascript diline eklenmistir.
 //? Aslinda Promise yapisinin syntax olarak basitlestirilmis halidir.
 //? Bu baglamda sentetik seker benzetmesi yapilabilir.
 
-//* Bir fonskiyonu asenkron hale getirmek icin fonksiyon keyword'nun onune
-//* async keyword'u eklenir.
+//* Bir fonskiyonu asenkron hale getirmek icin fonksiyon keyword'nun onune async keyword'u eklenir.
 
-//* Bir async fonksiyon icerisinde await keyword'u ile yapilan istegin cevabinin
-//* beklenmesi saglanir.
+//* Bir async fonksiyon icerisinde await keyword'u ile yapilan istegin cevabinin beklenmesi saglanir.
 
 //* Aslinda dizilis olarak senkron mantiga benzeyen kod yazarak Asenkron
 //* kod yazmayi mumkun kilar.
 
-//* Await, promise-temelli herhangi bir fonksiyonun onune getirilerek getirildigi
-//* satirdaki kodun durdurulmasini saglar.
+//* Await, promise-temelli herhangi bir fonksiyonun onune getirilerek getirildigi satirdaki kodun durdurulmasini saglar.
 //* Yapilan istek yerine getirilip sonuc degerlerinin dondurulmesi ile kodun calismasi devam eder.
 
 const getNews = async () => {
-  //   https://newsapi.org/v2/top-headlines?country=tr&apiKey=1a1a999e0d7240a6bd2dead87bcca78e&category=technology
+  //   https://newsapi.org/v2/top-headlines?country=tr&apiKey=ccdd9fe450ef48d480be0d234470aa1c&category=technology
 
   const BASE_URL = `https://newsapi.org/v2/`
   const API_KEY = `ccdd9fe450ef48d480be0d234470aa1c`
@@ -27,7 +26,7 @@ const getNews = async () => {
   const URL = `${BASE_URL}${queryString}&apiKey=${API_KEY}`
 
   try {
-    const res = await fetch(URL)
+    const res = await fetch(URL) //await koymazsak isteğin bitip bitmemesine bakmaz anlık olarak hemen çalıştırmaya çalışır
 
     //? Error handing
     if (!res.ok) {
