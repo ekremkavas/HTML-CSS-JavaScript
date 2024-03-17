@@ -28,18 +28,18 @@ const getNews = async () => {
   try {
     const res = await fetch(URL) //await koymazsak isteğin bitip bitmemesine bakmaz anlık olarak hemen çalıştırmaya çalışır
 
-    //? Error handing
+    //? Error handing hatayı yakalama
     if (!res.ok) {
       throw new Error(`${res.status}`)
     }
-    const data = await res.json()
-    dipslayNews(data.articles)
+    const data = await res.json() //verıyı jasonlaştıdık
+    dipslayNews(data.articles) //verının artıcle ulastık
   } catch (error) {
     const newsArticle = document.getElementById("news")
     newsArticle.innerHTML = `
         <img src="./img/404.png" alt="" />
     `
-  }
+  }//hatayı ekrana 404 resmıyle basmak ıcın
 }
 
 const dipslayNews = (news) => {
@@ -48,7 +48,7 @@ const dipslayNews = (news) => {
 
   news.forEach(({ urlToImage, url, content, title }) => {
     newsArticle.innerHTML += `
-        <div class="card col-sm-6 col-md-4 col-lg-3">
+        <div class="card col-sm-6 col-md-4 col-lg-3"> 
             <img src="${
               urlToImage || defaultImage
             }" class="card-img-top" alt="...">
@@ -59,7 +59,7 @@ const dipslayNews = (news) => {
             </div>
         </div>
     `
-  })
+  }) //bootsrap kart yapısı kopyaladık yukarıda
 }
 
 getNews()
