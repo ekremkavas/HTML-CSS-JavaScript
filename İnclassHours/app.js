@@ -24,7 +24,7 @@ const getFollowers = async (username) => { //!ADIM 5
       // forEach & map farkı sorulur
       //* forEach => no return
       //? map => array return
-      data.forEach((item) => createElem(item));
+      data.forEach((item) => createElem(item)); //!ADIM 9A
     } else {
       throw new Error("Kullanıcı bulunamadı");
     } //!console hata olur throw new error yazmazsan hatayı basar ama catch bloguna gırmez 
@@ -34,10 +34,10 @@ const getFollowers = async (username) => { //!ADIM 5
     console.log(error);
   }
 };
-const createElem = (user) => {
-//   console.log(user);
+const createElem = (user) => { //!ADIM 9B
+//   console.log(user); 
 //   console.log(user.login);
-  const { login, html_url, avatar_url } = user;
+  const { login, html_url, avatar_url } = user; //object decturacking user içinden login html_url avaar_url çek
 //   console.log(avatar_url);
   const newElem = `
   <div class="col">
