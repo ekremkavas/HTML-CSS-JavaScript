@@ -6,7 +6,7 @@ const getBtn = document.getElementById("button"); //!ADIM 1
 // const value = document.querySelector("#searchText").value;
 //*inputun o anki değerini yakaladığı için sağlıklı çalışmaz.
 
-const cardsDiv = document.getElementById("cards");
+const cardsDiv = document.getElementById("cards"); //!ADIM 8
 // console.log("🚀 ~ cardsDiv:", cardsDiv)
 
 // https://api.github.com/users/anthonyharold67/followers?per_page=100
@@ -16,9 +16,10 @@ const getFollowers = async (username) => { //!ADIM 5
       `https://api.github.com/users/${username}/followers?per_page=100`
     );
 
-    console.log("🚀 ~ getFollowers ~ response:", response);
+    console.log("🚀 ~ getFollowers ~ response:", response); 
+    //!ADIM 7
     if (response.ok) { //res tamamsa datayı okunabılır hale getırmek ıcin json a çevir
-      const data = await response.json();
+      const data = await response.json(); //ne kadar süreceğini bilmiyorum jsonlaştırmak asekron bir ilem o yüzden await unutmamam gerekir
       console.log("🚀 ~ getFollowers ~ data:", data);
       // forEach & map farkı sorulur
       //* forEach => no return
